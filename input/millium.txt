@@ -1,0 +1,11 @@
+1 1 42 55
+1,scripts/scena/dat_us/r0800.dat,78030
+1,scripts/scena/dat_us/system.dat,4926
+1,scripts/scena/dat_us/system.dat,8718
+2,scripts/scena/dat_us/r0800.dat,78036
+2,scripts/scena/dat_us/system.dat,4932
+2,scripts/scena/dat_us/system.dat,8724
+3,scripts/scena/dat_us/system.dat,4938
+3,scripts/scena/dat_us/system.dat,8730
+4,scripts/scena/dat_us/system.dat,4944
+4,scripts/scena/dat_us/system.dat,8736

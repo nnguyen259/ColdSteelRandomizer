@@ -1,0 +1,13 @@
+1 16 25 48 1
+1,scripts/scena/dat_us/system.dat,4806
+1,scripts/scena/dat_us/system.dat,8598
+1,scripts/scena/dat_us/t1010.dat,83314
+2,scripts/scena/dat_us/system.dat,4812
+2,scripts/scena/dat_us/system.dat,8604
+3,scripts/scena/dat_us/system.dat,4818
+3,scripts/scena/dat_us/system.dat,8610
+4,scripts/scena/dat_us/system.dat,4824
+4,scripts/scena/dat_us/system.dat,8616
+5,scripts/scena/dat_us/system.dat,4830
+5,scripts/scena/dat_us/system.dat,8622
+5,scripts/scena/dat_us/t1010.dat,83320

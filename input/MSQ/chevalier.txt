@@ -1,0 +1,4 @@
+101792,data/scripts/scena/dat_us/system.dat
+101682,data/scripts/scena/dat_us/system.dat
+101770,data/scripts/scena/dat_us/system.dat
+133709,data/scripts/scena/dat_us/t1000.dat

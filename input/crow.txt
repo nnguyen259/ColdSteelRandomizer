@@ -1,0 +1,9 @@
+1 1 42 54
+1,scripts/scena/dat_us/m2540.dat,27821
+1,scripts/scena/dat_us/system.dat,4956
+1,scripts/scena/dat_us/system.dat,8748
+2,scripts/scena/dat_us/m2540.dat,27827
+2,scripts/scena/dat_us/system.dat,4962
+2,scripts/scena/dat_us/system.dat,8754
+3,scripts/scena/dat_us/system.dat,4968
+3,scripts/scena/dat_us/system.dat,8760

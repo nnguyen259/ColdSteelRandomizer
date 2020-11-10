@@ -1,0 +1,14 @@
+133653,data/scripts/scena/dat_us/t1000.dat
+23114,data/text/dat_us/t_shop.tbl
+23239,data/text/dat_us/t_shop.tbl
+23381,data/text/dat_us/t_shop.tbl
+23540,data/text/dat_us/t_shop.tbl
+23716,data/text/dat_us/t_shop.tbl
+49767,data/text/dat_us/t_shop.tbl
+54228,data/text/dat_us/t_shop.tbl
+62170,data/text/dat_us/t_shop.tbl
+68586,data/text/dat_us/t_shop.tbl
+72438,data/text/dat_us/t_shop.tbl
+76695,data/text/dat_us/t_shop.tbl
+85286,data/text/dat_us/t_shop.tbl
+87554,data/text/dat_us/t_shop.tbl

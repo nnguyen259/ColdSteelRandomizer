@@ -1,0 +1,11 @@
+1 16 26 46
+1,scripts/scena/dat_us/m2501.dat,23665
+1,scripts/scena/dat_us/system.dat,4842
+1,scripts/scena/dat_us/system.dat,8634
+1,scripts/scena/dat_us/t1010.dat,83326
+2,scripts/scena/dat_us/system.dat,4848
+2,scripts/scena/dat_us/system.dat,8640
+3,scripts/scena/dat_us/system.dat,4854
+3,scripts/scena/dat_us/system.dat,8646
+4,scripts/scena/dat_us/system.dat,4860
+4,scripts/scena/dat_us/system.dat,8652

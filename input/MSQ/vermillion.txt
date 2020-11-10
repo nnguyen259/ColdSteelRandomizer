@@ -1,0 +1,4 @@
+271187,data/scripts/scena/dat_us/t1000.dat
+271089,data/scripts/scena/dat_us/t1000.dat
+271165,data/scripts/scena/dat_us/t1000.dat
+133741,data/scripts/scena/dat_us/t1000.dat

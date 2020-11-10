@@ -1,0 +1,8 @@
+51018,data/scripts/scena/dat_us/m2500.dat
+10026,data/scripts/scena/dat_us/system.dat
+83120,data/scripts/scena/dat_us/t1010.dat
+10074,data/scripts/scena/dat_us/system.dat
+133597,data/scripts/scena/dat_us/t1000.dat
+51028,data/scripts/scena/dat_us/m2500.dat
+10120,data/scripts/scena/dat_us/system.dat
+83154,data/scripts/scena/dat_us/t1010.dat

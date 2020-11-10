@@ -1,0 +1,6 @@
+10034,data/scripts/scena/dat_us/system.dat
+83136,data/scripts/scena/dat_us/t1010.dat
+10082,data/scripts/scena/dat_us/system.dat
+133613,data/scripts/scena/dat_us/t1000.dat
+10127,data/scripts/scena/dat_us/system.dat
+83175,data/scripts/scena/dat_us/t1010.dat

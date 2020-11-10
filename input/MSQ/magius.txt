@@ -1,0 +1,4 @@
+5840,data/scripts/talk/dat_us/tk_margarita.dat
+5730,data/scripts/talk/dat_us/tk_margarita.dat
+5818,data/scripts/talk/dat_us/tk_margarita.dat
+133717,data/scripts/scena/dat_us/t1000.dat

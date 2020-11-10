@@ -1,0 +1,16 @@
+FlameSlash,D200,10356
+AzureFlameSlash,D300,10512
+RosettaArrow,E600,11352
+JudgementArrow,E700,11530
+SeventhRhapsody,FA00,12565
+RadiantDance,0E01,13429
+RadiantWaltz,0F01,13567
+UltimateShot,2201,14362
+LordAlbireon,3601,15365
+CrystalSaber,6801,16180
+SylphidDance,7C01,16999
+CalamityHawk,9001,17776
+GigantBreaker,A401,18569
+CrossRaven,B801,19412
+PlasmaStorm,CC01,20062
+DragonKick,E001,20699

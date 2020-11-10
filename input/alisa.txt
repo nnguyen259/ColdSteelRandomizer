@@ -1,0 +1,8 @@
+1 8 24 52
+1,scripts/scena/dat_us/system.dat,4698
+1,scripts/scena/dat_us/system.dat,8490
+1,scripts/scena/dat_us/t1010.dat,72339
+2,scripts/scena/dat_us/system.dat,4704
+2,scripts/scena/dat_us/system.dat,8496
+3,scripts/scena/dat_us/system.dat,4710
+3,scripts/scena/dat_us/system.dat,8502

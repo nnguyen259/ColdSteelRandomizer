@@ -1,0 +1,5 @@
+4399,data/scripts/scena/dat_us/m2532.dat
+4299,data/scripts/scena/dat_us/m2532.dat
+4473,data/scripts/scena/dat_us/m2532.dat
+1495,data/scripts/scena/dat_us/m2532.dat
+133645,data/scripts/scena/dat_us/t1000.dat

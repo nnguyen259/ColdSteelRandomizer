@@ -1,0 +1,5 @@
+27729,data/scripts/scena/dat_us/m2540.dat
+135548,data/scripts/scena/dat_us/t1010.dat
+133685,data/scripts/scena/dat_us/t1000.dat
+27739,data/scripts/scena/dat_us/m2540.dat
+135565,data/scripts/scena/dat_us/t1010.dat

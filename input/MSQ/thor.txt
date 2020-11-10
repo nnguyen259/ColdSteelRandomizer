@@ -1,0 +1,7 @@
+5587,data/scripts/scena/dat_us/system.dat
+101534,data/scripts/scena/dat_us/system.dat
+101424,data/scripts/scena/dat_us/system.dat
+101512,data/scripts/scena/dat_us/system.dat
+5635,data/scripts/scena/dat_us/system.dat
+5680,data/scripts/scena/dat_us/system.dat
+133765,data/scripts/scena/dat_us/t1000.dat

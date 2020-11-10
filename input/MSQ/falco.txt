@@ -1,0 +1,6 @@
+40717,data/scripts/scena/dat_us/m2500.dat
+5555,data/scripts/scena/dat_us/system.dat
+5603,data/scripts/scena/dat_us/system.dat
+133565,data/scripts/scena/dat_us/t1000.dat
+40734,data/scripts/scena/dat_us/m2500.dat
+5673,data/scripts/scena/dat_us/system.dat

@@ -1,0 +1,10 @@
+1 6 31 57 9
+1,scripts/scena/dat_us/m2500.dat,40741
+1,scripts/scena/dat_us/system.dat,4722
+1,scripts/scena/dat_us/system.dat,8514
+2,scripts/scena/dat_us/system.dat,4728
+2,scripts/scena/dat_us/system.dat,8520
+3,scripts/scena/dat_us/system.dat,4734
+3,scripts/scena/dat_us/system.dat,8526
+4,scripts/scena/dat_us/system.dat,4740
+4,scripts/scena/dat_us/system.dat,8532
