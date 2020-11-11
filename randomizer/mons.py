@@ -60,6 +60,7 @@ def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=T
                 for j in range(15):
                     if keepDeathblow:
                         if j == 7 or j == 10 or j == 13:
+                            file.seek(file.tell() + 2)
                             continue
                     newAfflictionRes = random.randrange(0, 201, 5)
                     file.write(newAfflictionRes.to_bytes(1, 'little'))
