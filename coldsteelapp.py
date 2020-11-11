@@ -19,7 +19,7 @@ class ColdSteelApp:
         self.lbDirectory.rowconfigure('0', minsize='0')
         self.entryDirectory = ttk.Entry(self.frameGeneral)
         self.gameDirectory = tk.StringVar()
-        self.entryDirectory.config(textvariable=self.gameDirectory)
+        self.entryDirectory.config(textvariable=self.gameDirectory, width='60')
         self.entryDirectory.grid(column='1', padx='5', pady='5', row='0', sticky='ew')
         self.btnBrowse = ttk.Button(self.frameGeneral)
         self.btnBrowse.config(text='Browse')
@@ -31,7 +31,7 @@ class ColdSteelApp:
         self.lbSeed.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.entrySeed = ttk.Entry(self.frameGeneral)
         self.seed = tk.StringVar()
-        self.entrySeed.config(textvariable=self.seed, width='40')
+        self.entrySeed.config(textvariable=self.seed, width='60')
         self.entrySeed.grid(column='1', padx='5', pady='5', row='1', sticky='ew')
         self.entrySeed.columnconfigure('1', minsize='0')
         self.frameGeneral.config(height='200', text='General Information', width='200')
@@ -140,13 +140,16 @@ class ColdSteelApp:
         # enemy affliction res
         self.cbtnEnemyAfflictionRes = ttk.Checkbutton(self.lbEnemy)
         self.randomizeEnemyAfflictionRes = tk.IntVar()
+        self.keepDeathBlow = tk.IntVar()
         self.cbtnEnemyAfflictionRes.config(text='Randomize Enemy Aliment Efficacy', variable=self.randomizeEnemyAfflictionRes)
         self.cbtnEnemyAfflictionRes.grid(columnspan='2', padx='5', pady='5', row='3', sticky='w')
+        self.cbtnEnemyAfflictionRes.config(text='Keep Deathblow/Vanish/Petrify Efficacy', variable=self.keepDeathBlow)
+        self.cbtnEnemyAfflictionRes.grid(columnspan='2', padx='25', pady='5', row='4', sticky='w')
         # enemy unbalance res
         self.cbtnEnemyUnbalanceRes = ttk.Checkbutton(self.lbEnemy)
         self.randomizeEnemyUnbalanceRes = tk.IntVar()
         self.cbtnEnemyUnbalanceRes.config(text='Randomize Enemy Unbalance Efficacy', variable=self.randomizeEnemyUnbalanceRes)
-        self.cbtnEnemyUnbalanceRes.grid(columnspan='2', padx='5', pady='5', row='4', sticky='w')
+        self.cbtnEnemyUnbalanceRes.grid(columnspan='2', padx='5', pady='5', row='5', sticky='w')
         self.lbEnemy.config(height='200', text='Enemy', width='200')
         self.lbEnemy.grid(column='0', padx='5', pady='5', row='2', sticky='nsew')
 
@@ -222,7 +225,7 @@ class ColdSteelApp:
                 if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
                     self.progressValue.set('Randomizing Enemies...')
                     import randomizer.mons
-                    randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyAfflictionRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get())
+                    randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyAfflictionRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
 
                 messagebox.showinfo('Finished!', 'All Done!')
                 self.progressValue.set('Ready')

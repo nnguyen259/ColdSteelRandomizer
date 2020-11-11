@@ -3,7 +3,7 @@ import random
 mainStatArray = ['str', 'def', 'ats', 'adf']
 subStatArray = ['dex', 'agi', 'spd']
 
-def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=True, randomAfflictionRes=True, randomUnbalance=True):
+def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=True, randomAfflictionRes=True, randomUnbalance=True, keepDeathblow=False):
     if seed:
         random.seed(seed)
     
@@ -58,6 +58,9 @@ def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=T
             if randomAfflictionRes:
                 file.seek(newHead + 18 + 7)
                 for j in range(15):
+                    if keepDeathblow:
+                        if j == 7 or j == 10 or j == 13:
+                            continue
                     newAfflictionRes = random.randrange(0, 201, 5)
                     file.write(newAfflictionRes.to_bytes(1, 'little'))
 
@@ -70,4 +73,4 @@ def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=T
             i += 1
 
 if __name__ == "__main__":
-    randomize('D:\SteamLibrary\steamapps\common\Trails of Cold Steel\data\\text\dat_us/', variance=60, randomStat=True, randomEleRes=False, randomAfflictionRes=False, randomUnbalance=False)
+    randomize('data/text/dat_us/', variance=60, randomStat=False, randomEleRes=False, randomAfflictionRes=True, randomUnbalance=False, keepDeathblow=True)
