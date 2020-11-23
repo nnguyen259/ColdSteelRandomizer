@@ -114,6 +114,10 @@ class ColdSteelApp:
         self.spinMaxSlot.config(from_='0', increment='1', justify='right', textvariable=self.maxSlot)
         self.spinMaxSlot.config(to='8', width='5', wrap='true')
         self.spinMaxSlot.grid(column='1', padx='5', pady='5', row='5', sticky='e')
+        # master quartz
+        self.randomizeMasterQuartz = tk.IntVar()
+        self.cbtnOrbmentLine.config(text='Reshuffle Master Quartz (EXPERIMENTAL)', variable=self.randomizeMasterQuartz)
+        self.cbtnOrbmentLine.grid(column='0', columnspan='2', padx='5', pady='5', row='6', sticky='w')
         self.frameOrbment.config(height='200', text='Orbment', width='200')
         self.frameOrbment.grid(column='1', padx='5', pady='5', row='1', sticky='nsew')
 
@@ -183,10 +187,12 @@ class ColdSteelApp:
         self.randomizeBaseEP.set(1)
         self.randomizeEPGrowth.set(1)
         self.randomizeOrbmentLine.set(1)
+        self.randomizeMasterQuartz.set(0)
 
         self.randomizeEnemyStat.set(1)
         self.randomizeEnemyEleRes.set(1)
         self.randomizeEnemyAfflictionRes.set(1)
+        self.keepDeathBlow.set(0)
         self.randomizeEnemyUnbalanceRes.set(1)
 
     def selectDirectory(self):
@@ -222,6 +228,10 @@ class ColdSteelApp:
                     self.progressValue.set('Randomizing Orbment Line...')
                     import randomizer.orb
                     randomizer.orb.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
+                if self.randomizeMasterQuartz.get():
+                    self.progressValue.set('Reshuffling Master Quartz...')
+                    import randomizer.masterquartz
+                    randomizer.masterquartz.randomizeMasterQuartzLocation(self.gameDirectory.get() + '/', self.seed.get())
                 if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
                     self.progressValue.set('Randomizing Enemies...')
                     import randomizer.mons
