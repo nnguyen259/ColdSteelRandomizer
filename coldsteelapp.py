@@ -247,6 +247,7 @@ if __name__ == '__main__':
     import tkinter as tk
     root = tk.Tk()
     root.title('ColdSteelRandomizer')
+    root.iconbitmap('icon.ico')
     root.resizable(False, False)
     app = ColdSteelApp(root)
     app.run()
