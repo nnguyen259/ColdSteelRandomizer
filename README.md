@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://cdn.discordapp.com/attachments/588527782674432013/776477326564524112/UI.png)
+![](https://media.discordapp.net/attachments/588527782674432013/780238345263120404/unknown.png)
 
 The Game Location is the folder where the game .exe is located.
 
@@ -38,16 +38,19 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 ### Orbment Options
 * **Orbment Line:** Create a new orbment line for each character and randomly assign slots to have an elemental lock.
 * **Base EP and EP Growth:** Each character will have a different starting amount of EP as well as the amount of EP gain when opening an orbment slot.
+* **Reshuffle Master Quartz:**  Each master quartz will take place of another master quartz, including starting master quartz, shop, chest, and special master quartz (Chevalier, Thor, Emblem, ...)
 
 ### Enemy Options
 Note: Playble characters as enemies will not be randomized.
 * **Enemy Stats:** Randomize enemy main four stats (STR, DEF, ATS, ADF). If the enemy has 0 ATS, it will not be changed. The higher the variance, the more random it is.
-* **Enemy Elemental/Affliction/Unbalance Efficacy:** Generate new values for these efficacy for each enemy.
+* **Enemy Elemental/Affliction/Unbalance Efficacy:** Generate new values for these efficacy for each enemy. There is an option to prevent Petrify/Deathblow/Vanish efficacy from being randomized.
 
 ## TODO List
-* Optionally prevent Petrify/Deathblow/Vanish Efficacy from being randomized (coming 1.1)
-* Shuffle Master Quartz Locations (coming 1.1)
-* More to come...
+* Add option to increase EXP and Sepith gain.
+* Normalize Master Quartz so that master quartz not having level 1-2 will have data if being randomized into the early game.
+* Add randomize arts gain by master quartz.
+* More ...
 
 ## Special Thanks
 * SoftBrilliant and the Modding Community for help with testing.
+* ChampionBeef for playing and providing feedback.
