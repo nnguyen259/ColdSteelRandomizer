@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://media.discordapp.net/attachments/588527782674432013/781355586616819722/unknown.png)
+![](https://media.discordapp.net/attachments/588527782674432013/781360397415612426/unknown.png)
 
 The Game Location is the folder where the game .exe is located.
 

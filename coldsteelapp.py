@@ -50,7 +50,7 @@ class ColdSteelApp:
         self.lbBaseVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.spinBase = ttk.Spinbox(self.frameCharacter)
         self.baseVariance = tk.IntVar(value=20)
-        self.spinBase.config(from_='10', increment='5', justify='right', textvariable=self.baseVariance)
+        self.spinBase.config(from_='10', increment='5', justify='left', textvariable=self.baseVariance)
         self.spinBase.config(to='100', width='5', wrap='true')
         self.spinBase.grid(column='1', padx='5', pady='5', row='1', sticky='e')
         # stat growth
@@ -63,7 +63,7 @@ class ColdSteelApp:
         self.lbGrowthVariance.grid(column='0', padx='5', pady='5', row='3', sticky='w')
         self.spinbase_2 = ttk.Spinbox(self.frameCharacter)
         self.growthVariance = tk.IntVar(value=20)
-        self.spinbase_2.config(from_='10', increment='5', justify='right', textvariable=self.growthVariance)
+        self.spinbase_2.config(from_='10', increment='5', justify='left', textvariable=self.growthVariance)
         self.spinbase_2.config(to='100', width='5', wrap='true')
         self.spinbase_2.grid(column='1', padx='5', pady='5', row='3', sticky='e')
         # craft
@@ -96,7 +96,7 @@ class ColdSteelApp:
         self.lbMaxLine.grid(column='0', padx='5', pady='5', row='3', sticky='w')
         self.spinMaxLine = ttk.Spinbox(self.frameOrbment)
         self.maxLine = tk.IntVar(value=4)
-        self.spinMaxLine.config(from_='1', increment='1', justify='right', textvariable=self.maxLine)
+        self.spinMaxLine.config(from_='1', increment='1', justify='left', textvariable=self.maxLine)
         self.spinMaxLine.config(to='8', width='5', wrap='true')
         self.spinMaxLine.grid(column='1', padx='5', pady='5', row='3', sticky='e')
         self.lbMinSlot = ttk.Label(self.frameOrbment)
@@ -104,7 +104,7 @@ class ColdSteelApp:
         self.lbMinSlot.grid(column='0', padx='5', pady='5', row='4', sticky='w')
         self.spinMinSlot = ttk.Spinbox(self.frameOrbment)
         self.minSlot = tk.IntVar(value=0)
-        self.spinMinSlot.config(from_='0', increment='1', justify='right', textvariable=self.minSlot)
+        self.spinMinSlot.config(from_='0', increment='1', justify='left', textvariable=self.minSlot)
         self.spinMinSlot.config(to='8', width='5', wrap='true')
         self.spinMinSlot.grid(column='1', padx='5', pady='5', row='4', sticky='e')
         self.lbMaxSlot = ttk.Label(self.frameOrbment)
@@ -112,7 +112,7 @@ class ColdSteelApp:
         self.lbMaxSlot.grid(column='0', padx='5', pady='5', row='5', sticky='w')
         self.spinMaxSlot = ttk.Spinbox(self.frameOrbment)
         self.maxSlot = tk.IntVar(value=4)
-        self.spinMaxSlot.config(from_='0', increment='1', justify='right', textvariable=self.maxSlot)
+        self.spinMaxSlot.config(from_='0', increment='1', justify='left', textvariable=self.maxSlot)
         self.spinMaxSlot.config(to='8', width='5', wrap='true')
         self.spinMaxSlot.grid(column='1', padx='5', pady='5', row='5', sticky='e')
         # master quartz
@@ -134,7 +134,7 @@ class ColdSteelApp:
         self.lbEnemyStatVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.spinEnemyStat = ttk.Spinbox(self.lbEnemy)
         self.enemyStatVariance = tk.IntVar(value=20)
-        self.spinEnemyStat.config(from_='10', increment='5', justify='right', textvariable=self.enemyStatVariance)
+        self.spinEnemyStat.config(from_='10', increment='5', justify='left', textvariable=self.enemyStatVariance)
         self.spinEnemyStat.config(to='100', width='5', wrap='true')
         self.spinEnemyStat.grid(column='1', padx='5', pady='5', row='1', sticky='w')
         # enemy ele res
