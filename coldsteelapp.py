@@ -173,12 +173,12 @@ class ColdSteelApp:
 
         self.cbtnIncreaseSepithMass = ttk.Checkbutton(self.lbMisc)
         self.increaseSepithMass = tk.IntVar()
-        self.cbtnIncreaseSepithMass.config(text='Increase Sepith Gain', variable=self.increaseSepithMass)
+        self.cbtnIncreaseSepithMass.config(text='Increase Sepith Mass Gain', variable=self.increaseSepithMass)
         self.cbtnIncreaseSepithMass.grid(padx='5', pady='5', row='2', sticky='w')
 
         self.cbtnReduceSlotCost = ttk.Checkbutton(self.lbMisc)
         self.reduceSlotCost = tk.IntVar()
-        self.cbtnReduceSlotCost.config(text='Increase Sepith Gain', variable=self.reduceSlotCost)
+        self.cbtnReduceSlotCost.config(text='Reduce Slot Unlocking Cost', variable=self.reduceSlotCost)
         self.cbtnReduceSlotCost.grid(padx='5', pady='5', row='3', sticky='w')
 
         self.lbMisc.config(text='Misc.')
