@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import font
 import tkinter.ttk as ttk
 import tkinter.filedialog as filedialog
 import tkinter.messagebox as messagebox
@@ -49,7 +50,7 @@ class ColdSteelApp:
         self.lbBaseVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.spinBase = ttk.Spinbox(self.frameCharacter)
         self.baseVariance = tk.IntVar(value=20)
-        self.spinBase.config(from_='10', increment='5', justify='right', textvariable=self.baseVariance)
+        self.spinBase.config(from_='10', increment='5', justify='left', textvariable=self.baseVariance)
         self.spinBase.config(to='100', width='5', wrap='true')
         self.spinBase.grid(column='1', padx='5', pady='5', row='1', sticky='e')
         # stat growth
@@ -62,7 +63,7 @@ class ColdSteelApp:
         self.lbGrowthVariance.grid(column='0', padx='5', pady='5', row='3', sticky='w')
         self.spinbase_2 = ttk.Spinbox(self.frameCharacter)
         self.growthVariance = tk.IntVar(value=20)
-        self.spinbase_2.config(from_='10', increment='5', justify='right', textvariable=self.growthVariance)
+        self.spinbase_2.config(from_='10', increment='5', justify='left', textvariable=self.growthVariance)
         self.spinbase_2.config(to='100', width='5', wrap='true')
         self.spinbase_2.grid(column='1', padx='5', pady='5', row='3', sticky='e')
         # craft
@@ -95,7 +96,7 @@ class ColdSteelApp:
         self.lbMaxLine.grid(column='0', padx='5', pady='5', row='3', sticky='w')
         self.spinMaxLine = ttk.Spinbox(self.frameOrbment)
         self.maxLine = tk.IntVar(value=4)
-        self.spinMaxLine.config(from_='1', increment='1', justify='right', textvariable=self.maxLine)
+        self.spinMaxLine.config(from_='1', increment='1', justify='left', textvariable=self.maxLine)
         self.spinMaxLine.config(to='8', width='5', wrap='true')
         self.spinMaxLine.grid(column='1', padx='5', pady='5', row='3', sticky='e')
         self.lbMinSlot = ttk.Label(self.frameOrbment)
@@ -103,7 +104,7 @@ class ColdSteelApp:
         self.lbMinSlot.grid(column='0', padx='5', pady='5', row='4', sticky='w')
         self.spinMinSlot = ttk.Spinbox(self.frameOrbment)
         self.minSlot = tk.IntVar(value=0)
-        self.spinMinSlot.config(from_='0', increment='1', justify='right', textvariable=self.minSlot)
+        self.spinMinSlot.config(from_='0', increment='1', justify='left', textvariable=self.minSlot)
         self.spinMinSlot.config(to='8', width='5', wrap='true')
         self.spinMinSlot.grid(column='1', padx='5', pady='5', row='4', sticky='e')
         self.lbMaxSlot = ttk.Label(self.frameOrbment)
@@ -111,7 +112,7 @@ class ColdSteelApp:
         self.lbMaxSlot.grid(column='0', padx='5', pady='5', row='5', sticky='w')
         self.spinMaxSlot = ttk.Spinbox(self.frameOrbment)
         self.maxSlot = tk.IntVar(value=4)
-        self.spinMaxSlot.config(from_='0', increment='1', justify='right', textvariable=self.maxSlot)
+        self.spinMaxSlot.config(from_='0', increment='1', justify='left', textvariable=self.maxSlot)
         self.spinMaxSlot.config(to='8', width='5', wrap='true')
         self.spinMaxSlot.grid(column='1', padx='5', pady='5', row='5', sticky='e')
         # master quartz
@@ -133,7 +134,7 @@ class ColdSteelApp:
         self.lbEnemyStatVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.spinEnemyStat = ttk.Spinbox(self.lbEnemy)
         self.enemyStatVariance = tk.IntVar(value=20)
-        self.spinEnemyStat.config(from_='10', increment='5', justify='right', textvariable=self.enemyStatVariance)
+        self.spinEnemyStat.config(from_='10', increment='5', justify='left', textvariable=self.enemyStatVariance)
         self.spinEnemyStat.config(to='100', width='5', wrap='true')
         self.spinEnemyStat.grid(column='1', padx='5', pady='5', row='1', sticky='w')
         # enemy ele res
@@ -145,10 +146,11 @@ class ColdSteelApp:
         self.cbtnEnemyAfflictionRes = ttk.Checkbutton(self.lbEnemy)
         self.randomizeEnemyAfflictionRes = tk.IntVar()
         self.keepDeathBlow = tk.IntVar()
+        self.cbtnKeepDeathBlow = ttk.Checkbutton(self.lbEnemy)
         self.cbtnEnemyAfflictionRes.config(text='Randomize Enemy Aliment Efficacy', variable=self.randomizeEnemyAfflictionRes)
         self.cbtnEnemyAfflictionRes.grid(columnspan='2', padx='5', pady='5', row='3', sticky='w')
-        self.cbtnEnemyAfflictionRes.config(text='Keep Deathblow/Vanish/Petrify Efficacy', variable=self.keepDeathBlow)
-        self.cbtnEnemyAfflictionRes.grid(columnspan='2', padx='25', pady='5', row='4', sticky='w')
+        self.cbtnKeepDeathBlow.config(text='Keep Deathblow/Vanish/Petrify Efficacy', variable=self.keepDeathBlow)
+        self.cbtnKeepDeathBlow.grid(columnspan='2', padx='25', pady='5', row='4', sticky='w')
         # enemy unbalance res
         self.cbtnEnemyUnbalanceRes = ttk.Checkbutton(self.lbEnemy)
         self.randomizeEnemyUnbalanceRes = tk.IntVar()
@@ -157,14 +159,40 @@ class ColdSteelApp:
         self.lbEnemy.config(height='200', text='Enemy', width='200')
         self.lbEnemy.grid(column='0', padx='5', pady='5', row='2', sticky='nsew')
 
+        # misc frame
+        self.lbMisc = ttk.Labelframe(self.frameMain)
+        self.cbtnIncreaseEXP = ttk.Checkbutton(self.lbMisc)
+        self.increaseEXP = tk.IntVar()
+        self.cbtnIncreaseEXP.config(text='Increase EXP Gain', variable=self.increaseEXP)
+        self.cbtnIncreaseEXP.grid(padx='5', pady='5', row='0', sticky='w')
+
+        self.cbtnIncreaseSepith = ttk.Checkbutton(self.lbMisc)
+        self.increaseSepith = tk.IntVar()
+        self.cbtnIncreaseSepith.config(text='Increase Sepith Gain', variable=self.increaseSepith)
+        self.cbtnIncreaseSepith.grid(padx='5', pady='5', row='1', sticky='w')
+
+        self.cbtnIncreaseSepithMass = ttk.Checkbutton(self.lbMisc)
+        self.increaseSepithMass = tk.IntVar()
+        self.cbtnIncreaseSepithMass.config(text='Increase Sepith Mass Gain', variable=self.increaseSepithMass)
+        self.cbtnIncreaseSepithMass.grid(padx='5', pady='5', row='2', sticky='w')
+
+        self.cbtnReduceSlotCost = ttk.Checkbutton(self.lbMisc)
+        self.reduceSlotCost = tk.IntVar()
+        self.cbtnReduceSlotCost.config(text='Reduce Slot Unlocking Cost', variable=self.reduceSlotCost)
+        self.cbtnReduceSlotCost.grid(padx='5', pady='5', row='3', sticky='w')
+
+        self.lbMisc.config(text='Misc.')
+        self.lbMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
+
         # button frame
+        self.styleButton = ttk.Style()
+        self.styleButton.configure('my.TButton', font=('Helvetica', 16))
         self.frameButton = ttk.Frame(self.frameMain)
         self.btnRandomize = ttk.Button(self.frameButton)
         self.btnRandomize.config(text='Randomize!')
-        self.btnRandomize.pack(anchor='center', expand='true', fill='both', padx='5', pady='5', side='top')
-        self.btnRandomize.configure(command=self.randomize)
-        self.frameButton.config(height='200', width='200')
-        self.frameButton.grid(column='1', padx='5', pady='5', row='2', sticky='nsew')
+        self.btnRandomize.pack(anchor='center', padx='5', pady='5', side='top', expand=True, fill='y')
+        self.btnRandomize.configure(command=self.randomize, style='my.TButton')
+        self.frameButton.grid(column='0', padx='5', pady='5', row='3', sticky='nse', columnspan='2')
         self.frameMain.config(height='200', width='200')
         self.frameMain.grid(sticky='nsew')
 
@@ -174,7 +202,7 @@ class ColdSteelApp:
         self.lbProgress = ttk.Label(self.frameProgress)
         self.lbProgress.config(textvariable=self.progressValue)
         self.lbProgress.grid(column='0', row='0', columnspan='2', padx='5', pady='5', sticky='w')
-        self.frameProgress.grid(column='0', row='3', padx='5', pady='5', columnspan='2', sticky='nsew')
+        self.frameProgress.grid(column='0', row='4', padx='5', pady='5', columnspan='2', sticky='nsew')
 
         # Main widget
         self.mainwindow = self.frameMain
@@ -194,6 +222,11 @@ class ColdSteelApp:
         self.randomizeEnemyAfflictionRes.set(1)
         self.keepDeathBlow.set(0)
         self.randomizeEnemyUnbalanceRes.set(1)
+
+        self.increaseEXP.set(0)
+        self.increaseSepith.set(0)
+        self.increaseSepithMass.set(0)
+        self.reduceSlotCost.set(0)
 
     def selectDirectory(self):
         directory = filedialog.askdirectory()
@@ -235,7 +268,15 @@ class ColdSteelApp:
                 if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
                     self.progressValue.set('Randomizing Enemies...')
                     import randomizer.mons
-                    randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyAfflictionRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
+                    randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
+                if self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
+                    self.progressValue.set('Increasing Drops...')
+                    import randomizer.qol
+                    randomizer.qol.increaseDrop(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), increaseEXP=self.increaseEXP.get(), increaseNormalSepith=self.increaseSepith.get(), increaseSepithMass=self.increaseSepithMass.get())
+                if self.reduceSlotCost.get():
+                    self.progressValue.set('Reducing Slot Cost...')
+                    import randomizer.qol
+                    randomizer.qol.reduceSlotCost(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
 
                 messagebox.showinfo('Finished!', 'All Done!')
                 self.progressValue.set('Ready')
