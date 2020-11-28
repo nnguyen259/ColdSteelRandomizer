@@ -25,6 +25,8 @@ def increaseDrop(path=None, seed=None, increaseEXP=True, increaseNormalSepith=Tr
             if increaseEXP:
                 file.seek(newHead + 16)
                 exp = 2 * int.from_bytes(file.read(2), 'little')
+                if exp > 65535:
+                    exp = 65535
                 file.seek(newHead + 16)
                 file.write(exp.to_bytes(2, 'little'))
 
