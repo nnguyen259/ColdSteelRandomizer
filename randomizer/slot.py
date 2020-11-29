@@ -12,14 +12,14 @@ def randomizeEP(path=None, seed=None, randomizeBase=True, randomizeGrowth=True):
             startOffset = 2 + i*29 + 11
             if randomizeBase:
                 file.seek(startOffset)
-                newEP = random.randrange(0, 201, 5)
+                newEP = random.randrange(40, 201, 5)
                 file.write(newEP.to_bytes(2, 'little'))
                 resultfile.write('Base EP: ' + str(newEP) + '\n')
             if randomizeGrowth:
                 file.seek(startOffset + 2)
                 growthArray = [0] * 8
                 for j in range(8):
-                    growthArray[j] = random.randrange(0, 201, 5)
+                    growthArray[j] = random.randrange(10, 201, 5)
                 growthArray.sort()
                 for j in range(8):
                     file.write(growthArray[j].to_bytes(2, 'little'))
