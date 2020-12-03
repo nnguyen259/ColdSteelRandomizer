@@ -273,43 +273,48 @@ class ColdSteelApp:
                     if self.randomizeBase.get():
                         self.progressValue.set('Randomizing Base Stat...')
                         import randomizer.status
-                        randomizer.status.randomizeBase(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.baseVariance.get())
+                        randomizer.status.randomizeBase(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), variance=self.baseVariance.get())
                     if self.randomizeGrowth.get():
                         self.progressValue.set('Randomizing Stat Growth...')
                         import randomizer.status
-                        randomizer.status.randomizeGrowth(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.growthVariance.get())
+                        randomizer.status.randomizeGrowth(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), variance=self.growthVariance.get())
                     if self.randomizeCraft.get():
                         self.progressValue.set('Randomizing Craft...')
                         import randomizer.craft
-                        randomizer.craft.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
+                        randomizer.craft.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
                     if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
                         self.progressValue.set('Randomizing EP...')
                         import randomizer.slot
-                        randomizer.slot.randomizeEP(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
+                        randomizer.slot.randomizeEP(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                    randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
                     if self.randomizeOrbmentLine.get():
                         self.progressValue.set('Randomizing Orbment Line...')
                         import randomizer.orb
-                        randomizer.orb.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
+                        randomizer.orb.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
                     if self.randomizeMasterQuartz.get():
                         self.progressValue.set('Reshuffling Master Quartz...')
                         import randomizer.masterquartz
-                        randomizer.masterquartz.randomizeMasterQuartzLocation(self.gameDirectory.get() + '/', self.seed.get())
-                    if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
-                        self.progressValue.set('Randomizing Enemies...')
-                        import randomizer.mons
-                        randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
-                    if self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
-                        self.progressValue.set('Increasing Drops...')
-                        import randomizer.qol
-                        randomizer.qol.increaseDrop(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), increaseEXP=self.increaseEXP.get(), increaseNormalSepith=self.increaseSepith.get(), increaseSepithMass=self.increaseSepithMass.get())
+                        randomizer.masterquartz.randomizeMasterQuartzLocation(path=self.gameDirectory.get() + '/', seed=self.seed.get())
+
+                    self.progressValue.set('Randomizing Enemies...')
+                    import randomizer.mons
+                    randomizer.mons.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                            randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), 
+                                            randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), 
+                                            keepDeathblow=self.keepDeathBlow.get(), increaseExp=self.increaseEXP.get(), 
+                                            increaseSepith=self.increaseSepith.get(), increaseMass=self.increaseSepithMass.get())
+                    
                     if self.reduceSlotCost.get():
                         self.progressValue.set('Reducing Slot Cost...')
                         import randomizer.qol
-                        randomizer.qol.reduceSlotCost(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
+                        randomizer.qol.reduceSlotCost(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
 
                     self.progressValue.set('Building Master Quartz')
                     import randomizer.masterquartz
-                    randomizer.masterquartz.buildMasterQuartz(self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), normalize=self.normalizeMasterQuartz.get(), randomizeArts=self.randomizeMQArt.get(), artGainChance=self.artGainChance.get())
+                    randomizer.masterquartz.buildMasterQuartz(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                            normalize=self.normalizeMasterQuartz.get(), randomizeArts=self.randomizeMQArt.get(), 
+                                                            artGainChance=self.artGainChance.get())
 
                     messagebox.showinfo('Finished!', 'All Done!')
             self.progressValue.set('Ready')
