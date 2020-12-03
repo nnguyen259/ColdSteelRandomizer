@@ -1,0 +1,5384 @@
+{
+	"2000": {
+		"id": 2000,
+		"sort_id": 0,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2000,
+				"level": 1,
+				"hp": 300,
+				"ep": 20,
+				"str": 25,
+				"def": 5,
+				"ats": 10,
+				"adf": 5,
+				"spd": 2,
+				"effect_1": 5.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 50,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2000,
+				"level": 2,
+				"hp": 400,
+				"ep": 30,
+				"str": 35,
+				"def": 10,
+				"ats": 15,
+				"adf": 10,
+				"spd": 3,
+				"effect_1": 10.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 56,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2000,
+				"level": 3,
+				"hp": 500,
+				"ep": 40,
+				"str": 45,
+				"def": 15,
+				"ats": 20,
+				"adf": 15,
+				"spd": 4,
+				"effect_1": 15.0,
+				"effect_2": -1.0,
+				"effect_3": 50.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2000,
+				"level": 4,
+				"hp": 700,
+				"ep": 50,
+				"str": 60,
+				"def": 20,
+				"ats": 25,
+				"adf": 20,
+				"spd": 5,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": 100.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 59,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2000,
+				"level": 5,
+				"hp": 900,
+				"ep": 70,
+				"str": 80,
+				"def": 25,
+				"ats": 35,
+				"adf": 25,
+				"spd": 7,
+				"effect_1": 25.0,
+				"effect_2": -1.0,
+				"effect_3": 200.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": 25.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2000,
+				"memo_id": 0,
+				"text": "★Killing enemies restores CP\n"
+			},
+			"1": {
+				"id": 2000,
+				"memo_id": 1,
+				"text": "CP+%g per enemy killed"
+			},
+			"2": {
+				"id": 2000,
+				"memo_id": 2,
+				"text": "★Restores CP when HP is low\n"
+			},
+			"3": {
+				"id": 2000,
+				"memo_id": 3,
+				"text": "CP+%g\n"
+			},
+			"4": {
+				"id": 2000,
+				"memo_id": 4,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"5": {
+				"id": 2000,
+				"memo_id": 5,
+				"text": "★Raises STR when HP is low\n"
+			},
+			"6": {
+				"id": 2000,
+				"memo_id": 6,
+				"text": "%g turns of STR+%g％\n"
+			},
+			"7": {
+				"id": 2000,
+				"memo_id": 7,
+				"text": "Once per fight when below 20%% HP"
+			}
+		}
+	},
+	"2001": {
+		"id": 2001,
+		"sort_id": 1,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2001,
+				"level": 1,
+				"hp": 200,
+				"ep": 40,
+				"str": 10,
+				"def": 10,
+				"ats": 25,
+				"adf": 20,
+				"spd": 1,
+				"effect_1": 1.25,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 40,
+				"art_2": 35,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2001,
+				"level": 2,
+				"hp": 300,
+				"ep": 50,
+				"str": 15,
+				"def": 15,
+				"ats": 35,
+				"adf": 25,
+				"spd": 2,
+				"effect_1": 1.5,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 41,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2001,
+				"level": 3,
+				"hp": 400,
+				"ep": 70,
+				"str": 20,
+				"def": 20,
+				"ats": 45,
+				"adf": 35,
+				"spd": 3,
+				"effect_1": 1.75,
+				"effect_2": -1.0,
+				"effect_3": 3.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 37,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2001,
+				"level": 4,
+				"hp": 500,
+				"ep": 100,
+				"str": 25,
+				"def": 25,
+				"ats": 60,
+				"adf": 50,
+				"spd": 4,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": 4.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 42,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2001,
+				"level": 5,
+				"hp": 700,
+				"ep": 120,
+				"str": 35,
+				"def": 35,
+				"ats": 80,
+				"adf": 60,
+				"spd": 5,
+				"effect_1": 3.0,
+				"effect_2": -1.0,
+				"effect_3": 5.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": -1.0,
+				"art_1": 44,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2001,
+				"memo_id": 0,
+				"text": "★Increases potency of healing arts\n"
+			},
+			"1": {
+				"id": 2001,
+				"memo_id": 1,
+				"text": "Amount healed multiplied by %g"
+			},
+			"2": {
+				"id": 2001,
+				"memo_id": 2,
+				"text": "★Begin battle with gradual HP regen\n"
+			},
+			"3": {
+				"id": 2001,
+				"memo_id": 3,
+				"text": "Recover 30%% of max HP for %g turns"
+			},
+			"4": {
+				"id": 2001,
+				"memo_id": 4,
+				"text": "★Gradual HP regen when HP is low\n"
+			},
+			"5": {
+				"id": 2001,
+				"memo_id": 5,
+				"text": "Recover 30%% of max HP for %g turns\n"
+			},
+			"6": {
+				"id": 2001,
+				"memo_id": 6,
+				"text": "Once per fight when below 20%% HP"
+			}
+		}
+	},
+	"2002": {
+		"id": 2002,
+		"sort_id": 2,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2002,
+				"level": 1,
+				"hp": 400,
+				"ep": 20,
+				"str": 25,
+				"def": 10,
+				"ats": 5,
+				"adf": 10,
+				"spd": 4,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2002,
+				"level": 2,
+				"hp": 500,
+				"ep": 30,
+				"str": 35,
+				"def": 15,
+				"ats": 10,
+				"adf": 15,
+				"spd": 5,
+				"effect_1": 3.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 100,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2002,
+				"level": 3,
+				"hp": 700,
+				"ep": 40,
+				"str": 45,
+				"def": 20,
+				"ats": 15,
+				"adf": 20,
+				"spd": 7,
+				"effect_1": 4.0,
+				"effect_2": -1.0,
+				"effect_3": 3.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2002,
+				"level": 4,
+				"hp": 1000,
+				"ep": 50,
+				"str": 60,
+				"def": 25,
+				"ats": 20,
+				"adf": 25,
+				"spd": 10,
+				"effect_1": 5.0,
+				"effect_2": -1.0,
+				"effect_3": 6.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 72,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2002,
+				"level": 5,
+				"hp": 1200,
+				"ep": 70,
+				"str": 80,
+				"def": 35,
+				"ats": 25,
+				"adf": 35,
+				"spd": 12,
+				"effect_1": 6.0,
+				"effect_2": -1.0,
+				"effect_3": 9.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2002,
+				"memo_id": 0,
+				"text": "★Begin battle with insight status\n"
+			},
+			"1": {
+				"id": 2002,
+				"memo_id": 1,
+				"text": "Lasts for %g turns"
+			},
+			"2": {
+				"id": 2002,
+				"memo_id": 2,
+				"text": "★Evasion up\n"
+			},
+			"3": {
+				"id": 2002,
+				"memo_id": 3,
+				"text": "Evasion+%g％"
+			},
+			"4": {
+				"id": 2002,
+				"memo_id": 4,
+				"text": "★Attacks/crafts deal critical damage\n"
+			},
+			"5": {
+				"id": 2002,
+				"memo_id": 5,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2003": {
+		"id": 2003,
+		"sort_id": 3,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2003,
+				"level": 1,
+				"hp": 200,
+				"ep": 20,
+				"str": 10,
+				"def": 10,
+				"ats": 25,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 10.0,
+				"effect_2": 10.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 43,
+				"art_2": 95,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2003,
+				"level": 2,
+				"hp": 300,
+				"ep": 30,
+				"str": 15,
+				"def": 15,
+				"ats": 35,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 25.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 99,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2003,
+				"level": 3,
+				"hp": 400,
+				"ep": 40,
+				"str": 20,
+				"def": 20,
+				"ats": 45,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 50.0,
+				"effect_2": 50.0,
+				"effect_3": 3.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 100,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					5,
+					6,
+					7,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2003,
+				"level": 4,
+				"hp": 500,
+				"ep": 50,
+				"str": 25,
+				"def": 25,
+				"ats": 60,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 100.0,
+				"effect_2": 100.0,
+				"effect_3": 4.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 97,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					5,
+					6,
+					7,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2003,
+				"level": 5,
+				"hp": 700,
+				"ep": 70,
+				"str": 35,
+				"def": 35,
+				"ats": 80,
+				"adf": 45,
+				"spd": 9,
+				"effect_1": 100.0,
+				"effect_2": 200.0,
+				"effect_3": 5.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 98,
+				"art_2": 65535,
+				"memos": [
+					0,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2003,
+				"memo_id": 0,
+				"text": "★Automatically recover from K.O.\n"
+			},
+			"1": {
+				"id": 2003,
+				"memo_id": 1,
+				"text": "Recover %g％ HP, CP+%g\n"
+			},
+			"2": {
+				"id": 2003,
+				"memo_id": 2,
+				"text": "Activates once per battle"
+			},
+			"3": {
+				"id": 2003,
+				"memo_id": 3,
+				"text": "Recover %g％ HP/EP, CP+%g\n"
+			},
+			"4": {
+				"id": 2003,
+				"memo_id": 4,
+				"text": "Activates twice per battle"
+			},
+			"5": {
+				"id": 2003,
+				"memo_id": 5,
+				"text": "★Gradual HP regen when HP is low\n"
+			},
+			"6": {
+				"id": 2003,
+				"memo_id": 6,
+				"text": "Lasts for %g turns\n"
+			},
+			"7": {
+				"id": 2003,
+				"memo_id": 7,
+				"text": "Once per fight when under 20%% HP"
+			},
+			"8": {
+				"id": 2003,
+				"memo_id": 8,
+				"text": "★Delay after space arts reduced\n"
+			},
+			"9": {
+				"id": 2003,
+				"memo_id": 9,
+				"text": "Delay reduced by %g％"
+			}
+		}
+	},
+	"2004": {
+		"id": 2004,
+		"sort_id": 4,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2004,
+				"level": 1,
+				"hp": 200,
+				"ep": 10,
+				"str": 30,
+				"def": 10,
+				"ats": 5,
+				"adf": 10,
+				"spd": 1,
+				"effect_1": 1.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 50,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2004,
+				"level": 2,
+				"hp": 300,
+				"ep": 20,
+				"str": 45,
+				"def": 15,
+				"ats": 10,
+				"adf": 15,
+				"spd": 2,
+				"effect_1": 2.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 57,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2004,
+				"level": 3,
+				"hp": 400,
+				"ep": 30,
+				"str": 60,
+				"def": 20,
+				"ats": 15,
+				"adf": 20,
+				"spd": 3,
+				"effect_1": 3.0,
+				"effect_2": 25.0,
+				"effect_3": 3.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2004,
+				"level": 4,
+				"hp": 500,
+				"ep": 40,
+				"str": 80,
+				"def": 25,
+				"ats": 20,
+				"adf": 25,
+				"spd": 4,
+				"effect_1": 4.0,
+				"effect_2": 25.0,
+				"effect_3": 4.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 58,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2004,
+				"level": 5,
+				"hp": 700,
+				"ep": 50,
+				"str": 100,
+				"def": 35,
+				"ats": 25,
+				"adf": 35,
+				"spd": 5,
+				"effect_1": 5.0,
+				"effect_2": 50.0,
+				"effect_3": 5.0,
+				"effect_4": 50.0,
+				"effect_5": 5.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2004,
+				"memo_id": 0,
+				"text": "★Begin battle with STR raised\n"
+			},
+			"1": {
+				"id": 2004,
+				"memo_id": 1,
+				"text": "%g turns of STR+%g％"
+			},
+			"2": {
+				"id": 2004,
+				"memo_id": 2,
+				"text": "★Raises STR when HP is low\n"
+			},
+			"3": {
+				"id": 2004,
+				"memo_id": 3,
+				"text": "%g turns of STR+%g％\n"
+			},
+			"4": {
+				"id": 2004,
+				"memo_id": 4,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"5": {
+				"id": 2004,
+				"memo_id": 5,
+				"text": "★Attacks/crafts deal critical damage\n"
+			},
+			"6": {
+				"id": 2004,
+				"memo_id": 6,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2005": {
+		"id": 2005,
+		"sort_id": 5,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2005,
+				"level": 1,
+				"hp": 100,
+				"ep": 20,
+				"str": 20,
+				"def": 5,
+				"ats": 20,
+				"adf": 5,
+				"spd": 1,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 35,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2005,
+				"level": 2,
+				"hp": 200,
+				"ep": 30,
+				"str": 25,
+				"def": 10,
+				"ats": 25,
+				"adf": 10,
+				"spd": 2,
+				"effect_1": 40.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 36,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2005,
+				"level": 3,
+				"hp": 300,
+				"ep": 40,
+				"str": 35,
+				"def": 15,
+				"ats": 35,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 50.0,
+				"effect_2": -1.0,
+				"effect_3": 30.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2005,
+				"level": 4,
+				"hp": 400,
+				"ep": 50,
+				"str": 50,
+				"def": 20,
+				"ats": 50,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 40.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 37,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2005,
+				"level": 5,
+				"hp": 500,
+				"ep": 70,
+				"str": 60,
+				"def": 25,
+				"ats": 60,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 90.0,
+				"effect_2": -1.0,
+				"effect_3": 50.0,
+				"effect_4": -1.0,
+				"effect_5": 1.25,
+				"effect_6": -1.0,
+				"art_1": 38,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2005,
+				"memo_id": 0,
+				"text": "★Obtain sepith from attacks/crafts\n"
+			},
+			"1": {
+				"id": 2005,
+				"memo_id": 1,
+				"text": "%g％ chance"
+			},
+			"2": {
+				"id": 2005,
+				"memo_id": 2,
+				"text": "★Obtain sepith from offensive arts\n"
+			},
+			"3": {
+				"id": 2005,
+				"memo_id": 3,
+				"text": "%g％ chance"
+			},
+			"4": {
+				"id": 2005,
+				"memo_id": 4,
+				"text": "★Increases obtained EXP\n"
+			},
+			"5": {
+				"id": 2005,
+				"memo_id": 5,
+				"text": "Obtained EXP multiplied by %g"
+			}
+		}
+	},
+	"2006": {
+		"id": 2006,
+		"sort_id": 6,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2006,
+				"level": 1,
+				"hp": 300,
+				"ep": 20,
+				"str": 15,
+				"def": 30,
+				"ats": 10,
+				"adf": 25,
+				"spd": 1,
+				"effect_1": 1.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 20,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2006,
+				"level": 2,
+				"hp": 400,
+				"ep": 30,
+				"str": 20,
+				"def": 45,
+				"ats": 15,
+				"adf": 35,
+				"spd": 2,
+				"effect_1": 2.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 26,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2006,
+				"level": 3,
+				"hp": 500,
+				"ep": 40,
+				"str": 25,
+				"def": 60,
+				"ats": 20,
+				"adf": 45,
+				"spd": 3,
+				"effect_1": 3.0,
+				"effect_2": 25.0,
+				"effect_3": 3.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2006,
+				"level": 4,
+				"hp": 700,
+				"ep": 50,
+				"str": 35,
+				"def": 80,
+				"ats": 25,
+				"adf": 60,
+				"spd": 4,
+				"effect_1": 4.0,
+				"effect_2": 25.0,
+				"effect_3": 4.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 27,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2006,
+				"level": 5,
+				"hp": 900,
+				"ep": 70,
+				"str": 45,
+				"def": 100,
+				"ats": 35,
+				"adf": 80,
+				"spd": 5,
+				"effect_1": 5.0,
+				"effect_2": 50.0,
+				"effect_3": 5.0,
+				"effect_4": 50.0,
+				"effect_5": 10.0,
+				"effect_6": 10.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2006,
+				"memo_id": 0,
+				"text": "★Begin battle with DEF/ADF raised\n"
+			},
+			"1": {
+				"id": 2006,
+				"memo_id": 1,
+				"text": "%g turns of DEF/ADF+%g％"
+			},
+			"2": {
+				"id": 2006,
+				"memo_id": 2,
+				"text": "★Raises DEF/ADF when HP is low\n"
+			},
+			"3": {
+				"id": 2006,
+				"memo_id": 3,
+				"text": "%g turns of DEF/ADF+%g％\n"
+			},
+			"4": {
+				"id": 2006,
+				"memo_id": 4,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"5": {
+				"id": 2006,
+				"memo_id": 5,
+				"text": "★Automatically recover from K.O.\n"
+			},
+			"6": {
+				"id": 2006,
+				"memo_id": 6,
+				"text": "Recover %g％ HP, CP+%g\n"
+			},
+			"7": {
+				"id": 2006,
+				"memo_id": 7,
+				"text": "Activates once per battle"
+			}
+		}
+	},
+	"2007": {
+		"id": 2007,
+		"sort_id": 7,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2007,
+				"level": 1,
+				"hp": 100,
+				"ep": 20,
+				"str": 25,
+				"def": 5,
+				"ats": 25,
+				"adf": 5,
+				"spd": 2,
+				"effect_1": 1.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2007,
+				"level": 2,
+				"hp": 200,
+				"ep": 30,
+				"str": 35,
+				"def": 10,
+				"ats": 35,
+				"adf": 10,
+				"spd": 3,
+				"effect_1": 2.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2007,
+				"level": 3,
+				"hp": 300,
+				"ep": 40,
+				"str": 45,
+				"def": 15,
+				"ats": 45,
+				"adf": 15,
+				"spd": 4,
+				"effect_1": 3.0,
+				"effect_2": 25.0,
+				"effect_3": 3.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 67,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2007,
+				"level": 4,
+				"hp": 400,
+				"ep": 50,
+				"str": 60,
+				"def": 20,
+				"ats": 60,
+				"adf": 20,
+				"spd": 5,
+				"effect_1": 4.0,
+				"effect_2": 25.0,
+				"effect_3": 4.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2007,
+				"level": 5,
+				"hp": 500,
+				"ep": 70,
+				"str": 80,
+				"def": 25,
+				"ats": 80,
+				"adf": 25,
+				"spd": 7,
+				"effect_1": 5.0,
+				"effect_2": 50.0,
+				"effect_3": 5.0,
+				"effect_4": 50.0,
+				"effect_5": 30.0,
+				"effect_6": -1.0,
+				"art_1": 68,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2007,
+				"memo_id": 0,
+				"text": "★Begin battle with ATS raised\n"
+			},
+			"1": {
+				"id": 2007,
+				"memo_id": 1,
+				"text": "%g turns of ATS+%g％"
+			},
+			"2": {
+				"id": 2007,
+				"memo_id": 2,
+				"text": "★Raises ATS when HP is low\n"
+			},
+			"3": {
+				"id": 2007,
+				"memo_id": 3,
+				"text": "%g turns of ATS+%g％\n"
+			},
+			"4": {
+				"id": 2007,
+				"memo_id": 4,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"5": {
+				"id": 2007,
+				"memo_id": 5,
+				"text": "★Offensive arts deal critical damage\n"
+			},
+			"6": {
+				"id": 2007,
+				"memo_id": 6,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2008": {
+		"id": 2008,
+		"sort_id": 8,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2008,
+				"level": 1,
+				"hp": 100,
+				"ep": 10,
+				"str": 25,
+				"def": 5,
+				"ats": 5,
+				"adf": 5,
+				"spd": 6,
+				"effect_1": 1.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2008,
+				"level": 2,
+				"hp": 200,
+				"ep": 20,
+				"str": 35,
+				"def": 10,
+				"ats": 10,
+				"adf": 10,
+				"spd": 9,
+				"effect_1": 2.0,
+				"effect_2": 25.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 84,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2008,
+				"level": 3,
+				"hp": 300,
+				"ep": 30,
+				"str": 45,
+				"def": 15,
+				"ats": 15,
+				"adf": 15,
+				"spd": 12,
+				"effect_1": 3.0,
+				"effect_2": 25.0,
+				"effect_3": 3.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 81,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2008,
+				"level": 4,
+				"hp": 400,
+				"ep": 40,
+				"str": 60,
+				"def": 20,
+				"ats": 20,
+				"adf": 20,
+				"spd": 16,
+				"effect_1": 4.0,
+				"effect_2": 25.0,
+				"effect_3": 4.0,
+				"effect_4": 25.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2008,
+				"level": 5,
+				"hp": 500,
+				"ep": 50,
+				"str": 80,
+				"def": 25,
+				"ats": 25,
+				"adf": 25,
+				"spd": 20,
+				"effect_1": 5.0,
+				"effect_2": 50.0,
+				"effect_3": 5.0,
+				"effect_4": 50.0,
+				"effect_5": 10.0,
+				"effect_6": -1.0,
+				"art_1": 86,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2008,
+				"memo_id": 0,
+				"text": "★Begin battle with SPD raised\n"
+			},
+			"1": {
+				"id": 2008,
+				"memo_id": 1,
+				"text": "%g turns of SPD+%g％"
+			},
+			"2": {
+				"id": 2008,
+				"memo_id": 2,
+				"text": "★Raises SPD when HP is low\n"
+			},
+			"3": {
+				"id": 2008,
+				"memo_id": 3,
+				"text": "Once per fight when below 20%% HP\n"
+			},
+			"4": {
+				"id": 2008,
+				"memo_id": 4,
+				"text": "%g turns of SPD+%g％"
+			},
+			"5": {
+				"id": 2008,
+				"memo_id": 5,
+				"text": "★Evasion up\n"
+			},
+			"6": {
+				"id": 2008,
+				"memo_id": 6,
+				"text": "Evasion+%g％"
+			}
+		}
+	},
+	"2009": {
+		"id": 2009,
+		"sort_id": 9,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2009,
+				"level": 1,
+				"hp": 100,
+				"ep": 50,
+				"str": 5,
+				"def": 5,
+				"ats": 30,
+				"adf": 5,
+				"spd": 1,
+				"effect_1": 5.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2009,
+				"level": 2,
+				"hp": 200,
+				"ep": 70,
+				"str": 10,
+				"def": 10,
+				"ats": 45,
+				"adf": 10,
+				"spd": 2,
+				"effect_1": 10.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 114,
+				"art_2": 110,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2009,
+				"level": 3,
+				"hp": 300,
+				"ep": 90,
+				"str": 15,
+				"def": 15,
+				"ats": 60,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 15.0,
+				"effect_2": -1.0,
+				"effect_3": 25.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 111,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2009,
+				"level": 4,
+				"hp": 400,
+				"ep": 120,
+				"str": 20,
+				"def": 20,
+				"ats": 80,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": 50.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 116,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2009,
+				"level": 5,
+				"hp": 500,
+				"ep": 160,
+				"str": 25,
+				"def": 25,
+				"ats": 100,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 25.0,
+				"effect_2": -1.0,
+				"effect_3": 75.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": 25.0,
+				"art_1": 112,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2009,
+				"memo_id": 0,
+				"text": "★Killing enemies restores EP\n"
+			},
+			"1": {
+				"id": 2009,
+				"memo_id": 1,
+				"text": "EP+%g per enemy killed"
+			},
+			"2": {
+				"id": 2009,
+				"memo_id": 2,
+				"text": "★Evades magic attacks\n"
+			},
+			"3": {
+				"id": 2009,
+				"memo_id": 3,
+				"text": "%g％ chance\n"
+			},
+			"4": {
+				"id": 2009,
+				"memo_id": 4,
+				"text": "※Can counter evaded magic"
+			},
+			"5": {
+				"id": 2009,
+				"memo_id": 5,
+				"text": "★Raises ATS when HP is low\n"
+			},
+			"6": {
+				"id": 2009,
+				"memo_id": 6,
+				"text": "%g turns of ATS+%g％\n"
+			},
+			"7": {
+				"id": 2009,
+				"memo_id": 7,
+				"text": "Once per fight when below 20%% HP"
+			}
+		}
+	},
+	"2010": {
+		"id": 2010,
+		"sort_id": 10,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2010,
+				"level": 1,
+				"hp": 400,
+				"ep": 40,
+				"str": 15,
+				"def": 15,
+				"ats": 20,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2010,
+				"level": 2,
+				"hp": 500,
+				"ep": 50,
+				"str": 20,
+				"def": 20,
+				"ats": 25,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 40.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65,
+				"art_2": 70,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2010,
+				"level": 3,
+				"hp": 700,
+				"ep": 70,
+				"str": 25,
+				"def": 25,
+				"ats": 35,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 3.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 72,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2010,
+				"level": 4,
+				"hp": 1000,
+				"ep": 100,
+				"str": 35,
+				"def": 35,
+				"ats": 50,
+				"adf": 50,
+				"spd": 10,
+				"effect_1": 80.0,
+				"effect_2": -1.0,
+				"effect_3": 6.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 71,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2010,
+				"level": 5,
+				"hp": 1200,
+				"ep": 120,
+				"str": 45,
+				"def": 45,
+				"ats": 60,
+				"adf": 60,
+				"spd": 12,
+				"effect_1": 100.0,
+				"effect_2": -1.0,
+				"effect_3": 9.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 69,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2010,
+				"memo_id": 0,
+				"text": "★Prevents abnormal status/stat down\n"
+			},
+			"1": {
+				"id": 2010,
+				"memo_id": 1,
+				"text": "%g％ chance"
+			},
+			"2": {
+				"id": 2010,
+				"memo_id": 2,
+				"text": "★Evasion up\n"
+			},
+			"3": {
+				"id": 2010,
+				"memo_id": 3,
+				"text": "Evasion+%g％"
+			},
+			"4": {
+				"id": 2010,
+				"memo_id": 4,
+				"text": "★Reduced AT Delay after wind arts\n"
+			},
+			"5": {
+				"id": 2010,
+				"memo_id": 5,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2011": {
+		"id": 2011,
+		"sort_id": 11,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2011,
+				"level": 1,
+				"hp": 300,
+				"ep": 30,
+				"str": 20,
+				"def": 25,
+				"ats": 20,
+				"adf": 30,
+				"spd": 3,
+				"effect_1": -1.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 20,
+				"art_2": 65535,
+				"memos": [
+					0,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2011,
+				"level": 2,
+				"hp": 400,
+				"ep": 40,
+				"str": 25,
+				"def": 35,
+				"ats": 25,
+				"adf": 45,
+				"spd": 4,
+				"effect_1": -1.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 25,
+				"art_2": 65535,
+				"memos": [
+					0,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2011,
+				"level": 3,
+				"hp": 500,
+				"ep": 50,
+				"str": 35,
+				"def": 45,
+				"ats": 35,
+				"adf": 60,
+				"spd": 5,
+				"effect_1": -1.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 27,
+				"art_2": 65535,
+				"memos": [
+					0,
+					65535,
+					65535,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2011,
+				"level": 4,
+				"hp": 700,
+				"ep": 70,
+				"str": 50,
+				"def": 60,
+				"ats": 50,
+				"adf": 80,
+				"spd": 7,
+				"effect_1": -1.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 28,
+				"art_2": 65535,
+				"memos": [
+					0,
+					65535,
+					65535,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2011,
+				"level": 5,
+				"hp": 900,
+				"ep": 90,
+				"str": 60,
+				"def": 80,
+				"ats": 60,
+				"adf": 100,
+				"spd": 9,
+				"effect_1": -1.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 24,
+				"art_2": 65535,
+				"memos": [
+					0,
+					65535,
+					65535,
+					1,
+					2,
+					65535,
+					3,
+					4,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2011,
+				"memo_id": 0,
+				"text": "★Begin battle with Immunity/Reflect"
+			},
+			"1": {
+				"id": 2011,
+				"memo_id": 1,
+				"text": "★Immunity/Reflect when HP is low\n"
+			},
+			"2": {
+				"id": 2011,
+				"memo_id": 2,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"3": {
+				"id": 2011,
+				"memo_id": 3,
+				"text": "★Reduced AT Delay after earth arts\n"
+			},
+			"4": {
+				"id": 2011,
+				"memo_id": 4,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2012": {
+		"id": 2012,
+		"sort_id": 12,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2012,
+				"level": 1,
+				"hp": 300,
+				"ep": 50,
+				"str": 5,
+				"def": 15,
+				"ats": 25,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 8.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 35,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2012,
+				"level": 2,
+				"hp": 400,
+				"ep": 70,
+				"str": 10,
+				"def": 20,
+				"ats": 35,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 11.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 36,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2012,
+				"level": 3,
+				"hp": 500,
+				"ep": 90,
+				"str": 15,
+				"def": 25,
+				"ats": 45,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 14.0,
+				"effect_2": -1.0,
+				"effect_3": 1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 37,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2012,
+				"level": 4,
+				"hp": 700,
+				"ep": 120,
+				"str": 20,
+				"def": 35,
+				"ats": 60,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 17.0,
+				"effect_2": -1.0,
+				"effect_3": 1.5,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 38,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2012,
+				"level": 5,
+				"hp": 900,
+				"ep": 160,
+				"str": 25,
+				"def": 45,
+				"ats": 80,
+				"adf": 45,
+				"spd": 9,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": 2.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 39,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2012,
+				"memo_id": 0,
+				"text": "★Recover HP through offensive arts\n"
+			},
+			"1": {
+				"id": 2012,
+				"memo_id": 1,
+				"text": "Recover %g％ of damage as HP"
+			},
+			"2": {
+				"id": 2012,
+				"memo_id": 2,
+				"text": "★Recover EP through offensive arts\n"
+			},
+			"3": {
+				"id": 2012,
+				"memo_id": 3,
+				"text": "Recover %g％ of damage as EP"
+			},
+			"4": {
+				"id": 2012,
+				"memo_id": 4,
+				"text": "★Reduced AT Delay after water arts\n"
+			},
+			"5": {
+				"id": 2012,
+				"memo_id": 5,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2013": {
+		"id": 2013,
+		"sort_id": 13,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2013,
+				"level": 1,
+				"hp": 300,
+				"ep": 30,
+				"str": 20,
+				"def": 20,
+				"ats": 15,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 1.2,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 95,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2013,
+				"level": 2,
+				"hp": 400,
+				"ep": 40,
+				"str": 25,
+				"def": 25,
+				"ats": 20,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 1.4,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 96,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2013,
+				"level": 3,
+				"hp": 500,
+				"ep": 50,
+				"str": 35,
+				"def": 35,
+				"ats": 25,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 1.6,
+				"effect_2": -1.0,
+				"effect_3": 4.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 70,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2013,
+				"level": 4,
+				"hp": 700,
+				"ep": 70,
+				"str": 50,
+				"def": 50,
+				"ats": 35,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 1.8,
+				"effect_2": -1.0,
+				"effect_3": 6.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 44,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2013,
+				"level": 5,
+				"hp": 900,
+				"ep": 90,
+				"str": 60,
+				"def": 60,
+				"ats": 45,
+				"adf": 45,
+				"spd": 9,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": 8.0,
+				"effect_4": -1.0,
+				"effect_5": 6.0,
+				"effect_6": -1.0,
+				"art_1": 71,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2013,
+				"memo_id": 0,
+				"text": "★Increases potency of healing items\n"
+			},
+			"1": {
+				"id": 2013,
+				"memo_id": 1,
+				"text": "Multiplied by %g (HP/EP/battle only)"
+			},
+			"2": {
+				"id": 2013,
+				"memo_id": 2,
+				"text": "★Increases item range\n"
+			},
+			"3": {
+				"id": 2013,
+				"memo_id": 3,
+				"text": "RNG+%g"
+			},
+			"4": {
+				"id": 2013,
+				"memo_id": 4,
+				"text": "★Healing items affect a wider area\n"
+			},
+			"5": {
+				"id": 2013,
+				"memo_id": 5,
+				"text": "Area: M"
+			}
+		}
+	},
+	"2014": {
+		"id": 2014,
+		"sort_id": 14,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2014,
+				"level": 1,
+				"hp": 400,
+				"ep": 10,
+				"str": 25,
+				"def": 15,
+				"ats": 15,
+				"adf": 15,
+				"spd": 1,
+				"effect_1": 1.3,
+				"effect_2": 1.2,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 27,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2014,
+				"level": 2,
+				"hp": 500,
+				"ep": 20,
+				"str": 35,
+				"def": 20,
+				"ats": 20,
+				"adf": 20,
+				"spd": 2,
+				"effect_1": 1.6,
+				"effect_2": 1.4,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 58,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2014,
+				"level": 3,
+				"hp": 700,
+				"ep": 30,
+				"str": 45,
+				"def": 25,
+				"ats": 25,
+				"adf": 25,
+				"spd": 3,
+				"effect_1": 1.9,
+				"effect_2": 1.6,
+				"effect_3": 50.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 21,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2014,
+				"level": 4,
+				"hp": 1000,
+				"ep": 40,
+				"str": 60,
+				"def": 35,
+				"ats": 35,
+				"adf": 35,
+				"spd": 4,
+				"effect_1": 2.2,
+				"effect_2": 1.8,
+				"effect_3": 75.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 22,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2014,
+				"level": 5,
+				"hp": 1200,
+				"ep": 50,
+				"str": 80,
+				"def": 45,
+				"ats": 45,
+				"adf": 45,
+				"spd": 5,
+				"effect_1": 2.5,
+				"effect_2": 2.0,
+				"effect_3": 100.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": -1.0,
+				"art_1": 23,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2014,
+				"memo_id": 0,
+				"text": "★Damage of regular attacks raised\n"
+			},
+			"1": {
+				"id": 2014,
+				"memo_id": 1,
+				"text": "Damage multiplied by %g\n"
+			},
+			"2": {
+				"id": 2014,
+				"memo_id": 2,
+				"text": "Delay after attack multiplied by %g"
+			},
+			"3": {
+				"id": 2014,
+				"memo_id": 3,
+				"text": "★Accuracy up\n"
+			},
+			"4": {
+				"id": 2014,
+				"memo_id": 4,
+				"text": "Accuracy+%g％"
+			},
+			"5": {
+				"id": 2014,
+				"memo_id": 5,
+				"text": "★Attacks/crafts deal critical damage\n"
+			},
+			"6": {
+				"id": 2014,
+				"memo_id": 6,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2015": {
+		"id": 2015,
+		"sort_id": 15,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2015,
+				"level": 1,
+				"hp": 200,
+				"ep": 30,
+				"str": 10,
+				"def": 10,
+				"ats": 25,
+				"adf": 15,
+				"spd": 2,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 50,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2015,
+				"level": 2,
+				"hp": 300,
+				"ep": 40,
+				"str": 15,
+				"def": 15,
+				"ats": 35,
+				"adf": 20,
+				"spd": 3,
+				"effect_1": 45.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 51,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2015,
+				"level": 3,
+				"hp": 400,
+				"ep": 50,
+				"str": 20,
+				"def": 20,
+				"ats": 45,
+				"adf": 25,
+				"spd": 4,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 10.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 52,
+				"art_2": 53,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2015,
+				"level": 4,
+				"hp": 500,
+				"ep": 70,
+				"str": 25,
+				"def": 25,
+				"ats": 60,
+				"adf": 35,
+				"spd": 5,
+				"effect_1": 75.0,
+				"effect_2": -1.0,
+				"effect_3": 15.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 54,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2015,
+				"level": 5,
+				"hp": 700,
+				"ep": 90,
+				"str": 35,
+				"def": 35,
+				"ats": 80,
+				"adf": 45,
+				"spd": 7,
+				"effect_1": 90.0,
+				"effect_2": -1.0,
+				"effect_3": 20.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 55,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					4,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2015,
+				"memo_id": 0,
+				"text": "★Offensive arts deal critical damage\n"
+			},
+			"1": {
+				"id": 2015,
+				"memo_id": 1,
+				"text": "%g％ chance"
+			},
+			"2": {
+				"id": 2015,
+				"memo_id": 2,
+				"text": "★Restores EP when HP is low\n"
+			},
+			"3": {
+				"id": 2015,
+				"memo_id": 3,
+				"text": "EP+%g%%\n"
+			},
+			"4": {
+				"id": 2015,
+				"memo_id": 4,
+				"text": "Once per fight when below 20%% HP"
+			},
+			"5": {
+				"id": 2015,
+				"memo_id": 5,
+				"text": "★Reduced AT Delay after fire arts\n"
+			},
+			"6": {
+				"id": 2015,
+				"memo_id": 6,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2016": {
+		"id": 2016,
+		"sort_id": 16,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2016,
+				"level": 1,
+				"hp": 100,
+				"ep": 10,
+				"str": 20,
+				"def": 15,
+				"ats": 20,
+				"adf": 15,
+				"spd": 1,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 116,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2016,
+				"level": 2,
+				"hp": 200,
+				"ep": 20,
+				"str": 25,
+				"def": 20,
+				"ats": 25,
+				"adf": 20,
+				"spd": 2,
+				"effect_1": 45.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 110,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2016,
+				"level": 3,
+				"hp": 300,
+				"ep": 30,
+				"str": 35,
+				"def": 25,
+				"ats": 35,
+				"adf": 25,
+				"spd": 3,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 10.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 111,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2016,
+				"level": 4,
+				"hp": 400,
+				"ep": 40,
+				"str": 50,
+				"def": 35,
+				"ats": 50,
+				"adf": 35,
+				"spd": 4,
+				"effect_1": 75.0,
+				"effect_2": -1.0,
+				"effect_3": 15.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 28,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2016,
+				"level": 5,
+				"hp": 500,
+				"ep": 50,
+				"str": 60,
+				"def": 45,
+				"ats": 60,
+				"adf": 45,
+				"spd": 5,
+				"effect_1": 90.0,
+				"effect_2": -1.0,
+				"effect_3": 20.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 112,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2016,
+				"memo_id": 0,
+				"text": "★Attacks/crafts inflict abnormalities\n"
+			},
+			"1": {
+				"id": 2016,
+				"memo_id": 1,
+				"text": "%g％ chance (random abnormality)"
+			},
+			"2": {
+				"id": 2016,
+				"memo_id": 2,
+				"text": "★Offensive arts inflict abnormalities\n"
+			},
+			"3": {
+				"id": 2016,
+				"memo_id": 3,
+				"text": "%g％ chance (random abnormality)"
+			},
+			"4": {
+				"id": 2016,
+				"memo_id": 4,
+				"text": "★Attacks/crafts inflict nightmare\n"
+			},
+			"5": {
+				"id": 2016,
+				"memo_id": 5,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2017": {
+		"id": 2017,
+		"sort_id": 17,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2017,
+				"level": 1,
+				"hp": 200,
+				"ep": 30,
+				"str": 25,
+				"def": 10,
+				"ats": 20,
+				"adf": 10,
+				"spd": 5,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2017,
+				"level": 2,
+				"hp": 300,
+				"ep": 40,
+				"str": 35,
+				"def": 15,
+				"ats": 25,
+				"adf": 15,
+				"spd": 7,
+				"effect_1": 45.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2017,
+				"level": 3,
+				"hp": 400,
+				"ep": 50,
+				"str": 45,
+				"def": 20,
+				"ats": 35,
+				"adf": 20,
+				"spd": 9,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 10.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 80,
+				"art_2": 81,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2017,
+				"level": 4,
+				"hp": 500,
+				"ep": 70,
+				"str": 60,
+				"def": 25,
+				"ats": 50,
+				"adf": 25,
+				"spd": 12,
+				"effect_1": 75.0,
+				"effect_2": -1.0,
+				"effect_3": 15.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 85,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2017,
+				"level": 5,
+				"hp": 700,
+				"ep": 90,
+				"str": 80,
+				"def": 35,
+				"ats": 60,
+				"adf": 35,
+				"spd": 16,
+				"effect_1": 90.0,
+				"effect_2": -1.0,
+				"effect_3": 20.0,
+				"effect_4": -1.0,
+				"effect_5": 20.0,
+				"effect_6": -1.0,
+				"art_1": 82,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2017,
+				"memo_id": 0,
+				"text": "★Attacks/crafts cause status down\n"
+			},
+			"1": {
+				"id": 2017,
+				"memo_id": 1,
+				"text": "%g％ chance (effect is random)"
+			},
+			"2": {
+				"id": 2017,
+				"memo_id": 2,
+				"text": "★Offensive arts cause status down\n"
+			},
+			"3": {
+				"id": 2017,
+				"memo_id": 3,
+				"text": "%g％ chance (effect is random)"
+			},
+			"4": {
+				"id": 2017,
+				"memo_id": 4,
+				"text": "★Attacks/crafts kill enemy\n"
+			},
+			"5": {
+				"id": 2017,
+				"memo_id": 5,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2018": {
+		"id": 2018,
+		"sort_id": 18,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2018,
+				"level": 1,
+				"hp": 100,
+				"ep": 30,
+				"str": 5,
+				"def": 5,
+				"ats": 25,
+				"adf": 15,
+				"spd": 3,
+				"effect_1": 1.2,
+				"effect_2": 1.1,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 111,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2018,
+				"level": 2,
+				"hp": 200,
+				"ep": 40,
+				"str": 10,
+				"def": 10,
+				"ats": 35,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 1.4,
+				"effect_2": 1.2,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 22,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2018,
+				"level": 3,
+				"hp": 300,
+				"ep": 50,
+				"str": 15,
+				"def": 15,
+				"ats": 45,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 1.6,
+				"effect_2": 1.3,
+				"effect_3": 1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 37,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2018,
+				"level": 4,
+				"hp": 400,
+				"ep": 70,
+				"str": 20,
+				"def": 20,
+				"ats": 60,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 1.8,
+				"effect_2": 1.4,
+				"effect_3": 1.5,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 100,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2018,
+				"level": 5,
+				"hp": 500,
+				"ep": 90,
+				"str": 25,
+				"def": 25,
+				"ats": 80,
+				"adf": 45,
+				"spd": 9,
+				"effect_1": 2.0,
+				"effect_2": 1.5,
+				"effect_3": 2.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 113,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					65535,
+					5,
+					6,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2018,
+				"memo_id": 0,
+				"text": "★Damage of offensive arts raised\n"
+			},
+			"1": {
+				"id": 2018,
+				"memo_id": 1,
+				"text": "Multiplied by a maximum of %g\n"
+			},
+			"2": {
+				"id": 2018,
+				"memo_id": 2,
+				"text": "Consumed EP multiplied by %g"
+			},
+			"3": {
+				"id": 2018,
+				"memo_id": 3,
+				"text": "★Arts affect a wider area\n"
+			},
+			"4": {
+				"id": 2018,
+				"memo_id": 4,
+				"text": "Area+%g"
+			},
+			"5": {
+				"id": 2018,
+				"memo_id": 5,
+				"text": "★Reduced AT Delay after mirage arts\n"
+			},
+			"6": {
+				"id": 2018,
+				"memo_id": 6,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2019": {
+		"id": 2019,
+		"sort_id": 19,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2019,
+				"level": 1,
+				"hp": 400,
+				"ep": 40,
+				"str": 20,
+				"def": 20,
+				"ats": 25,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 40.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2019,
+				"level": 2,
+				"hp": 500,
+				"ep": 50,
+				"str": 25,
+				"def": 25,
+				"ats": 35,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 55.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2019,
+				"level": 3,
+				"hp": 700,
+				"ep": 70,
+				"str": 35,
+				"def": 35,
+				"ats": 45,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 70.0,
+				"effect_2": -1.0,
+				"effect_3": 10.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 80,
+				"art_2": 81,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2019,
+				"level": 4,
+				"hp": 1000,
+				"ep": 100,
+				"str": 50,
+				"def": 50,
+				"ats": 60,
+				"adf": 50,
+				"spd": 10,
+				"effect_1": 85.0,
+				"effect_2": -1.0,
+				"effect_3": 15.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 82,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2019,
+				"level": 5,
+				"hp": 1200,
+				"ep": 120,
+				"str": 60,
+				"def": 60,
+				"ats": 80,
+				"adf": 60,
+				"spd": 12,
+				"effect_1": 100.0,
+				"effect_2": -1.0,
+				"effect_3": 20.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 83,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2019,
+				"memo_id": 0,
+				"text": "★Absorb magic attacks\n"
+			},
+			"1": {
+				"id": 2019,
+				"memo_id": 1,
+				"text": "%g％ chance"
+			},
+			"2": {
+				"id": 2019,
+				"memo_id": 2,
+				"text": "★Restores EP at start of battle\n"
+			},
+			"3": {
+				"id": 2019,
+				"memo_id": 3,
+				"text": "%g％ restored."
+			},
+			"4": {
+				"id": 2019,
+				"memo_id": 4,
+				"text": "★Reduced AT Delay after time arts\n"
+			},
+			"5": {
+				"id": 2019,
+				"memo_id": 5,
+				"text": "AT Delay reduced by %g％"
+			}
+		}
+	},
+	"2020": {
+		"id": 2020,
+		"sort_id": 20,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2020,
+				"level": 1,
+				"hp": 600,
+				"ep": 40,
+				"str": 25,
+				"def": 25,
+				"ats": 20,
+				"adf": 20,
+				"spd": 4,
+				"effect_1": 1.4,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 27,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2020,
+				"level": 2,
+				"hp": 900,
+				"ep": 50,
+				"str": 35,
+				"def": 35,
+				"ats": 25,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 1.55,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 58,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2020,
+				"level": 3,
+				"hp": 1200,
+				"ep": 70,
+				"str": 45,
+				"def": 45,
+				"ats": 35,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 1.7,
+				"effect_2": -1.0,
+				"effect_3": 60.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 100,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2020,
+				"level": 4,
+				"hp": 1600,
+				"ep": 100,
+				"str": 60,
+				"def": 60,
+				"ats": 50,
+				"adf": 50,
+				"spd": 10,
+				"effect_1": 1.85,
+				"effect_2": -1.0,
+				"effect_3": 75.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 59,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2020,
+				"level": 5,
+				"hp": 2000,
+				"ep": 120,
+				"str": 80,
+				"def": 80,
+				"ats": 60,
+				"adf": 60,
+				"spd": 12,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": 90.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": 25.0,
+				"art_1": 101,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2020,
+				"memo_id": 0,
+				"text": "★Physical damage up as HP drops\n"
+			},
+			"1": {
+				"id": 2020,
+				"memo_id": 1,
+				"text": "Multiplied by a maximum of %g"
+			},
+			"2": {
+				"id": 2020,
+				"memo_id": 2,
+				"text": "★Attracts enemies' attention\n"
+			},
+			"3": {
+				"id": 2020,
+				"memo_id": 3,
+				"text": "%g％ chance of activating in battle"
+			},
+			"4": {
+				"id": 2020,
+				"memo_id": 4,
+				"text": "★Raises STR/DEF when HP is low\n"
+			},
+			"5": {
+				"id": 2020,
+				"memo_id": 5,
+				"text": "%g turns of STR/DEF+%g％\n"
+			},
+			"6": {
+				"id": 2020,
+				"memo_id": 6,
+				"text": "Once per fight when below 20%% HP"
+			}
+		}
+	},
+	"2021": {
+		"id": 2021,
+		"sort_id": 21,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2021,
+				"level": 1,
+				"hp": 400,
+				"ep": 60,
+				"str": 20,
+				"def": 20,
+				"ats": 25,
+				"adf": 25,
+				"spd": 4,
+				"effect_1": 1.4,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 110,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2021,
+				"level": 2,
+				"hp": 500,
+				"ep": 90,
+				"str": 25,
+				"def": 25,
+				"ats": 35,
+				"adf": 35,
+				"spd": 5,
+				"effect_1": 1.55,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 111,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2021,
+				"level": 3,
+				"hp": 700,
+				"ep": 120,
+				"str": 35,
+				"def": 35,
+				"ats": 45,
+				"adf": 45,
+				"spd": 7,
+				"effect_1": 1.7,
+				"effect_2": -1.0,
+				"effect_3": 1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 112,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2021,
+				"level": 4,
+				"hp": 1000,
+				"ep": 160,
+				"str": 50,
+				"def": 50,
+				"ats": 60,
+				"adf": 60,
+				"spd": 10,
+				"effect_1": 1.85,
+				"effect_2": -1.0,
+				"effect_3": 1.5,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 82,
+				"art_2": 97,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2021,
+				"level": 5,
+				"hp": 1200,
+				"ep": 200,
+				"str": 60,
+				"def": 60,
+				"ats": 80,
+				"adf": 80,
+				"spd": 12,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": 2.0,
+				"effect_4": -1.0,
+				"effect_5": 5.0,
+				"effect_6": 25.0,
+				"art_1": 113,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2021,
+				"memo_id": 0,
+				"text": "★Arts damage up as HP drops\n"
+			},
+			"1": {
+				"id": 2021,
+				"memo_id": 1,
+				"text": "Multiplied by a maximum of %g"
+			},
+			"2": {
+				"id": 2021,
+				"memo_id": 2,
+				"text": "★Arts affect a wider area\n"
+			},
+			"3": {
+				"id": 2021,
+				"memo_id": 3,
+				"text": "Area+%g"
+			},
+			"4": {
+				"id": 2021,
+				"memo_id": 4,
+				"text": "★Raises ATS/ADF when HP is low\n"
+			},
+			"5": {
+				"id": 2021,
+				"memo_id": 5,
+				"text": "%g turns of ATS/ADF+%g％\n"
+			},
+			"6": {
+				"id": 2021,
+				"memo_id": 6,
+				"text": "Once per fight when under 20%% HP"
+			}
+		}
+	},
+	"2022": {
+		"id": 2022,
+		"sort_id": 22,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2022,
+				"level": 1,
+				"hp": 500,
+				"ep": 50,
+				"str": 5,
+				"def": 20,
+				"ats": 5,
+				"adf": 20,
+				"spd": 1,
+				"effect_1": 1.1,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 21,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2022,
+				"level": 2,
+				"hp": 700,
+				"ep": 70,
+				"str": 10,
+				"def": 25,
+				"ats": 10,
+				"adf": 25,
+				"spd": 2,
+				"effect_1": 1.2,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 22,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2022,
+				"level": 3,
+				"hp": 900,
+				"ep": 90,
+				"str": 15,
+				"def": 35,
+				"ats": 15,
+				"adf": 35,
+				"spd": 3,
+				"effect_1": 1.3,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 25,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2022,
+				"level": 4,
+				"hp": 1200,
+				"ep": 120,
+				"str": 20,
+				"def": 50,
+				"ats": 20,
+				"adf": 50,
+				"spd": 4,
+				"effect_1": 1.4,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 27,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2022,
+				"level": 5,
+				"hp": 1600,
+				"ep": 160,
+				"str": 25,
+				"def": 60,
+				"ats": 25,
+				"adf": 60,
+				"spd": 5,
+				"effect_1": 1.5,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 28,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					4,
+					65535,
+					5,
+					65535,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2022,
+				"memo_id": 0,
+				"text": "★Increases obtained EXP\n"
+			},
+			"1": {
+				"id": 2022,
+				"memo_id": 1,
+				"text": "Obtained EXP multiplied by %g"
+			},
+			"2": {
+				"id": 2022,
+				"memo_id": 2,
+				"text": "★HP/EP/CP regenerate on field\n"
+			},
+			"3": {
+				"id": 2022,
+				"memo_id": 3,
+				"text": "Effect - Small"
+			},
+			"4": {
+				"id": 2022,
+				"memo_id": 4,
+				"text": "Effect - Large"
+			},
+			"5": {
+				"id": 2022,
+				"memo_id": 5,
+				"text": "★Enemies less likely to notice you"
+			}
+		}
+	},
+	"2023": {
+		"id": 2023,
+		"sort_id": 23,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2023,
+				"level": 1,
+				"hp": 400,
+				"ep": 40,
+				"str": 20,
+				"def": 20,
+				"ats": 20,
+				"adf": 20,
+				"spd": 1,
+				"effect_1": 1.3,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2023,
+				"level": 2,
+				"hp": 500,
+				"ep": 50,
+				"str": 25,
+				"def": 25,
+				"ats": 25,
+				"adf": 25,
+				"spd": 2,
+				"effect_1": 1.6,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2023,
+				"level": 3,
+				"hp": 700,
+				"ep": 70,
+				"str": 35,
+				"def": 35,
+				"ats": 35,
+				"adf": 35,
+				"spd": 3,
+				"effect_1": 1.9,
+				"effect_2": -1.0,
+				"effect_3": 1.4,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2023,
+				"level": 4,
+				"hp": 1000,
+				"ep": 100,
+				"str": 50,
+				"def": 50,
+				"ats": 50,
+				"adf": 50,
+				"spd": 4,
+				"effect_1": 2.2,
+				"effect_2": -1.0,
+				"effect_3": 1.6,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2023,
+				"level": 5,
+				"hp": 1200,
+				"ep": 120,
+				"str": 60,
+				"def": 60,
+				"ats": 60,
+				"adf": 60,
+				"spd": 5,
+				"effect_1": 2.5,
+				"effect_2": -1.0,
+				"effect_3": 1.7999999523162842,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2023,
+				"memo_id": 0,
+				"text": "★Randomly increases physical damage\n"
+			},
+			"1": {
+				"id": 2023,
+				"memo_id": 1,
+				"text": "Multiplied by a maximum of %g"
+			},
+			"2": {
+				"id": 2023,
+				"memo_id": 2,
+				"text": "★Randomly increases magic damage\n"
+			},
+			"3": {
+				"id": 2023,
+				"memo_id": 3,
+				"text": "Multiplied by a maximum of %g"
+			},
+			"4": {
+				"id": 2023,
+				"memo_id": 4,
+				"text": "★Attacks/crafts inflict poison\n"
+			},
+			"5": {
+				"id": 2023,
+				"memo_id": 5,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2024": {
+		"id": 2024,
+		"sort_id": 24,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2024,
+				"level": 1,
+				"hp": 500,
+				"ep": 20,
+				"str": 25,
+				"def": 20,
+				"ats": 10,
+				"adf": 20,
+				"spd": 2,
+				"effect_1": 1.2,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2024,
+				"level": 2,
+				"hp": 700,
+				"ep": 30,
+				"str": 35,
+				"def": 25,
+				"ats": 15,
+				"adf": 25,
+				"spd": 3,
+				"effect_1": 1.4,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2024,
+				"level": 3,
+				"hp": 900,
+				"ep": 40,
+				"str": 45,
+				"def": 35,
+				"ats": 20,
+				"adf": 35,
+				"spd": 4,
+				"effect_1": 1.6,
+				"effect_2": -1.0,
+				"effect_3": 500.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2024,
+				"level": 4,
+				"hp": 1200,
+				"ep": 50,
+				"str": 60,
+				"def": 50,
+				"ats": 25,
+				"adf": 50,
+				"spd": 5,
+				"effect_1": 1.8,
+				"effect_2": -1.0,
+				"effect_3": 750.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2024,
+				"level": 5,
+				"hp": 1600,
+				"ep": 70,
+				"str": 80,
+				"def": 60,
+				"ats": 35,
+				"adf": 60,
+				"spd": 7,
+				"effect_1": 2.0,
+				"effect_2": -1.0,
+				"effect_3": 1000.0,
+				"effect_4": -1.0,
+				"effect_5": 50.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2024,
+				"memo_id": 0,
+				"text": "★High HP increases physical damage\n"
+			},
+			"1": {
+				"id": 2024,
+				"memo_id": 1,
+				"text": "Multiplied by a maximum of %g"
+			},
+			"2": {
+				"id": 2024,
+				"memo_id": 2,
+				"text": "★Killing enemies recovers HP\n"
+			},
+			"3": {
+				"id": 2024,
+				"memo_id": 3,
+				"text": "HP+%g per enemy killed"
+			},
+			"4": {
+				"id": 2024,
+				"memo_id": 4,
+				"text": "★Attacks/crafts inflict burn\n"
+			},
+			"5": {
+				"id": 2024,
+				"memo_id": 5,
+				"text": "%g％ chance"
+			}
+		}
+	},
+	"2025": {
+		"id": 2025,
+		"sort_id": 25,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2025,
+				"level": 1,
+				"hp": 300,
+				"ep": 30,
+				"str": 25,
+				"def": 15,
+				"ats": 15,
+				"adf": 15,
+				"spd": 5,
+				"effect_1": 8.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2025,
+				"level": 2,
+				"hp": 400,
+				"ep": 40,
+				"str": 35,
+				"def": 20,
+				"ats": 20,
+				"adf": 20,
+				"spd": 7,
+				"effect_1": 11.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2025,
+				"level": 3,
+				"hp": 500,
+				"ep": 50,
+				"str": 45,
+				"def": 25,
+				"ats": 25,
+				"adf": 25,
+				"spd": 9,
+				"effect_1": 14.0,
+				"effect_2": -1.0,
+				"effect_3": 50.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2025,
+				"level": 4,
+				"hp": 700,
+				"ep": 70,
+				"str": 60,
+				"def": 35,
+				"ats": 35,
+				"adf": 35,
+				"spd": 12,
+				"effect_1": 17.0,
+				"effect_2": -1.0,
+				"effect_3": 75.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2025,
+				"level": 5,
+				"hp": 900,
+				"ep": 90,
+				"str": 80,
+				"def": 45,
+				"ats": 45,
+				"adf": 45,
+				"spd": 16,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": 100.0,
+				"effect_4": -1.0,
+				"effect_5": 2.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2025,
+				"memo_id": 0,
+				"text": "★Attacks/crafts deal critical damage\n"
+			},
+			"1": {
+				"id": 2025,
+				"memo_id": 1,
+				"text": "%g％ chance"
+			},
+			"2": {
+				"id": 2025,
+				"memo_id": 2,
+				"text": "★Accuracy up\n"
+			},
+			"3": {
+				"id": 2025,
+				"memo_id": 3,
+				"text": "Accuracy+%g％"
+			},
+			"4": {
+				"id": 2025,
+				"memo_id": 4,
+				"text": "★Increases damage dealt by criticals\n"
+			},
+			"5": {
+				"id": 2025,
+				"memo_id": 5,
+				"text": "Multiplied by %g (usually 1.5)"
+			}
+		}
+	},
+	"2026": {
+		"id": 2026,
+		"sort_id": 26,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2026,
+				"level": 1,
+				"hp": 500,
+				"ep": 50,
+				"str": 20,
+				"def": 25,
+				"ats": 20,
+				"adf": 25,
+				"spd": 5,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 95,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2026,
+				"level": 2,
+				"hp": 700,
+				"ep": 70,
+				"str": 25,
+				"def": 35,
+				"ats": 25,
+				"adf": 35,
+				"spd": 7,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 96,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2026,
+				"level": 3,
+				"hp": 900,
+				"ep": 90,
+				"str": 35,
+				"def": 45,
+				"ats": 35,
+				"adf": 45,
+				"spd": 9,
+				"effect_1": 40.0,
+				"effect_2": -1.0,
+				"effect_3": 30.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 99,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2026,
+				"level": 4,
+				"hp": 1200,
+				"ep": 120,
+				"str": 50,
+				"def": 60,
+				"ats": 50,
+				"adf": 60,
+				"spd": 12,
+				"effect_1": 50.0,
+				"effect_2": -1.0,
+				"effect_3": 65.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 100,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2026,
+				"level": 5,
+				"hp": 1600,
+				"ep": 160,
+				"str": 60,
+				"def": 80,
+				"ats": 60,
+				"adf": 80,
+				"spd": 16,
+				"effect_1": 60.0,
+				"effect_2": -1.0,
+				"effect_3": 100.0,
+				"effect_4": -1.0,
+				"effect_5": 2.0,
+				"effect_6": -1.0,
+				"art_1": 98,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2026,
+				"memo_id": 0,
+				"text": "★Low HP decreases received damage\n"
+			},
+			"1": {
+				"id": 2026,
+				"memo_id": 1,
+				"text": "Reduced by a maximum of %g％"
+			},
+			"2": {
+				"id": 2026,
+				"memo_id": 2,
+				"text": "★Increases item drop rate\n"
+			},
+			"3": {
+				"id": 2026,
+				"memo_id": 3,
+				"text": "Drop rate+%g％"
+			},
+			"4": {
+				"id": 2026,
+				"memo_id": 4,
+				"text": "★Increases number of dropped items\n"
+			},
+			"5": {
+				"id": 2026,
+				"memo_id": 5,
+				"text": "Number multiplied by %g"
+			}
+		}
+	},
+	"2027": {
+		"id": 2027,
+		"sort_id": 27,
+		"start_level": 1,
+		"data": {
+			"1": {
+				"id": 2027,
+				"level": 1,
+				"hp": 500,
+				"ep": 50,
+				"str": 25,
+				"def": 5,
+				"ats": 25,
+				"adf": 5,
+				"spd": 5,
+				"effect_1": 10.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"2": {
+				"id": 2027,
+				"level": 2,
+				"hp": 700,
+				"ep": 70,
+				"str": 35,
+				"def": 10,
+				"ats": 35,
+				"adf": 10,
+				"spd": 7,
+				"effect_1": 15.0,
+				"effect_2": -1.0,
+				"effect_3": -1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"3": {
+				"id": 2027,
+				"level": 3,
+				"hp": 900,
+				"ep": 90,
+				"str": 45,
+				"def": 15,
+				"ats": 45,
+				"adf": 15,
+				"spd": 9,
+				"effect_1": 20.0,
+				"effect_2": -1.0,
+				"effect_3": 1.0,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 65535,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"4": {
+				"id": 2027,
+				"level": 4,
+				"hp": 1200,
+				"ep": 120,
+				"str": 60,
+				"def": 20,
+				"ats": 60,
+				"adf": 20,
+				"spd": 12,
+				"effect_1": 25.0,
+				"effect_2": -1.0,
+				"effect_3": 1.5,
+				"effect_4": -1.0,
+				"effect_5": -1.0,
+				"effect_6": -1.0,
+				"art_1": 66,
+				"art_2": 68,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					65535,
+					65535,
+					65535
+				]
+			},
+			"5": {
+				"id": 2027,
+				"level": 5,
+				"hp": 1600,
+				"ep": 160,
+				"str": 80,
+				"def": 25,
+				"ats": 80,
+				"adf": 25,
+				"spd": 16,
+				"effect_1": 30.0,
+				"effect_2": -1.0,
+				"effect_3": 2.0,
+				"effect_4": -1.0,
+				"effect_5": 10.0,
+				"effect_6": -1.0,
+				"art_1": 69,
+				"art_2": 65535,
+				"memos": [
+					0,
+					1,
+					65535,
+					2,
+					3,
+					65535,
+					4,
+					5,
+					65535
+				]
+			}
+		},
+		"memo": {
+			"0": {
+				"id": 2027,
+				"memo_id": 0,
+				"text": "★Recover HP through attacks/crafts\n"
+			},
+			"1": {
+				"id": 2027,
+				"memo_id": 1,
+				"text": "Recover %g％ of damage as HP"
+			},
+			"2": {
+				"id": 2027,
+				"memo_id": 2,
+				"text": "★Recover EP through attacks/crafts\n"
+			},
+			"3": {
+				"id": 2027,
+				"memo_id": 3,
+				"text": "Recover %g％ of damage as EP"
+			},
+			"4": {
+				"id": 2027,
+				"memo_id": 4,
+				"text": "★Evasion up\n"
+			},
+			"5": {
+				"id": 2027,
+				"memo_id": 5,
+				"text": "Evasion+%g％"
+			}
+		}
+	}
+}

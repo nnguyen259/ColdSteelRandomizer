@@ -3,7 +3,7 @@ from tkinter import font
 import tkinter.ttk as ttk
 import tkinter.filedialog as filedialog
 import tkinter.messagebox as messagebox
-import os
+import os, threading
 
 class ColdSteelApp:
     def __init__(self, master=None):
@@ -20,7 +20,7 @@ class ColdSteelApp:
         self.lbDirectory.rowconfigure('0', minsize='0')
         self.entryDirectory = ttk.Entry(self.frameGeneral)
         self.gameDirectory = tk.StringVar()
-        self.entryDirectory.config(textvariable=self.gameDirectory, width='60')
+        self.entryDirectory.config(textvariable=self.gameDirectory, width='100')
         self.entryDirectory.grid(column='1', padx='5', pady='5', row='0', sticky='ew')
         self.btnBrowse = ttk.Button(self.frameGeneral)
         self.btnBrowse.config(text='Browse')
@@ -32,11 +32,11 @@ class ColdSteelApp:
         self.lbSeed.grid(column='0', padx='5', pady='5', row='1', sticky='w')
         self.entrySeed = ttk.Entry(self.frameGeneral)
         self.seed = tk.StringVar()
-        self.entrySeed.config(textvariable=self.seed, width='60')
+        self.entrySeed.config(textvariable=self.seed, width='100')
         self.entrySeed.grid(column='1', padx='5', pady='5', row='1', sticky='ew')
         self.entrySeed.columnconfigure('1', minsize='0')
         self.frameGeneral.config(height='200', text='General Information', width='200')
-        self.frameGeneral.grid(columnspan='2', padx='5', pady='5', sticky='ew')
+        self.frameGeneral.grid(columnspan='3', padx='5', pady='5', sticky='ew')
 
         # character randomizer frame
         # base stat
@@ -61,11 +61,11 @@ class ColdSteelApp:
         self.lbGrowthVariance = ttk.Label(self.frameCharacter)
         self.lbGrowthVariance.config(text='Variance (10-100)')
         self.lbGrowthVariance.grid(column='0', padx='5', pady='5', row='3', sticky='w')
-        self.spinbase_2 = ttk.Spinbox(self.frameCharacter)
+        self.spinGrowth = ttk.Spinbox(self.frameCharacter)
         self.growthVariance = tk.IntVar(value=20)
-        self.spinbase_2.config(from_='10', increment='5', justify='left', textvariable=self.growthVariance)
-        self.spinbase_2.config(to='100', width='5', wrap='true')
-        self.spinbase_2.grid(column='1', padx='5', pady='5', row='3', sticky='e')
+        self.spinGrowth.config(from_='10', increment='5', justify='left', textvariable=self.growthVariance)
+        self.spinGrowth.config(to='100', width='5', wrap='true')
+        self.spinGrowth.grid(column='1', padx='5', pady='5', row='3', sticky='e')
         # craft
         self.cbtnCraft = ttk.Checkbutton(self.frameCharacter)
         self.randomizeCraft = tk.IntVar()
@@ -115,74 +115,99 @@ class ColdSteelApp:
         self.spinMaxSlot.config(from_='0', increment='1', justify='left', textvariable=self.maxSlot)
         self.spinMaxSlot.config(to='8', width='5', wrap='true')
         self.spinMaxSlot.grid(column='1', padx='5', pady='5', row='5', sticky='e')
-        # master quartz
-        self.randomizeMasterQuartz = tk.IntVar()
-        self.cbtnOrbmentLine.config(text='Reshuffle Master Quartz (EXPERIMENTAL)', variable=self.randomizeMasterQuartz)
-        self.cbtnOrbmentLine.grid(column='0', columnspan='2', padx='5', pady='5', row='6', sticky='w')
         self.frameOrbment.config(height='200', text='Orbment', width='200')
         self.frameOrbment.grid(column='1', padx='5', pady='5', row='1', sticky='nsew')
 
         # enemy randomizer frame
         # enemy stat
-        self.lbEnemy = ttk.Labelframe(self.frameMain)
-        self.cbtnEnemyStat = ttk.Checkbutton(self.lbEnemy)
+        self.frameEnemy = ttk.Labelframe(self.frameMain)
+        self.cbtnEnemyStat = ttk.Checkbutton(self.frameEnemy)
         self.randomizeEnemyStat = tk.IntVar()
         self.cbtnEnemyStat.config(text='Randomize Enemy Stat', variable=self.randomizeEnemyStat)
         self.cbtnEnemyStat.grid(columnspan='2', padx='5', pady='5', sticky='w')
-        self.lbEnemyStatVariance = ttk.Label(self.lbEnemy)
+        self.lbEnemyStatVariance = ttk.Label(self.frameEnemy)
         self.lbEnemyStatVariance.config(text='Variance (10-100)')
         self.lbEnemyStatVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
-        self.spinEnemyStat = ttk.Spinbox(self.lbEnemy)
+        self.spinEnemyStat = ttk.Spinbox(self.frameEnemy)
         self.enemyStatVariance = tk.IntVar(value=20)
         self.spinEnemyStat.config(from_='10', increment='5', justify='left', textvariable=self.enemyStatVariance)
         self.spinEnemyStat.config(to='100', width='5', wrap='true')
         self.spinEnemyStat.grid(column='1', padx='5', pady='5', row='1', sticky='w')
         # enemy ele res
-        self.cbtnEnemyEleRes = ttk.Checkbutton(self.lbEnemy)
+        self.cbtnEnemyEleRes = ttk.Checkbutton(self.frameEnemy)
         self.randomizeEnemyEleRes = tk.IntVar()
         self.cbtnEnemyEleRes.config(text='Randomize Enemy Elemental Efficacy', variable=self.randomizeEnemyEleRes)
         self.cbtnEnemyEleRes.grid(columnspan='2', padx='5', pady='5', row='2', sticky='w')
         # enemy affliction res
-        self.cbtnEnemyAfflictionRes = ttk.Checkbutton(self.lbEnemy)
+        self.cbtnEnemyAfflictionRes = ttk.Checkbutton(self.frameEnemy)
         self.randomizeEnemyAfflictionRes = tk.IntVar()
         self.keepDeathBlow = tk.IntVar()
-        self.cbtnKeepDeathBlow = ttk.Checkbutton(self.lbEnemy)
+        self.cbtnKeepDeathBlow = ttk.Checkbutton(self.frameEnemy)
         self.cbtnEnemyAfflictionRes.config(text='Randomize Enemy Aliment Efficacy', variable=self.randomizeEnemyAfflictionRes)
         self.cbtnEnemyAfflictionRes.grid(columnspan='2', padx='5', pady='5', row='3', sticky='w')
         self.cbtnKeepDeathBlow.config(text='Keep Deathblow/Vanish/Petrify Efficacy', variable=self.keepDeathBlow)
         self.cbtnKeepDeathBlow.grid(columnspan='2', padx='25', pady='5', row='4', sticky='w')
         # enemy unbalance res
-        self.cbtnEnemyUnbalanceRes = ttk.Checkbutton(self.lbEnemy)
+        self.cbtnEnemyUnbalanceRes = ttk.Checkbutton(self.frameEnemy)
         self.randomizeEnemyUnbalanceRes = tk.IntVar()
         self.cbtnEnemyUnbalanceRes.config(text='Randomize Enemy Unbalance Efficacy', variable=self.randomizeEnemyUnbalanceRes)
         self.cbtnEnemyUnbalanceRes.grid(columnspan='2', padx='5', pady='5', row='5', sticky='w')
-        self.lbEnemy.config(height='200', text='Enemy', width='200')
-        self.lbEnemy.grid(column='0', padx='5', pady='5', row='2', sticky='nsew')
+        self.frameEnemy.config(height='200', text='Enemy', width='200')
+        self.frameEnemy.grid(column='0', padx='5', pady='5', row='2', sticky='nsew')
 
         # misc frame
-        self.lbMisc = ttk.Labelframe(self.frameMain)
-        self.cbtnIncreaseEXP = ttk.Checkbutton(self.lbMisc)
+        self.frameMisc = ttk.Labelframe(self.frameMain)
+        self.cbtnIncreaseEXP = ttk.Checkbutton(self.frameMisc)
         self.increaseEXP = tk.IntVar()
         self.cbtnIncreaseEXP.config(text='Increase EXP Gain', variable=self.increaseEXP)
         self.cbtnIncreaseEXP.grid(padx='5', pady='5', row='0', sticky='w')
 
-        self.cbtnIncreaseSepith = ttk.Checkbutton(self.lbMisc)
+        self.cbtnIncreaseSepith = ttk.Checkbutton(self.frameMisc)
         self.increaseSepith = tk.IntVar()
         self.cbtnIncreaseSepith.config(text='Increase Sepith Gain', variable=self.increaseSepith)
         self.cbtnIncreaseSepith.grid(padx='5', pady='5', row='1', sticky='w')
 
-        self.cbtnIncreaseSepithMass = ttk.Checkbutton(self.lbMisc)
+        self.cbtnIncreaseSepithMass = ttk.Checkbutton(self.frameMisc)
         self.increaseSepithMass = tk.IntVar()
         self.cbtnIncreaseSepithMass.config(text='Increase Sepith Mass Gain', variable=self.increaseSepithMass)
         self.cbtnIncreaseSepithMass.grid(padx='5', pady='5', row='2', sticky='w')
 
-        self.cbtnReduceSlotCost = ttk.Checkbutton(self.lbMisc)
+        self.cbtnReduceSlotCost = ttk.Checkbutton(self.frameMisc)
         self.reduceSlotCost = tk.IntVar()
         self.cbtnReduceSlotCost.config(text='Reduce Slot Unlocking Cost', variable=self.reduceSlotCost)
         self.cbtnReduceSlotCost.grid(padx='5', pady='5', row='3', sticky='w')
 
-        self.lbMisc.config(text='Misc.')
-        self.lbMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
+        self.frameMisc.config(text='Misc.')
+        self.frameMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
+
+        # master quartz frame
+        self.frameMasterQuartz = ttk.Labelframe(self.frameMain)
+        # shuffle master quartz
+        self.randomizeMasterQuartz = tk.IntVar()
+        self.cbtnMasterQuartz = ttk.Checkbutton(self.frameMasterQuartz)
+        self.cbtnMasterQuartz.config(text='Reshuffle Master Quartz (EXPERIMENTAL)', variable=self.randomizeMasterQuartz)
+        self.cbtnMasterQuartz.grid(column='0', columnspan='2', padx='5', pady='5', row='0', sticky='w')
+        # normalize master quartz
+        self.normalizeMasterQuartz = tk.IntVar()
+        self.cbtnNormalizeMasterQuartz = ttk.Checkbutton(self.frameMasterQuartz)
+        self.cbtnNormalizeMasterQuartz.config(text='Normalize Master Quartz Stats', variable=self.normalizeMasterQuartz)
+        self.cbtnNormalizeMasterQuartz.grid(column='0', columnspan='2', padx='5', pady='5', row='1', sticky='w')
+        # randomize master quartz art
+        self.randomizeMQArt = tk.IntVar()
+        self.cbtnRandomizeMQArt = ttk.Checkbutton(self.frameMasterQuartz)
+        self.cbtnRandomizeMQArt.config(text='Randomize Master Quartz Arts', variable=self.randomizeMQArt)
+        self.cbtnRandomizeMQArt.grid(column='0', columnspan='2', padx='5', pady='5', row='2', sticky='w')
+        self.lbArtGainChance = ttk.Label(self.frameMasterQuartz)
+        self.lbArtGainChance.config(text='Art Gain Chance (0-100)%')
+        self.lbArtGainChance.grid(column='0', padx='5', pady='5', row='3', sticky='w')
+        self.spinArtGain = ttk.Spinbox(self.frameMasterQuartz)
+        self.artGainChance = tk.IntVar(value=60)
+        self.spinArtGain.config(from_='0', increment='5', justify='left', textvariable=self.artGainChance)
+        self.spinArtGain.config(to='100', width='5', wrap='true')
+        self.spinArtGain.grid(column='1', padx='5', pady='5', row='3', sticky='w')
+
+        self.frameMasterQuartz.config(text='Master Quartz')
+        self.frameMasterQuartz.grid(column='2', row='1', padx='5', pady='5', sticky='nsew')
 
         # button frame
         self.styleButton = ttk.Style()
@@ -190,9 +215,9 @@ class ColdSteelApp:
         self.frameButton = ttk.Frame(self.frameMain)
         self.btnRandomize = ttk.Button(self.frameButton)
         self.btnRandomize.config(text='Randomize!')
-        self.btnRandomize.pack(anchor='center', padx='5', pady='5', side='top', expand=True, fill='y')
+        self.btnRandomize.pack(anchor='center', padx='5', pady='5', side='top', expand=True, fill='both')
         self.btnRandomize.configure(command=self.randomize, style='my.TButton')
-        self.frameButton.grid(column='0', padx='5', pady='5', row='3', sticky='nse', columnspan='2')
+        self.frameButton.grid(column='2', padx='5', pady='5', row='2', sticky='nsew', columnspan='2')
         self.frameMain.config(height='200', width='200')
         self.frameMain.grid(sticky='nsew')
 
@@ -215,7 +240,6 @@ class ColdSteelApp:
         self.randomizeBaseEP.set(1)
         self.randomizeEPGrowth.set(1)
         self.randomizeOrbmentLine.set(1)
-        self.randomizeMasterQuartz.set(0)
 
         self.randomizeEnemyStat.set(1)
         self.randomizeEnemyEleRes.set(1)
@@ -228,58 +252,71 @@ class ColdSteelApp:
         self.increaseSepithMass.set(0)
         self.reduceSlotCost.set(0)
 
+        self.randomizeMasterQuartz.set(0)
+        self.normalizeMasterQuartz.set(0)
+        self.randomizeMQArt.set(0)
+
     def selectDirectory(self):
         directory = filedialog.askdirectory()
         self.gameDirectory.set(directory)
 
     def randomize(self):
-        if not self.gameDirectory.get():
-            messagebox.showerror('No Directory', 'No game directory selected')
-        else:
-            if not os.path.exists(self.gameDirectory.get() + "/data"):
-                messagebox.showerror('Invalid Directory', 'Invalid game directory')
+        def realRandomize():
+            if not self.gameDirectory.get():
+                messagebox.showerror('No Directory', 'No game directory selected')
             else:
-                with open('result.txt', 'w') as resultfile:
-                    resultfile.write('Randomizer Result\n')
-                if self.randomizeBase.get():
-                    self.progressValue.set('Randomizing Base Stat...')
-                    import randomizer.status
-                    randomizer.status.randomizeBase(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.baseVariance.get())
-                if self.randomizeGrowth.get():
-                    self.progressValue.set('Randomizing Stat Growth...')
-                    import randomizer.status
-                    randomizer.status.randomizeGrowth(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.growthVariance.get())
-                if self.randomizeCraft.get():
-                    self.progressValue.set('Randomizing Craft...')
-                    import randomizer.craft
-                    randomizer.craft.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
-                if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
-                    self.progressValue.set('Randomizing EP...')
-                    import randomizer.slot
-                    randomizer.slot.randomizeEP(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
-                if self.randomizeOrbmentLine.get():
-                    self.progressValue.set('Randomizing Orbment Line...')
-                    import randomizer.orb
-                    randomizer.orb.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
-                if self.randomizeMasterQuartz.get():
-                    self.progressValue.set('Reshuffling Master Quartz...')
-                    import randomizer.masterquartz
-                    randomizer.masterquartz.randomizeMasterQuartzLocation(self.gameDirectory.get() + '/', self.seed.get())
-                if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
-                    self.progressValue.set('Randomizing Enemies...')
-                    import randomizer.mons
-                    randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
-                if self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
-                    self.progressValue.set('Increasing Drops...')
-                    import randomizer.qol
-                    randomizer.qol.increaseDrop(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), increaseEXP=self.increaseEXP.get(), increaseNormalSepith=self.increaseSepith.get(), increaseSepithMass=self.increaseSepithMass.get())
-                if self.reduceSlotCost.get():
-                    self.progressValue.set('Reducing Slot Cost...')
-                    import randomizer.qol
-                    randomizer.qol.reduceSlotCost(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
+                if not os.path.exists(self.gameDirectory.get() + "/data"):
+                    messagebox.showerror('Invalid Directory', 'Invalid game directory')
+                else:
+                    with open('result.txt', 'w') as resultfile:
+                        resultfile.write('Randomizer Result\n')
+                    if self.randomizeBase.get():
+                        self.progressValue.set('Randomizing Base Stat...')
+                        import randomizer.status
+                        randomizer.status.randomizeBase(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.baseVariance.get())
+                    if self.randomizeGrowth.get():
+                        self.progressValue.set('Randomizing Stat Growth...')
+                        import randomizer.status
+                        randomizer.status.randomizeGrowth(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), self.growthVariance.get())
+                    if self.randomizeCraft.get():
+                        self.progressValue.set('Randomizing Craft...')
+                        import randomizer.craft
+                        randomizer.craft.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
+                    if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
+                        self.progressValue.set('Randomizing EP...')
+                        import randomizer.slot
+                        randomizer.slot.randomizeEP(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
+                    if self.randomizeOrbmentLine.get():
+                        self.progressValue.set('Randomizing Orbment Line...')
+                        import randomizer.orb
+                        randomizer.orb.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
+                    if self.randomizeMasterQuartz.get():
+                        self.progressValue.set('Reshuffling Master Quartz...')
+                        import randomizer.masterquartz
+                        randomizer.masterquartz.randomizeMasterQuartzLocation(self.gameDirectory.get() + '/', self.seed.get())
+                    if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get():
+                        self.progressValue.set('Randomizing Enemies...')
+                        import randomizer.mons
+                        randomizer.mons.randomize(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), keepDeathblow=self.keepDeathBlow.get())
+                    if self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
+                        self.progressValue.set('Increasing Drops...')
+                        import randomizer.qol
+                        randomizer.qol.increaseDrop(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get(), increaseEXP=self.increaseEXP.get(), increaseNormalSepith=self.increaseSepith.get(), increaseSepithMass=self.increaseSepithMass.get())
+                    if self.reduceSlotCost.get():
+                        self.progressValue.set('Reducing Slot Cost...')
+                        import randomizer.qol
+                        randomizer.qol.reduceSlotCost(self.gameDirectory.get() + '/data/text/dat_us/', self.seed.get())
 
-                messagebox.showinfo('Finished!', 'All Done!')
-                self.progressValue.set('Ready')
+                    self.progressValue.set('Building Master Quartz')
+                    import randomizer.masterquartz
+                    randomizer.masterquartz.buildMasterQuartz(self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), normalize=self.normalizeMasterQuartz.get(), randomizeArts=self.randomizeMQArt.get(), artGainChance=self.artGainChance.get())
+
+                    messagebox.showinfo('Finished!', 'All Done!')
+            self.progressValue.set('Ready')
+            self.btnRandomize['state'] = 'normal'
+
+        self.btnRandomize['state'] = 'disabled'
+        threading.Thread(target=realRandomize).start()
 
     def run(self):
         self.mainwindow.mainloop()
