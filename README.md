@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://media.discordapp.net/attachments/689595501967835293/781361137660461056/unknown.png)
+![](https://media.discordapp.net/attachments/588527782674432013/784258274437365770/unknown.png)
 
 The Game Location is the folder where the game .exe is located.
 
@@ -32,13 +32,19 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 
 ## Randomizer Options
 ### Character
-* **Base Stat and Stat Growth:** Randomize the starting stat and stat growth for every character, including Sara and Angelica. The higher the variance, the more random it gets.
+* **Base Stat and Stat Growth:** Randomize the starting stat and stat growth for every character, including Sara and Angelica. The higher the variance, the more random it gets. Increase Base Stat option will give every character an extra 300 HP and 30 DEF at the start of the game.
 * **Crafts:** Randomize the craft pool for every character. The character will still have the same amount of total crafts and the level learn for those crafts, but the actual craft pool will be different. However, they will still use their old animation as if they are using their original crafts. Therefore, it is possible that crafts might not work as expected due to the interaction with the animation.
 
 ### Orbment Options
 * **Orbment Line:** Create a new orbment line for each character and randomly assign slots to have an elemental lock.
 * **Base EP and EP Growth:** Each character will have a different starting amount of EP as well as the amount of EP gain when opening an orbment slot.
-* **Reshuffle Master Quartz:**  Each master quartz will take place of another master quartz, including starting master quartz, shop, chest, and special master quartz (Chevalier, Thor, Emblem, ...)
+
+### Master Quartz Options
+* **Reshuffle Master Quartz:** Each master quartz will take place of another master quartz, including starting master quartz, shop, chest, and special master quartz (Chevalier, Thor, Emblem, ...)
+
+* **Normalize Master Quartz:** Make sure that late game master quartz (Vermillion, Thor, etc...) will have their effects even at lv1 with some rebalance done so that they are appropriate for the level.
+
+* **Randomize Master Quartz Arts:** Randomize the art(s) each master quartz give per level. The chance determine of likely it is to get an art.
 
 ### Enemy Options
 Note: Playble characters as enemies will not be randomized.
@@ -48,10 +54,11 @@ Note: Playble characters as enemies will not be randomized.
 ### Misc. Options
 These are options to increase the amount of EXP, Sepith, Sepith Mass after the battle as well as reduce the amount of Sepith needed to unlock character orbment slots. Helpful since you can easily end up with multiple characters having long orbment line or when you want to minimize battles.
 
+There is also an option to replace the Needle Shoot quartz with La Forte.
+
 ## TODO List
-* Normalize Master Quartz so that master quartz not having level 1-2 will have data if being randomized into the early game.
-* Add randomize arts gain by master quartz.
-* More ...
+* Randomized Cookbook
+* Randomized Chests
 
 ## Special Thanks
 * SoftBrilliant and the Modding Community for help with testing.

@@ -47,30 +47,34 @@ class ColdSteelApp:
         self.cbtnBase.grid(columnspan='3', padx='5', pady='5', sticky='w')
         self.lbBaseVariance = ttk.Label(self.frameCharacter)
         self.lbBaseVariance.config(text='Variance (10-100)')
-        self.lbBaseVariance.grid(column='0', padx='5', pady='5', row='1', sticky='w')
+        self.lbBaseVariance.grid(column='0', padx='5', pady='5', row='2', sticky='w')
         self.spinBase = ttk.Spinbox(self.frameCharacter)
         self.baseVariance = tk.IntVar(value=20)
         self.spinBase.config(from_='10', increment='5', justify='left', textvariable=self.baseVariance)
         self.spinBase.config(to='100', width='5', wrap='true')
-        self.spinBase.grid(column='1', padx='5', pady='5', row='1', sticky='e')
+        self.spinBase.grid(column='1', padx='5', pady='5', row='2', sticky='e')
+        self.increaseBase = tk.IntVar()
+        self.cbtnIncreaseBase = ttk.Checkbutton(self.frameCharacter)
+        self.cbtnIncreaseBase.config(state='normal', text='Increase Base Stat', variable=self.increaseBase)
+        self.cbtnIncreaseBase.grid(columnspan='3', padx='25', pady='5', sticky='w', row='1', column='0')
         # stat growth
         self.cbtnGrowth = ttk.Checkbutton(self.frameCharacter)
         self.randomizeGrowth = tk.IntVar()
         self.cbtnGrowth.config(text='Randomize Stat Growth', variable=self.randomizeGrowth)
-        self.cbtnGrowth.grid(column='0', columnspan='3', padx='5', pady='5', row='2', sticky='w')
+        self.cbtnGrowth.grid(column='0', columnspan='3', padx='5', pady='5', row='3', sticky='w')
         self.lbGrowthVariance = ttk.Label(self.frameCharacter)
         self.lbGrowthVariance.config(text='Variance (10-100)')
-        self.lbGrowthVariance.grid(column='0', padx='5', pady='5', row='3', sticky='w')
+        self.lbGrowthVariance.grid(column='0', padx='5', pady='5', row='4', sticky='w')
         self.spinGrowth = ttk.Spinbox(self.frameCharacter)
         self.growthVariance = tk.IntVar(value=20)
         self.spinGrowth.config(from_='10', increment='5', justify='left', textvariable=self.growthVariance)
         self.spinGrowth.config(to='100', width='5', wrap='true')
-        self.spinGrowth.grid(column='1', padx='5', pady='5', row='3', sticky='e')
+        self.spinGrowth.grid(column='1', padx='5', pady='5', row='4', sticky='e')
         # craft
         self.cbtnCraft = ttk.Checkbutton(self.frameCharacter)
         self.randomizeCraft = tk.IntVar()
         self.cbtnCraft.config(text='Randomize Craft (EXPERIMENTAL)', variable=self.randomizeCraft)
-        self.cbtnCraft.grid(column='0', columnspan='3', padx='5', pady='5', row='4', sticky='w')
+        self.cbtnCraft.grid(column='0', columnspan='3', padx='5', pady='5', row='5', sticky='w')
         self.frameCharacter.config(height='200', text='Character', width='200')
         self.frameCharacter.grid(column='0', padx='5', pady='5', row='1', sticky='nsew')
 
@@ -177,6 +181,11 @@ class ColdSteelApp:
         self.cbtnReduceSlotCost.config(text='Reduce Slot Unlocking Cost', variable=self.reduceSlotCost)
         self.cbtnReduceSlotCost.grid(padx='5', pady='5', row='3', sticky='w')
 
+        self.cbtnReplaceNeedleShoot = ttk.Checkbutton(self.frameMisc)
+        self.replaceNeedleShoot = tk.IntVar()
+        self.cbtnReplaceNeedleShoot.config(text='Replace Needle Shoot with La Forte', variable=self.replaceNeedleShoot)
+        self.cbtnReplaceNeedleShoot.grid(padx='5', pady='5', row='4', sticky='w')
+
         self.frameMisc.config(text='Misc.')
         self.frameMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
 
@@ -273,7 +282,8 @@ class ColdSteelApp:
                     if self.randomizeBase.get():
                         self.progressValue.set('Randomizing Base Stat...')
                         import randomizer.status
-                        randomizer.status.randomizeBase(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), variance=self.baseVariance.get())
+                        randomizer.status.randomizeBase(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                        variance=self.baseVariance.get(), increaseBase=self.increaseBase.get())
                     if self.randomizeGrowth.get():
                         self.progressValue.set('Randomizing Stat Growth...')
                         import randomizer.status
@@ -309,6 +319,11 @@ class ColdSteelApp:
                         self.progressValue.set('Reducing Slot Cost...')
                         import randomizer.qol
                         randomizer.qol.reduceSlotCost(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
+
+                    if self.replaceNeedleShoot.get():
+                        self.progressValue.set('Replacing Needle Shoot')
+                        import randomizer.qol
+                        randomizer.qol.replaceNeedleShoot(path=self.gameDirectory.get() + '/')
 
                     self.progressValue.set('Building Master Quartz')
                     import randomizer.masterquartz
