@@ -3,7 +3,7 @@ import random, struct
 statArray = ['hp', 'str', 'def', 'ats', 'adf', 'dex', 'agi', 'spd']
 charList = ['rean', 'alisa', 'elliot', 'laura', 'machias', 'emma', 'jusis', 'fie', 'gaius', 'millium', 'crow', 'sara', 'angelica']
 
-def randomizeBase(path=None, seed=None, variance=10):
+def randomizeBase(path=None, seed=None, variance=10, increaseBase=False):
     if seed:
         random.seed(seed)
     with open(path + 't_status.tbl', 'r+b') as file, open('result.txt', 'a') as resultfile:
@@ -42,6 +42,11 @@ def randomizeBase(path=None, seed=None, variance=10):
                 offset = startOffset + statOffset
                 file.seek(offset)
                 newStatArray[j] = int(newStatArray[j] / statMultiplier[j])
+                if increaseBase:
+                    if j == 0:
+                        newStatArray[j] += 300
+                    if j == 2:
+                        newStatArray[j] += 30
                 file.write(newStatArray[j].to_bytes(2, 'little'))
             resultfile.write(charList[i].title() + ': ' + str(newStatArray) + '\n')
 
