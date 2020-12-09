@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://media.discordapp.net/attachments/588527782674432013/784258274437365770/unknown.png)
+![](https://media.discordapp.net/attachments/588527782674432013/786309651728826378/unknown.png)
 
 The Game Location is the folder where the game .exe is located.
 
@@ -39,12 +39,20 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 * **Orbment Line:** Create a new orbment line for each character and randomly assign slots to have an elemental lock.
 * **Base EP and EP Growth:** Each character will have a different starting amount of EP as well as the amount of EP gain when opening an orbment slot.
 
-### Master Quartz Options
+### Master Quartz and Chests Options
 * **Reshuffle Master Quartz:** Each master quartz will take place of another master quartz, including starting master quartz, shop, chest, and special master quartz (Chevalier, Thor, Emblem, ...)
 
 * **Normalize Master Quartz:** Make sure that late game master quartz (Vermillion, Thor, etc...) will have their effects even at lv1 with some rebalance done so that they are appropriate for the level.
 
 * **Randomize Master Quartz Arts:** Randomize the art(s) each master quartz give per level. The chance determine of likely it is to get an art.
+
+* **Shuffle Chests:** Randomly shuffle the contents of every chest in the game with the exception of the first Needle Shoot chest, Master Quartz chests and Sepith chests. There are three mode:
+
+    1. Separated Pools: The contents of each type of chest (Normal, Rare and Monster) can only be shuffled into the same type of chest. 
+
+    2. Combine Rare and Monster: Rare and Monster chests will share the same pool.
+
+    3. Combine Everything: Every chest will be treated the same.
 
 ### Enemy Options
 Note: Playble characters as enemies will not be randomized.

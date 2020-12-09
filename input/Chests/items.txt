@@ -1,0 +1,971 @@
+Tear Balm,0
+Teara Balm,1
+Tearal Balm,2
+EP Charge I,3
+EP Charge II,4
+EP Charge III,5
+Reviving Balm,6
+Celestial Balm,7
+Celestial Balm EX,8
+Zeram Powder,9
+Zeram Capsule,10
+Antidote,11
+Relaxant,12
+Insulating Tape,13
+Eye Drop,14
+Mint Drop,15
+Cooling Spray,16
+Warmer,17
+Softening Ointment,18
+Stimulant,19
+Sedative,20
+S-Tablet,21
+Curia Balm,22
+Smoke Grenade,23
+Battle Scope,24
+Shining Pom Bait,25
+Vanilla Gelato,26
+Lemon Gelato,27
+Tetra Gelato,28
+Ground Sausage,29
+Turkey Leg,30
+Chocobanana Crepe,31
+Banana Crepe,32
+Apple Juice,33
+Orange Juice,34
+Steak Skewer,35
+Rich Strawberry Crepe,36
+Dark Cherry Pie,37
+U-Material,50
+Zemurian Ore Shard,51
+Zemurian Ore,52
+Orbal Scale,135
+Antique Orbal Lamp,136
+Orbal Wristwatch,137
+Colette's Student Notebook,134
+Passion Leaf Bundle,146
+New Orbment Light,104
+Broken Orbment Light,105
+Bear Claw,112
+Imperial Carrots,113
+Lost Wallet,124
+Behind the War of the Lions,141
+Modern Art: The Complete Works,142
+Topical Science,143
+Analyzing Macroeconomics,144
+The Empire's Hottest Spots,145
+Grand Rose Money,138
+Snow Lilies,139
+Grand Rose,140
+Dryad's Tear,118
+Pink Salt,125
+Healing Herb,126
+Munk's Sticker,149
+Epona Grass,106
+Food Parcel,107
+Erebonian Wine,108
+Eastern Ink Brush,147
+Handmade Summer Cap,119
+Orbal Camera,122
+PR Comment,123
+Record Money,127
+Amber Amour,128
+Ladies' Stregas,120
+Orbal Pedometer,121
+Phantom Thief B's Card,129
+Phantom Thief B's Card,130
+Phantom Thief B's Card,131
+Phantom Thief B's Card,132
+Phantom Thief B's Card,133
+Crimson Tiara,103
+Maintenance Key,114
+New Orbment Light,115
+Broken Orbment Light,116
+White Seed,100
+Legram Pretzel,101
+Gold Salmon,109
+Luminous Grass,117
+Linium,176
+Orbal Wave Detector,102
+Blade Deck,111
+Permission Slip (Nicholas),150
+Permission Slip (Colette),151
+Permission Slip (Hugo),152
+Permission Slip (Becky),153
+Black Leather Notebook,148
+Mishy Plush,154
+Relief Card,155
+Super Stallion Shield,156
+Orbal Radio,157
+Old Schoolhouse Key,158
+Nord Highlands Map,159
+Student Notebook,160
+Recipe Book,161
+Fishing Book,162
+Memory Quartz,170
+Address & Keys,171
+Underground Passage Key,172
+Underground Waterway Key,173
+Abend Time Sticker,110
+Yellow Orb,174
+Red Orb,178
+Mine Shaft Key,175
+Card Key,177
+Millium's Student Notebook,179
+Student Council Tasks (Apr),186
+Student Council Tasks (May),187
+Student Council Tasks (Jun),188
+Student Council Tasks (Jul),189
+Student Council Tasks (Aug),190
+Student Council Tasks (Sep),191
+Student Council Tasks (Oct),192
+Field Study Envelope (Apr),180
+Field Study Envelope (May),181
+Field Study Envelope (Jun),182
+Field Study Envelope (Jul),183
+Field Study Envelope (Aug),184
+Field Study Envelope (Sep),185
+Kazekiri,1000
+Kazekiri +1,1001
+Uzuki,1002
+Kisaragi,1004
+Kogitsunemaru,1005
+Rougatou,1007
+Nowaki no Tachi,1008
+Fuujin no Tachi,1010
+Sasameyuki,1011
+Akayukitou,1013
+Hakuu,1014
+Shigure,1016
+Fuji Ichimonji,1017
+Kage Ichimonji,1019
+Yakou,1020
+Byakuya,1021
+?????????????????????00????????????,1030
+Prima Bow,1031
+Light Bow,1032
+Rapid Bow,1034
+Prima Bow +1,1036
+Windlass,1038
+Wind Arc,1040
+Prima Bow +2,1042
+Prima Bow +3,1045
+White Bow,1047
+Platinum Bow,1049
+Siren's Song,1050
+Golden Archer,1051
+Lambda Rod,1060
+Lambda Rod +1,1061
+Scalar Cane,1062
+Belta Rod,1063
+Variable Cane,1064
+Synchrotron,1065
+Lambda Rod +2,1066
+Aerial Wand,1067
+Libra Staff,1068
+Lambda Rod +3,1069
+Stella Oak,1070
+Ruby Wand,1071
+Belta Rod +1,1072
+Ruby Force,1073
+Vector Staff,1074
+Lambda Rod +4,1075
+Glare Wand,1076
+Closed-Delta,1077
+Belta Rod +2,1078
+Open-Delta,1079
+Faith Rod,1080
+Blue Rhapsody,1081
+Lunar Witch,1082
+????????????00????????????,1090
+Braver,1091
+Broad Edge,1092
+Heavy Edge,1094
+Braver +1,1096
+Braver +2,1099
+Bastard Sword,1101
+Zweihaender,1103
+Titania,1104
+Durga,1106
+Braver +3,1108
+Grambringer,1110
+Valkyria,1111
+Buster Shot,1120
+Buster Shot +1,1123
+Needler SG50,1125
+Gray Needler,1127
+Buster Shot +2,1129
+Stinger SG30,1131
+Bear Stinger,1133
+Buster Shot +3,1135
+Inferno Blazer,1137
+Flare Cyclone,1139
+Blitz Blaster,1140
+Subjugation Blaster,1141
+Phantom SG Zero,1142
+Knight's Sword,1180
+Knight's Sword +1,1183
+Saber,1185
+Sinclair,1187
+Backsword,1188
+Walloon Sword,1190
+Knight's Sword +2,1192
+Lombardia,1194
+Katzbalger,1196
+Knight's Sword +3,1198
+Edel Saber,1200
+Holy Order,1201
+????????????00????????????,1210
+Dual Edge,1213
+Karambit,1215
+Double Skinner,1217
+Dual Edge +1,1219
+Gemini Star,1221
+Odd-Eye,1223
+Dual Edge +2,1225
+Strider,1227
+Avenger,1229
+Sword Breaker,1230
+Vert Venti,1231
+Black Raid,1232
+Cross Spear,1240
+Cross Spear +1,1241
+Cross Spear +2,1243
+Cross Spear +3,1246
+Long Pike,1248
+Gladiator Spear,1250
+Cross Spear +4,1252
+Partisan,1254
+Corsesca,1256
+Cross Spear +5,1258
+Dragoon Lance,1260
+Astra Hawk,1261
+????????????00????????????,1270
+Breaker Arm,1280
+Breaker Arm +1,1282
+Chrome Claw,1284
+Wild Claw,1286
+Breaker Arm +2,1288
+Mighty Arm,1290
+Divine Gear,1291
+????????????????????????00????????????,1300
+Trickster,1310
+Trickster,1312
+Trickster +1,1315
+Colt & Pony,1317
+Double Mustang,1319
+Shadow Jack,1320
+Crime & Punishment,1321
+Fire & Ice,1322
+Diablo & Pain,1346
+Platinum Fists,1377
+Leather Guard,500
+Border Print T-Shirt,501
+White Blouse,502
+Armored Vest,503
+Fiber Guard,504
+Cotton Shirt,505
+Silver Jacket,506
+Golden Dress,507
+Sturdy Leather,508
+Earth Vest,509
+Wind Robe,510
+Leopard Print Jacket,511
+Frilly Dress,512
+Titanium Coat,513
+Red Jacket,514
+Blue Tunic,515
+Golden Mail,516
+Lunar Robe,517
+Battle Coat,518
+Thick Jumpsuit,519
+General's Cape,520
+Shield Jacket,521
+Ares Armor,522
+Aurelia Dress,523
+Aura Jacket,524
+Leather Shoes,550
+Sunny Sandals,551
+Pink High Heels,552
+Metal Spikes,553
+Fiber Boots,554
+Rubber Soles,555
+Noble Leather,556
+Glittering Mules,557
+Rigid Shoes,558
+Frost Shoes,559
+Star Shoes,560
+Feathered Shoes,561
+Leaf Sandals,562
+Military Spikes,563
+Red Shoes,564
+Ladies' Stregas,565
+Hiking Shoes,566
+Golden Thread Shoes,567
+Dawn Boots,568
+Battle Boots,569
+Haken Boots,570
+General's Boots,571
+Accel Gear,572
+Orion Boots,573
+Kaleido Boots,574
+Strega-A1,575
+Silver Earring,600
+Coral Ring,601
+Marble Ring,602
+White Glasses,603
+Black Bangle,604
+Cool Necklace,605
+Lighter,606
+Stone Brooch,607
+Citrus Bottle,608
+Floral Bottle,609
+Holy Chain,610
+Grail Locket,614
+Silver Chain,615
+Coral Bracelet,616
+Marble Bracelet,617
+Luminous Glasses,618
+Energy Bandana,619
+Cooling Belt,620
+Cozy Socks,621
+Soft Stole,622
+Orange Cape,623
+Prismatic Cape,624
+Holy Sphere,625
+Yellow Pendulum,626
+Blue Pendulum,627
+Red Pendulum,628
+Green Pendulum,629
+Deep Ocher,630
+Still Blue,631
+Passionate Rouge,632
+Evergreen,633
+Abyss Shadow,634
+Proxy Puppet,635
+Gladiator Headband,639
+Gladiator Belt,640
+Swordtail Badge,636
+Carp Badge,637
+Salmon Badge,638
+Ceramic Ring,641
+ZCF Light,645
+Frog Strap,646
+Puppy Strap,647
+Kitty Strap,648
+Horseman's Cap,650
+Highland Cloth,651
+Silver Hourglass,652
+Golden Hourglass,653
+Fairy Brooch,654
+Fairy Necklace,662
+Mechanic's Goggles,655
+Reinford Medal,656
+Pikkard Plush,643
+Kobold Plush,644
+Sitting Mishy,642
+Napping Mishy,649
+Running Mishy,661
+Medal of Fortitude,611
+Medal of Discipline,612
+Medal of Vigor,613
+Medal of Dawn,663
+Medal of Valor,657
+Medal of Friendship,658
+Medal of Compassion,659
+Medal of Heroism,660
+Class VII Uniform,800
+Thors Summer Uniform,801
+Academy Swimsuit,802
+Stage Outfit,803
+Class VII Uniform,804
+Rean - Awakened (Dev Use),805
+Rean - Long Sleeves (Dev Use),806
+Rean's Pajamas,807
+Rean's Shirt,808
+Rean's Sleeveless Shirt,809
+Alisa's Lacrosse Wear,820
+Emma's Pajamas,972
+Jusis' Pajamas,997
+Gaius' Traditional Garb,925
+Special Ops Uniform,940
+Thors Standard Uniform,955
+"Sara's Swimwear ",967
+???,815
+???,816
+???,817
+???,818
+???,830
+???,831
+???,832
+???,833
+???,845
+???,846
+???,847
+???,848
+???,860
+???,861
+???,862
+???,863
+???,975
+???,976
+???,977
+???,978
+???,990
+???,991
+???,992
+???,993
+???,905
+???,906
+???,907
+???,908
+???,920
+???,921
+???,922
+???,923
+???,935
+???,936
+???,937
+???,938
+???,950
+???,951
+???,953
+Rean's Casual Clothes,2400
+Alisa's Casual Clothes,2401
+Elliot's Casual Clothes,2402
+Laura's Casual Clothes,2403
+Machias' Casual Clothes,2404
+Emma's Casual Clothes,2405
+Jusis' Casual Clothes,2406
+Fie's Casual Clothes,2407
+Gaius' Casual Clothes,2408
+Millium's Casual Clothes,2409
+Crow's Casual Clothes,2410
+Jenis Uniform,2455
+Black Uniform,2444
+Mishy Paradise Uniform,2422
+Lawson Uniform,2433
+Reverse Uniform,2411
+???,2412
+???,2413
+???,2414
+???,2415
+???,2416
+???,2417
+???,2418
+???,2419
+???,2420
+???,2421
+???,2423
+???,2424
+???,2425
+???,2426
+???,2427
+???,2428
+???,2429
+???,2430
+???,2431
+???,2432
+???,2434
+???,2435
+???,2436
+???,2437
+???,2438
+???,2439
+???,2440
+???,2441
+???,2442
+???,2443
+???,2445
+???,2446
+???,2447
+???,2448
+???,2449
+???,2450
+???,2451
+???,2452
+???,2453
+???,2454
+???,2456
+???,2457
+???,2458
+???,2459
+???,2460
+???,2461
+???,2462
+???,2463
+???,2464
+???,2465
+Ride-Along Mishy,2600
+Ride-Along Noi,2601
+Bunny Ears,2602
+Ride-Along Toro,2603
+Ride-Along Kuro,2604
+Kitty Ears,980
+Ride-Along Bear,981
+Ride-Along Bunny,982
+Student Council Band,983
+Force,2000
+Canon,2001
+Falco,2002
+Angel,2003
+Brave,2004
+Scepter,2005
+Iron,2006
+Mistral,2007
+Raven,2008
+Mirage,2009
+Wing,2010
+Moebius,2013
+Aries,2012
+Criminal,2015
+Tauros,2014
+Aegis,2011
+Cypher,2017
+Pandora,2018
+Katze,2019
+Megalith,2022
+Juggler,2016
+Murakumo,2025
+Vermillion,2024
+Orochi,2023
+Chevalier,2020
+Thor,2027
+Magius,2021
+Emblem,2026
+Emblem,2028
+Thor,2029
+Needle Shoot,2100
+Earth Lance,2101
+Grand Press,2102
+Yggdrasil,2103
+Ancient Glyph,2104
+Earth Pulse,2105
+Crest,2106
+La Crest,2107
+Adamantine Shield,2108
+Defense 1,2109
+Defense 2,2110
+Defense 3,2111
+Poison,2112
+Petrify,2113
+Needle Shoot,2122
+Earth Lance,2123
+Grand Press,2124
+Yggdrasil,2125
+Ancient Glyph,2126
+Earth Pulse,2127
+Crest,2128
+La Crest,2129
+Adamantine Shield,2130
+Septium Vein,2116
+Dragon Vein,2117
+Shield Breaker,2114
+Earth Bell,2115
+Harvest,2118
+Genbu,2121
+Impenetrable Shield,2119
+Acala Gem,2120
+Aqua Bleed,2135
+Frost Edge,2136
+Hydro Cannon,2137
+Crystal Flood,2138
+Maelstrom,2139
+Tear,2140
+Teara,2141
+Tearal,2142
+Thelas,2143
+Athelas,2144
+HP 1,2145
+HP 2,2146
+Shield 1,2147
+Shield 2,2148
+Shield 3,2149
+Mute,2150
+Freeze,2151
+Aqua Bleed,2159
+Frost Edge,2160
+Hydro Cannon,2161
+Crystal Flood,2162
+Maelstrom,2163
+Tear,2164
+Teara,2165
+Tearal,2166
+Thelas,2167
+Athelas,2168
+Heal,2153
+Effort,2154
+Spirit Breaker,2152
+Water Bell,2155
+Flood,2156
+"Seiryuu ",2158
+Sennin Gem,2157
+Fire Bolt,2170
+Heatwave,2171
+Flame Tongue,2172
+Volcanic Rain,2173
+Flare Bomb,2174
+Purgatorial Flame,2175
+Impassion,2176
+Heat Up,2177
+Forte,2178
+La Forte,2179
+Attack 1,2180
+Attack 2,2181
+Attack 3,2182
+Seal,2183
+Burn,2184
+Fire Bolt,2193
+Heatwave,2194
+Flame Tongue,2195
+Volcanic Rain,2196
+Flare Bomb,2197
+Purgatorial Flame,2198
+Impassion,2199
+Heat Up,2200
+Forte,2201
+La Forte,2202
+Invigorate,2187
+Prankster,2186
+Ingenuity,2188
+Sword Breaker,2185
+Fire Bell,2189
+Hellfire,2190
+Suzaku,2192
+Mars Gem,2191
+Air Strike,2205
+Spark Arrow,2206
+Aerial,2207
+Judgment Bolt,2208
+Ragna Vortex,2209
+Breath,2210
+Holy Breath,2211
+Recuria,2212
+Evade 1,2213
+Evade 2,2214
+Move 1,2215
+Move 2,2216
+Move 3,2217
+Blind,2218
+Sleep,2219
+Air Strike,2229
+Spark Arrow,2230
+Aerial,2231
+Judgment Bolt,2232
+Ragna Vortex,2233
+Breath,2234
+Holy Breath,2235
+Recuria,2236
+Hare,2221
+Scent,2222
+Leg Breaker,2220
+Wind Bell,2224
+Breeze,2225
+Byakko,2228
+Wrath,2223
+Zeus Gem,2226
+Aeolus Gem,2227
+Soul Blur,2240
+Demonic Scythe,2241
+Grim Butterfly,2242
+Shadow Blade,2243
+Chrono Drive,2244
+Chrono Break,2245
+Chrono Burst,2246
+Action 1,2247
+Action 2,2248
+Action 3,2249
+Impede 1,2250
+Impede 2,2251
+Cast 1,2252
+Cast 2,2253
+Soul Blur,2261
+Demonic Scythe,2262
+Grim Butterfly,2263
+Shadow Blade,2264
+Chrono Drive,2265
+Chrono Break,2266
+Chrono Burst,2267
+Nightmare,2254
+Speed Breaker,2255
+Black Bell,2256
+Reaper,2257
+Rakshasha,2260
+Skanda Gem,2258
+Diabolos Gem,2259
+Golden Sphere,2270
+Dark Matter,2271
+Cross Crusade,2272
+Altair Cannon,2273
+Fortuna,2274
+Shining,2275
+Seraphic Ring,2276
+EP Cut 1,2277
+EP Cut 2,2278
+Hit 1,2279
+Hit 2,2280
+Golden Sphere,2291
+Dark Matter,2292
+Cross Crusade,2293
+Altair Cannon,2294
+Fortuna,2295
+Shining,2296
+Seraphic Ring,2297
+Detection,2284
+Luck,2285
+Dragon Vision,2286
+Vanish,2281
+Voice Breaker,2282
+Golden Bell,2283
+Seraph,2289
+Qilin,2290
+Domination,2287
+Deus Gem,2288
+Luminous Ray,2300
+Silver Thorn,2301
+Phantom Phobia,2302
+Claiomh Solarion,2303
+Analyze,2304
+Saintly Force,2305
+Crescent Mirror,2306
+EP 1,2307
+EP 2,2308
+Mind 1,2309
+Mind 2,2310
+Mind 3,2311
+Luminous Ray,2320
+Silver Thorn,2321
+Phantom Phobia,2322
+Claiomh Solarion,2323
+Analyze,2324
+Saintly Force,2325
+Crescent Mirror,2326
+Information,2313
+Intimidation,2314
+Chaos,2315
+Confuse,2312
+Silver Bell,2316
+Youkai Gem,2319
+Brahma Gem,2317
+Chakravarti Gem,2318
+Thors Faceplate,2350
+Special Ops Faceplate,2351
+Thors Faceplate - Black,2352
+Thors Faceplate - Red,2353
+???,2354
+Faceplate - Rean,2700
+Faceplate - Alisa,2701
+Faceplate - Elliot,2702
+Faceplate - Laura,2703
+Faceplate - Machias,2704
+Faceplate - Emma,2705
+Faceplate - Jusis,2706
+Faceplate - Fie,2707
+Faceplate - Gaius,2708
+Faceplate - Millium,2709
+Faceplate - Crow,2710
+Faceplate - Cold Steel,2713
+Faceplate - Dengeki,2712
+Faceplate - Famitsu,2711
+Faceplate - Toro & Kuro,2716
+Beginner Rod,201
+Deluxe Rod,202
+Lakelord Star,203
+Groundbait,220
+Earth Sepith,241
+Water Sepith,242
+Fire Sepith,243
+Wind Sepith,244
+Time Sepith,245
+Space Sepith,246
+Mirage Sepith,247
+Sepith Mass,248
+All Element Sepith,249
+Notebook - Main,250
+Notebook - Quest,251
+Notebook - Battle,252
+Notebook - Character,253
+Recipe Book,254
+Fishing Book,255
+Notebook - Books,256
+Notebook - A.Voice,257
+Notebook - Help,258
+Imperial Chronicle - Issue 1,260
+Imperial Chronicle - Issue 2,261
+Imperial Chronicle - Issue 3,262
+Imperial Chronicle - Issue 4,263
+Imperial Chronicle - Issue 5,264
+Imperial Chronicle - Issue 6,265
+Imperial Chronicle - Issue 7,266
+Imperial Chronicle - Issue 8,267
+Imperial Chronicle - Issue 9,268
+Imperial Chronicle - Issue 10,269
+Imperial Chronicle - Issue 11,270
+Carnelia Reprint - Chapter 1,271
+Carnelia Reprint - Chapter 2,272
+Carnelia Reprint - Chapter 3,273
+Carnelia Reprint - Chapter 4,274
+Carnelia Reprint - Chapter 5,275
+Carnelia Reprint - Chapter 6,276
+Carnelia Reprint - Chapter 7,277
+Carnelia Reprint - Chapter 8,278
+Carnelia Reprint - Chapter 9,279
+Carnelia Reprint - Chapter 10,280
+Carnelia Reprint - Finale,281
+Erebonian Public Transport,282
+Erebonian Folklore: Vol. 1,283
+Erebonian Sports,284
+Erebonian Mass Media,285
+Erebonian Folklore: Vol. 2,286
+Reinford Group: Past to Present,287
+Erebonian Folklore: Vol. 3,288
+Manly Munchies - Omelets,289
+Manly Munchies - Cookies,290
+Manly Munchies - Juice,291
+Manly Munchies - Sandwiches,292
+Manly Munchies - Tea,293
+Manly Munchies - Chowder,294
+Manly Munchies - Tarts,295
+Manly Munchies - Porridge,296
+Manly Munchies - Pizza,297
+Manly Munchies - Coffee,298
+Manly Munchies - Gratin,299
+Manly Munchies - Deep Frying,300
+Manly Munchies - Puddings,301
+Manly Munchies - Pasta Soup,302
+Manly Munchies - Beef & Rice,303
+Manly Munchies - Steak,304
+Manly Munchies - Cocktails,305
+Manly Munchies - Gelato,306
+Manly Munchies - Hotpots,307
+Manly Munchies - Hamburgers,308
+Red Moon Rose - Chapter 1,309
+Red Moon Rose - Chapter 2,310
+Red Moon Rose - Chapter 3,311
+Red Moon Rose - Chapter 4,312
+Red Moon Rose - Chapter 5,313
+Red Moon Rose - Chapter 6,314
+Red Moon Rose - Chapter 7,315
+Red Moon Rose - Chapter 8,316
+Red Moon Rose - Chapter 9,317
+Red Moon Rose - Chapter 10,318
+Red Moon Rose - Chapter 11,319
+Red Moon Rose - Chapter 12,320
+Red Moon Rose - Chapter 13,321
+Red Moon Rose - Finale,322
+Relaxation Through Music,323
+Legram Guidebook,324
+Touching Paintings,325
+Traditional Archery,326
+The Art of Napping,327
+Intermediate Chess,328
+A Teaching Primer,329
+Imperial Horsemanship,330
+Swimming Strategies,331
+Military Mania,332
+Erebonian Art History,333
+Essence of Lacrosse,334
+Big Book of Instruments,335
+Advanced Court Fencing,336
+Brewing Amazing Coffee,337
+"Cats, Cats, Cats",338
+Expert Cookware,339
+The Philosophy of Blade,340
+"Ooze Cookie ",1575
+"Frozen Soup ",1576
+"Roasted Fry-up ",1577
+"Hampering Rice ",1578
+"Dangerous Meatball ",1579
+Soft & Fluffy Omelet,1520
+Royal Sable,1521
+Golden Juice,1522
+Elegant Sandwich,1523
+Aromatic Tea,1524
+Jewel Potage,1525
+Luxury Tart,1526
+Nord Porridge,1527
+Special Pizza,1528
+Premium Coffee,1529
+Melted Gratin,1530
+Elegant Fried Fish,1531
+Wobbly Pudding,1532
+Celestial Pasta Soup,1533
+Noble Demi-Glace Rice,1534
+Marbled Steak,1535
+Miraculous Cocktail,1536
+Heavenly Gelato,1537
+Ultimate Hotpot,1538
+Imperial Hamburger,1539
+Simple Omelet,1540
+Sweet Cookie,1541
+Whole Juice,1542
+Tomato Sandwich,1543
+Savory Herb Tea,1544
+Creamy Chowder,1545
+Berry Tart,1546
+Milk Porridge,1547
+Crispy Pizza,1548
+Roasted Coffee,1549
+Tomato Gratin,1550
+Fried Fish,1551
+Custard Pudding,1552
+Refreshing Pasta Soup,1553
+Hashed Beef Rice,1554
+Stamina Steak,1555
+Tomato Cocktail,1556
+Mixed Gelato,1557
+Filling Hotpot,1558
+Handmade Hamburger,1559
+"Solid Omelet ",1560
+"Yellow Liquid ",1561
+"Bitter Sandwich ",1562
+"Brown Liquid ",1563
+"Elementart ",1564
+"Soggy Porridge ",1565
+"Mirror Pizza ",1566
+"Black Liquid ",1567
+"Magma Gratin ",1568
+"Egg Custard Pudding ",1569
+"Colorless Noodles ",1570
+"Adamantine Steak ",1571
+"Red Liquid ",1572
+"Wonder Gelato ",1573
+"Enigmatic Hotpot ",1574
+"Warm Egg Soup ",1500
+"White Cookie ",1501
+"Wild Mix ",1502
+"Victory Sandwich ",1503
+"Nord Tea ",1504
+"Deluxe Herb Chowder ",1505
+"Soft Chocolate Tart ",1506
+"Three Cheese Risotto ",1507
+"Teriyaki Chicken Pizza ",1508
+"Double Espresso ",1509
+"Whole Pumpkin Gratin ",1510
+Fish Nuggets,1511
+"Quartet Pudding ",1512
+"Deluxe Herb Pasta ",1513
+"Artistic Omurice ",1514
+"Juicy Kebab ",1515
+"Red Hot Soda ",1516
+"Salty Gelato ",1517
+Hurricane Hotpot,1518
+"Mixed Hamburger Dish ",1519
+Fresh Egg,1600
+Fresh Milk,1601
+Mature Cheese,1602
+Fresh Herb,1603
+Crisp Onion,1604
+Flaky Potato,1605
+Starberry,1606
+Acerbic Tomato,1607
+Honey Syrup,1608
+Coarse Rock Salt,1609
+Assorted Grains,1610
+Healthy Liquor,1611
+Red Beast Flesh,1612
+White Beast Flesh,1613
+Chitinous Shell,1614
+Clear Gelatin,1615
+Globby Fat,1616
+Hearty Powder,1617
