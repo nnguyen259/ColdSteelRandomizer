@@ -1,0 +1,329 @@
+Map File,Map Name
+,---
+,？？？
+c0000,Capital - Station Plaza
+c0010,Heimdallr Central Station
+c0020,Railway Military Police - Command Post
+c0100,Capital - Vainqueur Street
+c0110,Le Sage Boutique - Head Store
+c0120,Department Store - Plaza Bifrost
+c0130,Watson's Weapons & Armor
+c0140,Imperial Chronicle Building
+c0150,Lumiere Orbal Factory
+c0200,Capital - Garnier District
+c0210,Heimdallr Opera House
+c0220,San Corries Jewelers
+c0230,Hotel - Der Himmel
+c0300,Capital - Alto Street
+c0310,Alto Street - Craig Family Home
+c0330,Former Guild Branch
+c0350,Concert Cafe - Etoile
+c0360,Alto Street - House
+c0400,Capital - Ost District
+c0410,Ost District - Regnitz Family Home
+c0430,Gamgee's Pub
+c0440,Emmrod's Used Goods
+c0450,Ost District - House 1
+c0460,Ost District - House 2
+c0500,"Capital - Heimdallr Port "
+c0600,Capital - Sankt District
+c0610,St. Astraia - Rose Garden
+c0620,St. Astraia - Communion Room
+c0700,Capital - Mater Park
+c0710,Crystal Garden
+c0800,"Capital - Dreichels Plaza "
+c0910,"Palace - Chancellor's Office "
+c0920,★Unused
+c0930,Valflame Palace - Parlor
+c0940,Valflame Palace - Audience Chamber
+c0950,Valflame Palace - Reception Hall
+c0960,Valflame Palace - Terrace
+t0000,Thors Military Academy
+t0010,Main Building 1F
+t0020,Main Building 2F
+t0030,Gate of Avalon
+t0031,Stella Garten
+t0032,Eastern Teahouse
+t0050,Gymnasium
+t0060,Academy - Library
+t0070,Academy - Auditorium
+t0080,Student Union Building
+t0090,Academy - Engineering Building
+,Main Building - Rooftop
+,Front Gate
+,Courtyard
+t0200,Old Schoolhouse
+t0201,Old Schoolhouse
+t0210,Old Schoolhouse - 1F
+t1000,Trista
+t1010,Class VII Dormitory
+t1020,Brandon's General Goods
+t1030,Keynes' Bookstore
+t1040,Boutique - Le Sage
+t1050,Kirsche's Cafe & Inn
+t1060,Micht's Pawn Shop
+t1070,Trista - Home
+t1080,Trista - House
+t1090,Trista Station
+t1110,Trista Chapel
+t1120,Trista Radio Station
+t1150,Upper Class Dorm
+t1160,Lower Class Dorm
+t1500,"Celdic, the Market Town"
+t1510,Weathercock Inn
+t1530,Celdic - Market Manager's House
+t1540,Celdic - House
+t1550,Oddvin's Arms & Orbal Factory
+t1560,Celdic Chapel
+t1570,Celdic Station
+,Provincial Army Guardhouse
+,Celdic Grand Market
+t1600,East Highway - Farmhouse
+t1610,West Highway - Farmhouse
+t2000,Bareahard - Station Street
+t2010,Bareahard Station
+t2020,Christie's Galleria
+,Bareahard Airport
+t2100,Bareahard Central Plaza
+t2110,Hotel Esmeralda
+t2120,Sorciere Restaurant
+t2130,Bareahard Cathedral
+t2200,Bareahard - Noble District
+t2210,Bareahard - Residence 1
+t2220,Bareahard - Residence 2
+t2300,Bareahard - Artisans' Street
+t2310,Davos' Factory
+t2320,Alouette Inn
+t2330,Turner's Jewelers
+t2340,Valenty Tailoring
+t3000,"Legram, the Lakeside Town"
+t3010,Bracer Guild - Legram Branch
+t3020,Watteau's Store
+t3030,Legram - House 2
+t3040,Legram - House 1
+t3050,Arseid School Training Hall
+t3060,Viscount Arseid's Mansion
+t3070,Mansion - Terrace
+t3090,Legram Chapel
+t3100,Aprikoze Inn
+t3000,Legram Station
+t3500,"Roer, the Industrial Metropolis"
+t3510,Reinford Corporate HQ - Entrance Hall
+t3520,23F - Executive Floor
+t3530,24F - Reinford Residence
+t3540,★Unused
+t3550,Elevator
+t3560,RF Store
+t3570,Boronia's General Goods
+t3580,Dining Bar - F
+t3590,Roer - Residence 1
+t3600,RF Arms
+t3610,Roer Cathedral
+t3620,Hotel Lagrange
+t3630,Roer Station
+t3710,Dvance's Diner
+t3720,Roer - Residence 2
+t3730,Jackass' Repair Shop
+t3740,Roer Institute of Technology
+t3750,Reinford - Military Factory
+t3760,Reinford - Military Factory
+t3770,Reinford - Military Factory
+t3780,Underground Passage 1
+t3790,Underground Passage 2
+t3900,Roer Airport
+t4000,"Ymir, the Hot Springs Paradise"
+t4020,Daily & Souvenir Store - Plover
+t4030,Tavern - Valley's Echo
+t4040,Baron Schwarzer's Mansion
+t4060,The Phoenix Wings
+t4070,The Phoenix Wings - Indoor Bathhouse
+t4080,The Phoenix Wings - Outdoor Hot Spring
+t4090,Ymir Chapel
+t4100,Ymir - House
+t4500,Nomadic Settlement
+t4510,Settlement - Worzel Home
+t4520,Settlement - Lodging Yurt
+t4530,Settlement - Elder's Home
+t4540,Settlement - Trading Post
+t4550,Settlement - Doctor's Home
+t4600,Highlands - Lake Lacrima
+t4610,Lake Cabin
+t4700,Imperial Army - Watchtower
+t4810,Imperial Border - Zender Gate
+t5000,Provincial Army - Aurochs Fort
+t5010,Rest Area - Crescent Moon
+t5500,Imperial Army Base - Garrelia Fortress
+t5510,Fortress - Motor Pool
+t5520,Garrelia Fortress - Command Area
+t5530,Fortress - Central Freight Platform
+t5610,Fortress - Storage Floor 1
+t5620,Fortress - Barracks
+t5630,Fortress - Storage Floor 2
+t5640,Fortress - Relay Area
+t5660,Fortress - Crossbell Side
+t5700,Garrelia Fortress - Training Grounds
+r0000,West Celdic Highway 1
+r0000,★Unused
+r0010,West Celdic Highway 2
+r0020,East Celdic Highway 1
+r0030,East Celdic Highway 2
+r0100,North Kreuzen Highway
+r0130,★Unused
+r0200,Aurochs Canyon Path 1
+r0210,Aurochs Canyon Path 2
+r0220,Aurochs Canyon Path 3
+r0300,Ebel Highway 1
+r0310,Ebel Highway 2
+r0400,Spina Byroad
+r0410,Nortia Highway
+r0420,Sachsen Mountain Path 1
+r0430,Sachsen Mountain Path 2
+r0500,Ymir Canyon Path 1
+r0510,Ymir Canyon Path 2
+r0520,Canyon Path - End
+r0600,West Trista Highway
+r0610,East Trista Highway
+r0800,Nord Highlands - South
+r0810,Nord Highlands - North
+m0010,Lunaria Nature Park 1
+n,Lunaria Nature Park
+m0020,Lunaria Nature Park 2
+m0030,Lunaria Nature Park 3
+m0040,Nature Park - Depths
+m0500,Underground Waterway 1
+m0510,Underground Waterway 2
+m0520,Underground Waterway 3
+m0530,Provincial Army Guardhouse - Underground
+m1000,Lohengrin Castle - Outside
+m1001,Lake Ebel
+m1010,Lohengrin Castle - Entrance Hall
+m1020,Lohengrin Castle - Left Wing
+m1030,Lohengrin Castle - Right Wing
+m1040,Lohengrin Castle - External Corridor 1
+m1050,Lohengrin Castle - External Corridor 2
+m1060,Lohengrin Castle - Staircase
+m1070,Lohengrin Castle - Keep
+m1200,Sachsen Iron Mine - Outside
+m1210,Sachsen Iron Mine - Delivery Area
+m1220,Sachsen Iron Mine - Delivery Area
+m1230,Sachsen Iron Mine - Shaft 3
+m1240,Sachsen Iron Mine - Relay Area
+m1250,--------------------
+m1260,Central Control Room - Front
+m1500,Highlands - Ancient Quarry
+m1510,--------------------
+m1520,--------------------
+m1540,Ancient Quarry - Interior
+m2000,Heimdallr Underground Passage 1
+m2001,Heimdallr Underground Passage 2
+m2002,0
+m2005,Heimdallr Underground Passage 3
+m2020,Heimdallr Underground Waterway 1
+m2021,Heimdallr Underground Waterway 2
+m2022,Heimdallr Underground Waterway 3
+m2100,--------------------
+m2110,--------------------
+m2120,--------------------
+m2130,Heimdallr Underground Waterway Depths
+m2500,Old Schoolhouse - Underground Area 1
+m2501,Old Schoolhouse - Underground Area 2
+m2502,Old Schoolhouse - Underground Area 3
+m2503,Old Schoolhouse - Stairway Room
+m2504,Old Schoolhouse - Elevator Room
+m2505,Old Schoolhouse - Stairway Room
+m2510,Old Schoolhouse - Floor 1
+m2511,Floor 1 - Main Area
+m2512,Floor 1 - Depths
+m2520,Old Schoolhouse - Floor 2
+m2521,Floor 2 - Main Area
+m2522,Floor 2 - Depths
+m2530,Old Schoolhouse - Floor 3
+m2531,Floor 3 - Area 1
+m2532,Floor 3 - Area 2
+m2533,Floor 3 - Depths
+m2540,Old Schoolhouse - Floor 4
+m2541,Floor 4 - Area 1
+m2542,Floor 4 - Area 2
+m2543,Floor 4 - Depths
+m2550,Old Schoolhouse - Floor 5
+m2551,Floor 5 - Area 1
+m2552,Floor 5 - Area 2
+m2553,Floor 5 - Depths
+m2560,Old Schoolhouse - Floor 6
+m2561,Floor 6 - Area 1
+m2562,Floor 6 - Area 2
+m2563,Floor 6 - Depths
+m3000,Old Schoolhouse - Floor 7
+m3001,Realm of the Great Shadow 1
+m3002,Realm of the Great Shadow 2
+m3003,Realm of the Great Shadow 3
+m3004,Realm of the Great Shadow 1
+m3005,★Unused
+m3006,★Unused
+m3007,Otherworldly Battlefield
+m3008,Floor 7 - Depths
+e2000,Courageous - Deck
+,Courageous - Front Deck
+,Courageous - Rear Deck
+e7010,Courageous - Inside
+,Courageous - 5F Bridge
+,Courageous - 3F Junction Area
+,Courageous - 1F Hold
+e5410,Orbal Tram
+e5010,Orbal Train
+e5011,Orbal Train
+e5012,Orbal Train
+,Trista - River
+,Old Schoolhouse - 1F
+,Old Schoolhouse - 3F
+,Old Schoolhouse - 4F
+,Old Schoolhouse - 5F
+,Old Schoolhouse - 6F
+,Trista - Pond
+,East Celdic Highway
+,West Celdic Highway
+,Bareahard Central Plaza
+,North Kreuzen Highway
+,Highlands - Lake Lacrima
+,Nord Highlands - North
+,"Capital - Dreichels Plaza "
+,Capital - Mater Park
+,"Capital - Heimdallr Port "
+,Heimdallr Underground Waterway
+,Ebel Highway
+,"Legram, the Lakeside Town"
+,Spina Byroad
+,Sachsen Mountain Path
+,Prologue - The Way to Thors
+,Chapter 1 - Unconventional Studies
+,Chapter 2 - The Verdant City
+,Chapter 3 - Beyond the Railways
+,Chapter 4 - A Midsummer's Revels
+,Chapter 5 - Signs and Omens
+,Chapter 6 - Progressive Chaos
+,Final Chapter - Put to the Test
+,Prologue - End
+,Chapter 1 - End
+,Chapter 2 - End
+,Chapter 3 - End
+,Chapter 4 - End
+,Chapter 5 - End
+,Chapter 6 - End
+,Final Chapter - End ★ Clear Data
+,Final Chapter - Afterparty
+,Chapter 1 - Practical Exam
+,Chapter 2 - Practical Exam
+,Chapter 3 - Practical Exam
+,Chapter 4 - Practical Exam
+,Chapter 5 - Practical Exam
+,Chapter 6 - Practical Exam
+,Chapter 3 - Field Study Day 2 - End
+,Chapter 3 - Arrested the Culprits
+,Chapter 4 - End of Free Day
+,Chapter 4 - Met with Prince Olivert
+,Chapter 5 - Fortress Day 1 - End
+,Final Chapter - Day before the Festival
+,Final Chapter - Festival Day 1 - End
+,Final Chapter - Before Class VII's Concert
+,Final Chapter - The Chancellor's Address
+,Final Chapter - Battle for Trista
