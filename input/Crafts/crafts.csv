@@ -1,0 +1,106 @@
+200,0,EB,30,1,0,10,2,4,217,110,100,22,100,15,0,25,20,10,1,0,AniBtlCraft00,Autumn Leaf Cutter,"[Attack (Set) - Area (S) - Impede - Delay+15]
+(Class C) Slashes foes while dashing by them. Unbalance+10%."
+201,0,PMBI,30,4,0,33,0,12,65,25,0,102,10,0,0,30,30,255,5,1,AniBtlCraft01,Motivate,"[Support - Area (XL/Self) - STR+25% - CP+10]
+An encouraging shout to rouse allies to battle."
+202,0,EB,30,1,0,11,100,2,1,130,0,22,100,30,0,20,30,0,15,2,AniBtlCraft02,Arc Slash,"[Attack (Set) - Line (S) - Delay+30]
+(Class B) Unleashes an arc-shaped shock wave. Can unbalance."
+203,0,EB,30,1,0,31,100,8,1,150,0,11,50,5,0,25,35,20,35,3,AniBtlCraft03,Gale,"[Attack - Area (L) - Seal (50%)]
+(Class A) Slices up enemies at high speed. Unbalance+20%."
+204,0,EB,30,1,0,10,1,4,1,180,0,76,50,5,0,30,35,30,55,4,AniBtlCraft04,Flame Impact,"[Attack (Set) - Area (S) - Burn (50%) - Faint (50%)]
+(Class S+) A powerful downward slash. Unbalance+30%."
+220,1,EBD,30,1,0,1,1,1,217,130,100,15,50,0,0,30,20,20,1,0,AniBtlCraft00,Flamberge,"[Attack - One - Impede - Burn (50%)]
+(Class B) Pierces enemy with a burning arrow. Unbalance+20%."
+221,1,PBID,30,3,0,32,1,4,108,450,10,102,40,0,0,30,40,255,8,1,AniBtlCraft01,Blessed Arrow,"[Recovery (Set) - Area (S) - HP Heal (S) - CP+40]
+Fires a blessed arrow into the air, healing allies in an area."
+222,1,EBD,30,1,0,32,1,8,1,110,0,0,0,0,0,30,35,0,24,2,AniBtlCraft02,Molten Rain,"[Attack (Set) - Area (L)]
+(Class C) Rains burning arrows onto enemies. Can unbalance."
+223,1,PBID,30,4,0,32,1,6,71,0,0,115,10,0,0,30,50,255,52,3,AniBtlCraft03,Heavenly Gift,"[Support (Set) - Area (M) - Insight - CP Regen]
+Grants allies insight status and restores 20CP every turn."
+240,2,PMBI,30,4,0,32,100,6,66,25,0,113,30,0,0,30,20,255,1,1,AniBtlCraft00,Resounding Beat,"[Support (Set) - Area (M) - DEF+25% - HP Regen]
+Boosts the DEF of allies by 25% and heals 30% HP every turn."
+241,2,EB,30,1,0,10,3,6,2,110,0,14,30,0,0,30,30,255,6,2,AniBtlCraft01,Blue Lullaby,"[Magic Attack (Set) - Area (M) - Sleep (30%)]
+(Class C) Lulls foes to sleep with soothing sounding bubbles."
+242,2,PMBI,30,3,0,33,0,8,108,900,10,74,0,0,0,30,30,255,31,3,AniBtlCraft02,Holy Song,"[Recovery - Area (L/Self) - HP Heal (M) - Cures all bar K.O.]
+Purifies allies with a holy song."
+243,2,EB,30,1,0,32,100,8,218,150,50,21,30,0,0,30,40,255,57,4,AniBtlCraft03,Nocturne Bell,"[Magic Attack (Set) - Area (L) - Sleep (50%) Nightmare (30%)]
+(Class A) Steals foes' consciousness with silver bells."
+244,2,EBI,30,2,0,30,100,1,26,100,0,203,0,0,0,30,20,255,9,0,AniBtlCraft04,Detector,"[Support - One - Analysis - Balance Down]
+Analyzes an enemy, making it easier to unbalance them."
+260,3,EBD,30,1,0,1,1,1,219,160,30,31,25,0,0,30,25,30,1,0,AniBtlCraft00,Armor Breaker,"[Attack - One - DEF-25% - Seal (30%)]
+(Class A+) Tears the armor from enemies. Unbalance+30%."
+261,3,EB,30,1,0,11,100,3,1,130,0,35,50,0,0,30,30,10,9,1,AniBtlCraft01,Earth Cleaver,"[Attack (Set) - Line (M) - MOV-50%]
+(Class B) Splits the earth beneath foes' feet. Unbalance+10%."
+262,3,EB,30,1,0,20,0,8,1,170,0,18,30,0,0,30,45,0,36,2,AniBtlCraft02,Brilliant Spin,"[Attack (Set) - Area (L) - Suction - Faint (30%)]
+(Class S) Draws foes into a vortex of light. Can unbalance."
+263,3,MBI,30,4,0,30,0,1,77,50,3,78,50,3,0,30,30,255,45,3,AniBtlCraft03,Radiant Wings,"[Support - Self - STR/DEF+50% - Insight - ATS/ADF-50%]
+Increases physical abilities at the expense of magical ones."
+280,4,EBD,30,1,0,1,1,1,217,150,100,31,25,0,0,30,20,20,1,0,AniBtlCraft00,Break Shot,"[Attack - One - Impede - DEF-25%]
+(Class A) Fires an armor-piercing round. Unbalance+20%."
+281,4,PBID,30,3,0,2,1,6,103,25,0,104,25,0,0,30,30,255,17,1,AniBtlCraft01,Energy Shell,"[Recovery - Area (M) - HP/EP Heal (25%)]
+Launches a special recovery bullet filled with energy."
+282,4,EBD,30,1,0,2,1,8,1,130,0,17,50,0,0,30,30,0,34,2,AniBtlCraft02,Petrification Shell,"[Attack - Area (L) - Petrify (50%)]
+(Class B) Fires a bullet that can petrify. Can unbalance."
+283,4,PBID,30,4,0,2,1,6,201,0,0,0,0,0,0,30,35,255,57,3,AniBtlCraft03,Burst Drive,"[Support - Area (M) - Accelerate]
+Breaks the time barrier, allowing allies to act faster."
+300,5,PRBID,30,3,0,1,1,1,107,50,0,102,20,0,0,30,30,255,1,1,AniBtlCraft00,Serene Blessing,"[Recovery - One - Cures K.O. - HP Heal (50%) - CP+20]
+Heals an ally with the calm of the moon."
+301,5,EB,30,1,0,11,100,3,2,130,0,32,50,0,0,30,30,10,16,2,AniBtlCraft01,Ethereal Edge,"[Magic Attack (Set) - Line (M) - ATS-50%]
+(Class B) Releases several magical blades. Unbalance+10%."
+302,5,PBI,30,4,0,31,100,6,66,50,0,151,1,0,0,30,30,255,25,3,AniBtlCraft02,Crescent Shell,"[Support - Area (M) - DEF+50% - Magic Reflect]
+Strengthens allies with the crescent moon's power."
+303,5,EB,30,1,0,31,100,8,2,150,0,79,30,0,0,30,40,255,48,4,AniBtlCraft03,Aster Flare,"[Magic Attack - Area (L) - Burn (30%) Confuse (30%)]
+(Class A) Muddles an enemy's cognitive abilities with flame."
+304,5,EBI,30,2,0,30,100,1,26,100,0,203,0,0,0,30,20,255,1,0,AniBtlCraft04,Detector,"[Support - One - Analysis - Balance Down]
+Analyzes an enemy, making it easier to unbalance them."
+320,6,EBD,30,1,0,1,1,1,217,150,100,22,100,30,0,30,20,20,1,0,AniBtlCraft00,Rapid Thrust,"[Attack - One - Impede - Delay+30]
+(Class A) A series of three rapid thrusts. Unbalance+20%."
+331,6,EB,30,1,0,2,3,6,2,130,0,33,50,0,0,30,30,255,16,1,AniBtlCraft01,Rune Blade,"[Magic Attack - Area (M) - ADF-50%]
+(Class B) Cuts enemies in half with a magical slash."
+342,6,PMBI,30,4,0,33,1,12,65,25,0,131,25,0,0,30,25,255,26,2,AniBtlCraft02,Noble Command,"[Support - Area (XL/Self) - STR/ATS/SPD+25%]
+Raises the morale of allies with an inspiring shout."
+353,6,EB,30,1,0,10,3,6,219,150,50,16,50,0,0,30,40,20,46,3,AniBtlCraft03,Treasure Sword,"[Attack (Set) - Area (M) - Seal (50%) Freeze (50%)]
+(Class A) Seals foes in ice, then shatters it. Unbalance+20%."
+370,7,EB,30,1,0,2,5,6,217,130,100,34,25,0,0,25,30,0,1,0,AniBtlCraft00,Sweep,"[Attack - Area (M) - Impede - SPD-25%]
+(Class B) Mows down foes with twin gunswords. Can unbalance."
+371,7,EB,30,1,0,31,100,8,219,100,30,13,30,0,0,30,35,255,17,1,AniBtlCraft01,Flash Grenade,"[Attack - Area (L) - Blind (30%) Seal (30%)]
+(Class D) Throws a grenade which emits bright light."
+372,7,EB,30,1,0,11,100,2,220,150,30,20,30,0,0,20,30,20,33,2,AniBtlCraft02,Scud Ripper,"[Attack (Set) - Line (S) - Faint (30%) K.O. (30%)]
+(Class A) Strikes enemies' weak points. Unbalance+20%."
+373,7,EB,30,1,0,2,3,6,219,180,50,22,100,35,0,25,40,30,56,3,AniBtlCraft03,Bullet Cyclone,"[Attack - Area (M) - Seal (50%) - Delay+35]
+(Class S+) Dominates foes with rapid attacks. Unbalance+30%."
+390,8,EB,30,1,0,11,100,2,1,110,0,11,50,0,0,30,20,0,1,0,AniBtlCraft00,Gale Stinger,"[Attack (Set) - Line (S) - Seal (50%)]
+(Class C) Launches a blast of wind forwards. Can unbalance."
+391,8,EBD,30,1,0,2,1,6,1,150,0,13,50,0,0,30,30,10,14,1,AniBtlCraft01,Turbulence,"[Attack - Area (M) - Blind (50%)]
+(Class A) Envelops foes in turbulent winds. Unbalance+10%."
+392,8,MBI,30,4,0,30,0,1,5,30,0,102,50,0,0,30,0,255,25,2,AniBtlCraft02,Wild Rage,"[Support - Self - HP-30% - CP+50]
+Cries out with wild anger, trading HP for CP."
+393,8,EB,30,1,0,20,0,6,221,180,50,22,100,35,0,30,40,20,47,3,AniBtlCraft03,Savage Fang,"[Attack (Set) - Area (M) - MOV-50% - Delay+35]
+(Class S+) Skewers foes with great force. Unbalance+20%."
+410,9,EBD,30,1,0,2,1,6,217,130,100,18,50,0,0,30,30,20,1,0,AniBtlCraft00,Buster Arm,"[Attack - Area (M) - Impede - Faint (50%)]
+(Class B) Airgetlam attacks with great force. Unbalance+20%."
+411,9,MBI,30,4,0,30,0,1,150,1,0,0,0,0,0,30,20,255,1,1,AniBtlCraft01,Ultimate Barrier,"[Support - Self - Physical Immunity]
+Creates a silver barrier, granting immunity to one attack."
+412,9,EB,30,1,0,11,100,3,1,150,0,30,25,0,0,30,30,255,42,2,AniBtlCraft02,Riot Beam,"[Attack (Set) - Line (M) - STR-25%]
+(Class A) Airgetlam fires a beam of light."
+413,9,EB,30,1,0,31,100,8,220,170,70,22,100,40,0,30,40,30,55,3,AniBtlCraft03,Megaton Press,"[Attack - Area (L) - Faint (70%) - Delay+40]
+(Class S) Airgetlam crushes foes as a sphere. Unbalance+30%."
+430,10,EBD,30,1,0,10,1,6,1,110,0,22,100,15,0,30,20,0,1,0,AniBtlCraft00,Rapid Volley,"[Attack (Set) - Area (M) - Delay+15]
+(Class C) Fires a series of rapid shots. Can unbalance."
+431,10,EBD,30,1,0,10,1,6,2,110,0,16,50,0,0,30,30,255,1,1,AniBtlCraft01,Freezing Bullet,"[Magic Attack (Set) - Area (M) - Freeze (50%)]
+(Class C) Fires a magical bullet imbued with the power of ice."
+432,10,PEB,30,2,0,12,100,100,222,0,0,0,0,0,0,30,5,255,42,2,AniBtlCraft02,Wild Card,"[Support - One - Random effect on ally or enemy]
+Draws a card, leaving everything to chance. What will happen?"
+433,10,EB,30,1,0,11,100,3,223,170,50,19,50,0,0,30,45,0,54,3,AniBtlCraft03,Chaos Trigger,"[Attack (Set) - Line (M) - Confuse (50%) Nightmare (50%)]
+(Class S) Fires a bullet of pure insanity. Can unbalance."
+450,11,EB,30,1,0,2,5,8,219,130,90,34,25,0,0,30,30,10,1,0,AniBtlCraft00,Thundering Roar,"[Attack - Area (L) - Seal (90%) - SPD-25%]
+(Class B) Attacks with bullets and lightning. Unbalance+10%."
+451,11,MBI,30,4,0,30,0,1,80,50,3,71,0,3,0,30,30,255,1,1,AniBtlCraft01,Lightning Charge,"[Support - Self - STR/SPD+50% - Insight]
+Raises physical abilities with a war cry."
+452,11,EB,30,1,0,10,3,6,219,170,30,22,100,30,0,30,40,30,1,2,AniBtlCraft02,Flash,"[Attack (Set) - Area (M) - Seal (30%) - Delay+30]
+(Class S) Overtakes foes like a lightning bolt. Unbalance+30%. "
+470,12,EB,30,1,0,11,100,2,217,110,100,22,100,20,0,30,20,10,1,0,AniBtlCraft00,Laser Bullet,"[Attack (Set) - Line (S) - Impede - Delay+20]
+(Class C) A kick that releases a shock wave. Unbalance+10%."
+471,12,EBD,30,1,0,1,1,1,1,170,0,18,90,0,0,30,30,50,1,1,AniBtlCraft01,Zero Impact,"[Attack - One - Faint (90%)]
+(Class S) A blast of energy from close range. Unbalance+50%."
+472,12,MBI,30,4,0,30,0,1,65,50,3,66,50,3,0,30,30,255,1,2,AniBtlCraft02,Dragon Boost,"[Support - Self - STR/DEF+50%]
+Strengthens the body through an explosion of energy."

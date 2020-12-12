@@ -1,56 +1,107 @@
-import random, struct
+import random, csv
 
 charList = ['rean', 'alisa', 'elliot', 'laura', 'machias', 'emma', 'jusis', 'fie', 'gaius', 'millium', 'crow', 'sara', 'angelica']
 craftNum = [5, 4, 5, 4, 4, 5, 4, 4, 4, 4, 4, 3, 3]
 
-def randomize(path, seed=None):
+def randomize(path, seed=None, original=False):
     if seed:
         random.seed(seed)
-    with open('input/crafts.txt') as f:
-        craftList = f.read().splitlines()
-    
-    # Assigning Crafts
-    magicFile = open(path + "t_magic.tbl", 'r+b')
-    resultFile = open('result.txt', 'a')
+    with open('input/Crafts/crafts.csv', newline='') as craftFile, open('input/Files/Magic.csv', newline='') as magicFile, open('result.txt', 'a') as resultFile:
+        craftList = list(csv.reader(craftFile))
+        magicList = list(csv.reader(magicFile))
 
-    resultFile.write('\nCraft Randomizer Result: \n')
-    for i in range(13):
-        resultFile.write(charList[i].title() + ":\n")
-        referenceList = list()
-        for k in range(craftNum[i]):
-            referenceList.append(list())
-        referenceFile = open('input/' + charList[i] + '.txt')
-        referenceLines = referenceFile.read().splitlines()
-        referenceLevels = referenceLines[0].split(' ')
-        for line in referenceLines[1:]:
-            temp = line.split(',')
-            referenceList[int(temp[0])-1].append(temp[1:])
+        if original:
+            with open('input/Crafts/original.csv', newline='') as originalFile:
+                originalList = list(csv.reader(originalFile))
+                craftList.extend(originalList)
+        fullList = list()
+
+        random.shuffle(craftList)
+
+        resultFile.write('\nCraft Randomizer Result: \n')
+        for i in range(13):
+            resultFile.write(charList[i].title() + ":\n")
+            levels = list()
+            ids = list()
+            with open('input/Crafts/' + charList[i] + '.txt', 'r') as referenceFile:
+                lines = referenceFile.readlines()
+                levels = lines[0].strip().split(' ')
+                ids = lines[1].strip().split(' ')
+
+            for j in range(craftNum[i]):
+                craft = craftList.pop()
+                craft[0] = int(ids[j])
+                craft[1] = i
+                craft[-3] = 'AniBtlCraft0' + str(j)
+                craft[-4] = j
+                craft[-5] = int(levels[j])
+                magicList.append(craft)
+                resultFile.write(craft[-2] + ', Level: ' + str(craft[-5]) + '\n')
+                
+            resultFile.write('\n')
         
-        for j in range(craftNum[i]):
-            craft = craftList.pop(random.randrange(len(craftList))).split(',')
-            
-            magicFile.seek(int(craft[2]))
-            magicFile.write(struct.pack('b', i))
-            
-            magicFile.seek(int(craft[3]))
-            magicFile.write(struct.pack('b', ord('0')+j))
-            
-            magicFile.seek(int(craft[3]) - 14)
-            magicFile.write(struct.pack('b', j))
+        headers = magicList[0]
 
-            level = int(referenceLevels[j])
+        for i in range(len(magicList) - 1):
+            magic = {}
+            data = magicList[i + 1]
+            for j in range(len(data)):
+                magic[headers[j]] = data[j]
+            fullList.append(magic)
+
+        testData = list(sorted(fullList, key=lambda item: int(item['id'])))
+
+        __buildMagic(path=path, data=testData)
+
+
+def __buildMagic(path=None, data=None):
+    field_names = ['id', 'char_restriction', 'flags', 'category', 'type', 'element', 'targetting_type', 'targetting_range', 'targetting_size',
+                    'effect1_id', 'effect1_data1', 'effect1_data2', 'effect2_id', 'effect2_data1', 'effect2_data2',
+                    'cast_delay', 'recovery_delay', 'cost', 'unbalance_bonus', 'level', 'sort_id','animation', 'name', 'description']
+    with open(path + '/data/text/dat_us/t_magic.tbl', 'wb') as destination:
+        entry_num = len(data)
+
+        destination.write(entry_num.to_bytes(2, 'little'))
+
+        for magic in data:
+            length = len(magic['flags'].encode('utf-8')) + len(magic['animation'].encode('utf-8')) + len(magic['name'].encode('utf-8')) + \
+                    len(magic['description'].replace('\r', '').encode('utf-8')) + 32
+
+            destination.write(b'magic\x00')
+            destination.write(length.to_bytes(2, 'little'))
+
+            destination.write(int(magic['id']).to_bytes(2, 'little'))
+            destination.write(int(magic['char_restriction']).to_bytes(2, 'little'))
+
+            destination.write(magic['flags'].encode('utf-8') + b'\x00')
+
+            destination.write(int(magic['category']).to_bytes(1, 'little'))
+            destination.write(int(magic['type']).to_bytes(1, 'little'))
+            destination.write(int(magic['element']).to_bytes(1, 'little'))
+
+            destination.write(int(magic['targetting_type']).to_bytes(1, 'little'))
+            destination.write(int(magic['targetting_range']).to_bytes(1, 'little'))
+            destination.write(int(magic['targetting_size']).to_bytes(1, 'little'))
+
+            destination.write(int(magic['effect1_id']).to_bytes(1, 'little'))
+            destination.write(int(magic['effect1_data1']).to_bytes(2, 'little'))
+            destination.write(int(magic['effect1_data2']).to_bytes(2, 'little'))
             
-            magicFile.seek(int(craft[3]) - 15)
-            magicFile.write(struct.pack('b', level))
-            
-            resultFile.write(craft[0] + ' - Level Learn: ' + str(level) + '\n')
-            
-            for entry in referenceList[j]:
-                scenaFile = open(path + '../../' + entry[0], 'r+b')
-                scenaFile.seek(int(entry[1]))
-                scenaFile.write(struct.pack('>H', int(craft[1], 16)))
-            
-        resultFile.write('\n')
+            destination.write(int(magic['effect2_id']).to_bytes(1, 'little'))
+            destination.write(int(magic['effect2_data1']).to_bytes(2, 'little'))
+            destination.write(int(magic['effect2_data2']).to_bytes(2, 'little'))
+
+            destination.write(int(magic['cast_delay']).to_bytes(1, 'little'))
+            destination.write(int(magic['recovery_delay']).to_bytes(1, 'little'))
+            destination.write(int(magic['cost']).to_bytes(2, 'little'))
+
+            destination.write(int(magic['unbalance_bonus']).to_bytes(1, 'little'))
+            destination.write(int(magic['level']).to_bytes(1, 'little'))
+            destination.write(int(magic['sort_id']).to_bytes(2, 'little'))
+
+            destination.write(magic['animation'].encode('utf-8') + b'\x00')
+            destination.write(magic['name'].encode('utf-8') + b'\x00')
+            destination.write(magic['description'].replace('\r', '').encode('utf-8') + b'\x00')
 
 if __name__ == "__main__":
-    randomize('data/text/dat_us/')
+    randomize('./')

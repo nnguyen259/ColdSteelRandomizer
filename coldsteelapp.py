@@ -75,6 +75,10 @@ class ColdSteelApp:
         self.randomizeCraft = tk.IntVar()
         self.cbtnCraft.config(text='Randomize Craft (EXPERIMENTAL)', variable=self.randomizeCraft)
         self.cbtnCraft.grid(column='0', columnspan='3', padx='5', pady='5', row='5', sticky='w')
+        self.cbtnOrginalCraft = ttk.Checkbutton(self.frameCharacter)
+        self.originalCraft = tk.IntVar()
+        self.cbtnOrginalCraft.config(text='Add Original Crafts', variable=self.originalCraft)
+        self.cbtnOrginalCraft.grid(column='0', columnspan='3', padx='25', pady='5', row='6', sticky='w')
         self.frameCharacter.config(height='200', text='Character', width='200')
         self.frameCharacter.grid(column='0', padx='5', pady='5', row='1', sticky='nsew')
 
@@ -283,6 +287,45 @@ class ColdSteelApp:
         self.normalizeMasterQuartz.set(0)
         self.randomizeMQArt.set(0)
 
+    def updateCraft(self, quiet=True):
+        def realUpdate():
+            self.progressValue.set('Updating Craft Database...')
+            with open('input/Crafts/crafts.csv', 'r+b') as craftFile, open('input/Crafts/original.csv', 'r+b') as orginalFile:
+                import urllib3
+                http = urllib3.PoolManager(timeout=5.0)
+                try:
+                    r = http.request('GET', 'https://github.com/nnguyen259/ColdSteelCrafts/raw/main/crafts.csv')
+
+                    if r.status == 200:
+                        craftFile.seek(0)
+                        craftFile.truncate()
+                        craftFile.write(r.data)
+                    else:
+                        raise Exception
+                    
+                    r = http.request('GET', 'https://github.com/nnguyen259/ColdSteelCrafts/raw/main/original.csv')
+
+                    if r.status == 200:
+                        orginalFile.seek(0)
+                        orginalFile.truncate()
+                        orginalFile.write(r.data)
+                    else:
+                        raise Exception
+
+                    if not quiet:
+                            messagebox.showinfo('Craft Updater', 'Succesfully update crafts database')
+                except Exception:
+                    print('Unexpected Error. Database not updated.')
+                    if not quiet:
+                        messagebox.showerror('Craft Updater', 'Unexpected Error.\nPlease try again later.')
+            self.btnBrowse['state'] = 'normal'
+            self.btnRandomize['state'] = 'normal'
+            self.progressValue.set('Ready')
+
+        self.btnBrowse['state'] = 'disabled'
+        self.btnRandomize['state'] = 'disabled'
+        threading.Thread(target=realUpdate).start()
+
     def selectDirectory(self):
         directory = filedialog.askdirectory()
         self.gameDirectory.set(directory)
@@ -310,7 +353,7 @@ class ColdSteelApp:
                         if self.randomizeCraft.get():
                             self.progressValue.set('Randomizing Craft...')
                             import randomizer.craft
-                            randomizer.craft.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
+                            randomizer.craft.randomize(path=self.gameDirectory.get() + '/', seed=self.seed.get(), original=self.originalCraft.get())
                         if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
                             self.progressValue.set('Randomizing EP...')
                             import randomizer.slot
@@ -360,6 +403,8 @@ class ColdSteelApp:
 
                         messagebox.showinfo('Finished!', 'All Done!')
                     except Exception as err:
+                        import traceback
+                        print(traceback.format_exc())
                         messagebox.showerror('FATAL ERROR', str(err))
             self.progressValue.set('Ready')
             self.btnRandomize['state'] = 'normal'
@@ -368,6 +413,7 @@ class ColdSteelApp:
         threading.Thread(target=realRandomize).start()
 
     def run(self):
+        self.updateCraft()
         self.mainwindow.mainloop()
 
 if __name__ == '__main__':

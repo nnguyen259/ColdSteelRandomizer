@@ -1,4 +1,5 @@
 1 16 25 48 1
+300 301 302 303 304
 1,scripts/scena/dat_us/system.dat,4806
 1,scripts/scena/dat_us/system.dat,8598
 1,scripts/scena/dat_us/t1010.dat,83314
