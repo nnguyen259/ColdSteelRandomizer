@@ -1,4 +1,5 @@
 1 17 33 56
+370 371 372 373
 1,scripts/scena/dat_us/system.dat,4872
 1,scripts/scena/dat_us/system.dat,8664
 1,scripts/scena/dat_us/t1010.dat,83332

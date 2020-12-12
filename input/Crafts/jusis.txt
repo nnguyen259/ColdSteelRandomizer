@@ -1,4 +1,5 @@
 1 16 26 46
+320 331 342 353
 1,scripts/scena/dat_us/m2501.dat,23665
 1,scripts/scena/dat_us/system.dat,4842
 1,scripts/scena/dat_us/system.dat,8634
