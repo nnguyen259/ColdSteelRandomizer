@@ -190,6 +190,11 @@ class ColdSteelApp:
         self.cbtnReplaceNeedleShoot.config(text='Replace Needle Shoot with La Forte', variable=self.replaceNeedleShoot)
         self.cbtnReplaceNeedleShoot.grid(padx='5', pady='5', row='4', sticky='w')
 
+        self.cbtnRandomizeCook = ttk.Checkbutton(self.frameMisc)
+        self.randomizeCook = tk.IntVar()
+        self.cbtnRandomizeCook.config(text='Randomize Cookbook', variable=self.randomizeCook)
+        self.cbtnRandomizeCook.grid(padx='5', pady='5', row='5', sticky='w')
+
         self.frameMisc.config(text='Misc.')
         self.frameMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
 
@@ -393,6 +398,11 @@ class ColdSteelApp:
                             self.progressValue.set('Replacing Needle Shoot')
                             import randomizer.qol
                             randomizer.qol.replaceNeedleShoot(path=self.gameDirectory.get() + '/')
+
+                        if self.randomizeCook.get():
+                            self.progressValue.set('Randomizing Cook Book...')
+                            import randomizer.notecook
+                            randomizer.notecook.randomize(path=self.gameDirectory.get() + '/', seed=self.seed.get())
 
                         if self.normalizeMasterQuartz.get() or self.randomizeMQArt.get():
                             self.progressValue.set('Building Master Quartz')
