@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://media.discordapp.net/attachments/588527782674432013/786309651728826378/unknown.png)
+![](https://media.discordapp.net/attachments/588527782674432013/787159970902835220/unknown.png)
 
 The Game Location is the folder where the game .exe is located.
 
@@ -34,6 +34,7 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 ### Character
 * **Base Stat and Stat Growth:** Randomize the starting stat and stat growth for every character, including Sara and Angelica. The higher the variance, the more random it gets. Increase Base Stat option will give every character an extra 300 HP and 30 DEF at the start of the game.
 * **Crafts:** Randomize the craft pool for every character. The character will still have the same amount of total crafts and the level learn for those crafts, but the actual craft pool will be different. However, they will still use their old animation as if they are using their original crafts. Therefore, it is possible that crafts might not work as expected due to the interaction with the animation.
+* **Original Crafts:** Only enabled when randomized craft is also enabled. These crafts are all original from me (nnguyen259) or player submitted. To submit your own craft, go [here](https://forms.gle/XhtVyMxxjB3xYMXr7).
 
 ### Orbment Options
 * **Orbment Line:** Create a new orbment line for each character and randomly assign slots to have an elemental lock.
@@ -60,13 +61,20 @@ Note: Playble characters as enemies will not be randomized.
 * **Enemy Elemental/Affliction/Unbalance Efficacy:** Generate new values for these efficacy for each enemy. There is an option to prevent Petrify/Deathblow/Vanish efficacy from being randomized.
 
 ### Misc. Options
-These are options to increase the amount of EXP, Sepith, Sepith Mass after the battle as well as reduce the amount of Sepith needed to unlock character orbment slots. Helpful since you can easily end up with multiple characters having long orbment line or when you want to minimize battles.
+* **Resources Gain:** These are options to increase the amount of EXP, Sepith, Sepith Mass after the battle as well as reduce the amount of Sepith needed to unlock character orbment slots. Helpful since you can easily end up with multiple characters having long orbment line or when you want to minimize battles.
 
-There is also an option to replace the Needle Shoot quartz with La Forte.
+* **La Forte:** Replace the Needle Shoot quartz with La Forte in Prologue. Helpful to go through the game faster.
+
+* **Cookbook:** Shuffle which item will be the normal, good, peculiar and unique result of the recipe. Also shuffle which character will cook the "unique" result.
+
+## Bugs
+* Petrifying Phase 1 of Prologue Boss then instant kill will softlock the game.
+* Wild Card can soft lock the game under various circumstances.
 
 ## TODO List
-* Randomized Cookbook
-* Randomized Chests
+* More crafts.
+* Shop?
+* I'm open for suggestions
 
 ## Special Thanks
 * SoftBrilliant and the Modding Community for help with testing.
