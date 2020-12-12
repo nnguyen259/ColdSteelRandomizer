@@ -1,4 +1,5 @@
 1 9 36 45
+260 261 262 263
 1,scripts/scena/dat_us/system.dat,4752
 1,scripts/scena/dat_us/system.dat,8544
 1,scripts/scena/dat_us/t1010.dat,72345

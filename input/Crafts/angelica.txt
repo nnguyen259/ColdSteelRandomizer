@@ -1,4 +1,5 @@
 1 1 1
+470 471 472
 1,scripts/scena/dat_us/system.dat,5004
 1,scripts/scena/dat_us/system.dat,8796
 1,scripts/scena/dat_us/t3780.dat,12896

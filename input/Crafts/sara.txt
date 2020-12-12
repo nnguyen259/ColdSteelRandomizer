@@ -1,4 +1,5 @@
 1 1 1
+450 451 452
 1,scripts/scena/dat_us/system.dat,4980
 1,scripts/scena/dat_us/system.dat,8772
 1,scripts/scena/dat_us/t5520.dat,82761
