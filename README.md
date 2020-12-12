@@ -2,7 +2,7 @@
 
 ## Latest Version: [1.1.0](https://github.com/nnguyen259/ColdSteelRandomizer/releases/tag/1.1.0)
 
-## Experimental Version: None
+## Experimental Version: [1.2.0beta](https://github.com/nnguyen259/ColdSteelRandomizer/releases/tag/1.2.0-beta)
 
 ## Introduction
 
