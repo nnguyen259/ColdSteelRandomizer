@@ -75,6 +75,10 @@ class ColdSteelApp:
         self.randomizeCraft = tk.IntVar()
         self.cbtnCraft.config(text='Randomize Craft (EXPERIMENTAL)', variable=self.randomizeCraft)
         self.cbtnCraft.grid(column='0', columnspan='3', padx='5', pady='5', row='5', sticky='w')
+        self.cbtnOrginalCraft = ttk.Checkbutton(self.frameCharacter)
+        self.originalCraft = tk.IntVar()
+        self.cbtnOrginalCraft.config(text='Add Original Crafts', variable=self.originalCraft)
+        self.cbtnOrginalCraft.grid(column='0', columnspan='3', padx='25', pady='5', row='6', sticky='w')
         self.frameCharacter.config(height='200', text='Character', width='200')
         self.frameCharacter.grid(column='0', padx='5', pady='5', row='1', sticky='nsew')
 
@@ -186,6 +190,11 @@ class ColdSteelApp:
         self.cbtnReplaceNeedleShoot.config(text='Replace Needle Shoot with La Forte', variable=self.replaceNeedleShoot)
         self.cbtnReplaceNeedleShoot.grid(padx='5', pady='5', row='4', sticky='w')
 
+        self.cbtnRandomizeCook = ttk.Checkbutton(self.frameMisc)
+        self.randomizeCook = tk.IntVar()
+        self.cbtnRandomizeCook.config(text='Randomize Cookbook', variable=self.randomizeCook)
+        self.cbtnRandomizeCook.grid(padx='5', pady='5', row='5', sticky='w')
+
         self.frameMisc.config(text='Misc.')
         self.frameMisc.grid(column='1', row='2', padx='5', pady='5', sticky='nsew')
 
@@ -215,7 +224,25 @@ class ColdSteelApp:
         self.spinArtGain.config(to='100', width='5', wrap='true')
         self.spinArtGain.grid(column='1', padx='5', pady='5', row='3', sticky='w')
 
-        self.frameMasterQuartz.config(text='Master Quartz')
+        # randomize chest
+        self.randomizeChest = tk.IntVar()
+        self.randomizeChestMode = tk.IntVar()
+        self.randomizeChestMode.set(0)
+        self.cbtnRandomizeChest = ttk.Checkbutton(self.frameMasterQuartz)
+        self.cbtnRandomizeChest.config(text='Shuffle Chest Contents', variable=self.randomizeChest)
+        self.rbtnMode1 = ttk.Radiobutton(self.frameMasterQuartz)
+        self.rbtnMode1.config(text='Separated Pools', variable=self.randomizeChestMode, value=0)
+        self.rbtnMode2 = ttk.Radiobutton(self.frameMasterQuartz)
+        self.rbtnMode2.config(text='Combine Rare and Monster', variable=self.randomizeChestMode, value=1)
+        self.rbtnMode3 = ttk.Radiobutton(self.frameMasterQuartz)
+        self.rbtnMode3.config(text='Combine Everything', variable=self.randomizeChestMode, value=2)
+
+        self.cbtnRandomizeChest.grid(column='0', row='4', padx='5', pady='5', sticky='w')
+        self.rbtnMode1.grid(column='0', row='5', padx='25', pady='5', sticky='w')
+        self.rbtnMode2.grid(column='0', row='6', padx='25', pady='5', sticky='w')
+        self.rbtnMode3.grid(column='0', row='7', padx='25', pady='5', sticky='w')
+
+        self.frameMasterQuartz.config(text='Master Quartz & Chest')
         self.frameMasterQuartz.grid(column='2', row='1', padx='5', pady='5', sticky='nsew')
 
         # button frame
@@ -265,6 +292,45 @@ class ColdSteelApp:
         self.normalizeMasterQuartz.set(0)
         self.randomizeMQArt.set(0)
 
+    def updateCraft(self, quiet=True):
+        def realUpdate():
+            self.progressValue.set('Updating Craft Database...')
+            with open('input/Crafts/crafts.csv', 'r+b') as craftFile, open('input/Crafts/original.csv', 'r+b') as orginalFile:
+                import urllib3
+                http = urllib3.PoolManager(timeout=5.0)
+                try:
+                    r = http.request('GET', 'https://github.com/nnguyen259/ColdSteelCrafts/raw/main/crafts.csv')
+
+                    if r.status == 200:
+                        craftFile.seek(0)
+                        craftFile.truncate()
+                        craftFile.write(r.data)
+                    else:
+                        raise Exception
+                    
+                    r = http.request('GET', 'https://github.com/nnguyen259/ColdSteelCrafts/raw/main/original.csv')
+
+                    if r.status == 200:
+                        orginalFile.seek(0)
+                        orginalFile.truncate()
+                        orginalFile.write(r.data)
+                    else:
+                        raise Exception
+
+                    if not quiet:
+                            messagebox.showinfo('Craft Updater', 'Succesfully update crafts database')
+                except Exception:
+                    print('Unexpected Error. Database not updated.')
+                    if not quiet:
+                        messagebox.showerror('Craft Updater', 'Unexpected Error.\nPlease try again later.')
+            self.btnBrowse['state'] = 'normal'
+            self.btnRandomize['state'] = 'normal'
+            self.progressValue.set('Ready')
+
+        self.btnBrowse['state'] = 'disabled'
+        self.btnRandomize['state'] = 'disabled'
+        threading.Thread(target=realUpdate).start()
+
     def selectDirectory(self):
         directory = filedialog.askdirectory()
         self.gameDirectory.set(directory)
@@ -277,61 +343,79 @@ class ColdSteelApp:
                 if not os.path.exists(self.gameDirectory.get() + "/data"):
                     messagebox.showerror('Invalid Directory', 'Invalid game directory')
                 else:
-                    with open('result.txt', 'w') as resultfile:
-                        resultfile.write('Randomizer Result\n')
-                    if self.randomizeBase.get():
-                        self.progressValue.set('Randomizing Base Stat...')
-                        import randomizer.status
-                        randomizer.status.randomizeBase(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
-                                                        variance=self.baseVariance.get(), increaseBase=self.increaseBase.get())
-                    if self.randomizeGrowth.get():
-                        self.progressValue.set('Randomizing Stat Growth...')
-                        import randomizer.status
-                        randomizer.status.randomizeGrowth(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), variance=self.growthVariance.get())
-                    if self.randomizeCraft.get():
-                        self.progressValue.set('Randomizing Craft...')
-                        import randomizer.craft
-                        randomizer.craft.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
-                    if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
-                        self.progressValue.set('Randomizing EP...')
-                        import randomizer.slot
-                        randomizer.slot.randomizeEP(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
-                                                    randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
-                    if self.randomizeOrbmentLine.get():
-                        self.progressValue.set('Randomizing Orbment Line...')
-                        import randomizer.orb
-                        randomizer.orb.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
-                                                maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
-                    if self.randomizeMasterQuartz.get():
-                        self.progressValue.set('Reshuffling Master Quartz...')
-                        import randomizer.masterquartz
-                        randomizer.masterquartz.randomizeMasterQuartzLocation(path=self.gameDirectory.get() + '/', seed=self.seed.get())
+                    try:
+                        with open('result.txt', 'w') as resultfile:
+                            resultfile.write('Randomizer Result\n')
+                        if self.randomizeBase.get():
+                            self.progressValue.set('Randomizing Base Stat...')
+                            import randomizer.status
+                            randomizer.status.randomizeBase(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                            variance=self.baseVariance.get(), increaseBase=self.increaseBase.get())
+                        if self.randomizeGrowth.get():
+                            self.progressValue.set('Randomizing Stat Growth...')
+                            import randomizer.status
+                            randomizer.status.randomizeGrowth(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), variance=self.growthVariance.get())
+                        if self.randomizeCraft.get():
+                            self.progressValue.set('Randomizing Craft...')
+                            import randomizer.craft
+                            randomizer.craft.randomize(path=self.gameDirectory.get() + '/', seed=self.seed.get(), original=self.originalCraft.get())
+                        if self.randomizeBaseEP.get() or self.randomizeEPGrowth.get():
+                            self.progressValue.set('Randomizing EP...')
+                            import randomizer.slot
+                            randomizer.slot.randomizeEP(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                        randomizeBase=self.randomizeBaseEP.get(), randomizeGrowth=self.randomizeEPGrowth.get())
+                        if self.randomizeOrbmentLine.get():
+                            self.progressValue.set('Randomizing Orbment Line...')
+                            import randomizer.orb
+                            randomizer.orb.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                    maxEleSlot=self.maxSlot.get(), minEleSlot=self.minSlot.get(), maxLine=self.maxLine.get())
+                        if self.randomizeMasterQuartz.get():
+                            self.progressValue.set('Reshuffling Master Quartz...')
+                            import randomizer.masterquartz
+                            randomizer.masterquartz.randomizeMasterQuartzLocation(path=self.gameDirectory.get() + '/', seed=self.seed.get())
 
-                    self.progressValue.set('Randomizing Enemies...')
-                    import randomizer.mons
-                    randomizer.mons.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
-                                            randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), 
-                                            randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), 
-                                            keepDeathblow=self.keepDeathBlow.get(), increaseExp=self.increaseEXP.get(), 
-                                            increaseSepith=self.increaseSepith.get(), increaseMass=self.increaseSepithMass.get())
-                    
-                    if self.reduceSlotCost.get():
-                        self.progressValue.set('Reducing Slot Cost...')
-                        import randomizer.qol
-                        randomizer.qol.reduceSlotCost(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
+                        if self.randomizeChest.get():
+                            self.progressValue.set('Reshuffling Chest Contents...')
+                            import randomizer.chest
+                            randomizer.chest.randomize(path=self.gameDirectory.get() + '/data/scripts/scena/dat_us/', seed=self.seed.get(), mode=self.randomizeChestMode.get())
 
-                    if self.replaceNeedleShoot.get():
-                        self.progressValue.set('Replacing Needle Shoot')
-                        import randomizer.qol
-                        randomizer.qol.replaceNeedleShoot(path=self.gameDirectory.get() + '/')
+                        if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get() \
+                            or self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
+                            self.progressValue.set('Randomizing Enemies...')
+                            import randomizer.mons
+                            randomizer.mons.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                    randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), 
+                                                    randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), 
+                                                    keepDeathblow=self.keepDeathBlow.get(), increaseExp=self.increaseEXP.get(), 
+                                                    increaseSepith=self.increaseSepith.get(), increaseMass=self.increaseSepithMass.get())
+                        
+                        if self.reduceSlotCost.get():
+                            self.progressValue.set('Reducing Slot Cost...')
+                            import randomizer.qol
+                            randomizer.qol.reduceSlotCost(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get())
 
-                    self.progressValue.set('Building Master Quartz')
-                    import randomizer.masterquartz
-                    randomizer.masterquartz.buildMasterQuartz(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
-                                                            normalize=self.normalizeMasterQuartz.get(), randomizeArts=self.randomizeMQArt.get(), 
-                                                            artGainChance=self.artGainChance.get())
+                        if self.replaceNeedleShoot.get():
+                            self.progressValue.set('Replacing Needle Shoot')
+                            import randomizer.qol
+                            randomizer.qol.replaceNeedleShoot(path=self.gameDirectory.get() + '/')
 
-                    messagebox.showinfo('Finished!', 'All Done!')
+                        if self.randomizeCook.get():
+                            self.progressValue.set('Randomizing Cook Book...')
+                            import randomizer.notecook
+                            randomizer.notecook.randomize(path=self.gameDirectory.get() + '/', seed=self.seed.get())
+
+                        if self.normalizeMasterQuartz.get() or self.randomizeMQArt.get():
+                            self.progressValue.set('Building Master Quartz')
+                            import randomizer.masterquartz
+                            randomizer.masterquartz.buildMasterQuartz(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
+                                                                    normalize=self.normalizeMasterQuartz.get(), randomizeArts=self.randomizeMQArt.get(), 
+                                                                    artGainChance=self.artGainChance.get())
+
+                        messagebox.showinfo('Finished!', 'All Done!')
+                    except Exception as err:
+                        import traceback
+                        print(traceback.format_exc())
+                        messagebox.showerror('FATAL ERROR', str(err))
             self.progressValue.set('Ready')
             self.btnRandomize['state'] = 'normal'
 
@@ -339,6 +423,7 @@ class ColdSteelApp:
         threading.Thread(target=realRandomize).start()
 
     def run(self):
+        self.updateCraft()
         self.mainwindow.mainloop()
 
 if __name__ == '__main__':

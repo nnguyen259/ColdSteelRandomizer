@@ -1,4 +1,5 @@
 1 8 24 52
+220 221 222 223
 1,scripts/scena/dat_us/system.dat,4698
 1,scripts/scena/dat_us/system.dat,8490
 1,scripts/scena/dat_us/t1010.dat,72339

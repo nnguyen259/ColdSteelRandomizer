@@ -1,4 +1,5 @@
 1 6 31 57 9
+240 241 242 243 244
 1,scripts/scena/dat_us/m2500.dat,40741
 1,scripts/scena/dat_us/system.dat,4722
 1,scripts/scena/dat_us/system.dat,8514

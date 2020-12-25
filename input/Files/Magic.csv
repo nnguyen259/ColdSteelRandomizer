@@ -1,0 +1,190 @@
+id,char_restriction,flags,category,type,element,targetting_type,targetting_range,targetting_size,effect1_id,effect1_data1,effect1_data2,effect2_id,effect2_data1,effect2_data2,cast_delay,recovery_delay,cost,unbalance_bonus,level,sort_id,animation,name,description
+0,65533,EBDN,1,1,0,1,1,1,1,100,0,0,0,0,0,20,0,0,0,0,AniBtlAttack,Attack,Attack
+1,65533,0,3,0,0,20,0,1,0,0,0,0,0,0,0,15,0,255,0,1,AniBtlMove,Move,Move
+2,65533,EBID,2,0,0,30,1,1,1,100,0,0,0,0,0,0,0,255,0,2,AniBtlCounter,Counter,Counter
+3,65533,0,4,0,0,0,1,1,0,0,0,0,0,0,0,20,0,255,0,3,AniBtlItem,Item,Item
+4,65533,0,5,0,0,0,1,1,0,0,0,0,0,0,0,20,0,255,0,4,0,Penalty,When you can't act due to status
+5,65533,0,7,0,0,0,1,1,0,0,0,0,0,0,0,20,0,255,0,5,0,Flee,Flee
+6,65533,EBI,8,0,0,12,100,100,1,100,0,0,0,0,0,0,0,255,0,6,0,Triple Advantage,Triple Advantage Damage
+20,65533,EBIQ,20,1,1,30,100,1,2,180,0,17,20,0,5,20,20,255,0,0,AniBtlArtsEarth00,Needle Shoot,"[#32IAttack - One -  Petrify (20%)]
+Launches a sharply pointed boulder at an enemy."
+21,65533,EBIQ,20,1,1,32,100,4,2,210,0,17,20,0,7,20,60,255,0,1,AniBtlArtsEarth01,Earth Lance,"[#32IAttack (Set) - Area (S) - Petrify (20%)]
+Summons lances of earth from below the ground."
+22,65533,EBIQ,20,1,1,32,100,6,2,270,0,35,50,0,10,25,120,255,0,2,AniBtlArtsEarth02,Grand Press,"[#32IAttack (Set) - Area (M) - MOV-50%]
+Creates a localized earthquake below enemies."
+23,65533,EBIQ,20,1,1,32,100,8,2,330,0,17,30,0,15,25,240,255,0,3,AniBtlArtsEarth03,Yggdrasil,"[#32IAttack (Set) - Area (L) - Petrify (30%)]
+Summons a sentient tree to skewer enemies."
+24,65533,EBIQ,20,1,1,32,100,12,2,360,0,17,20,0,20,30,360,255,0,4,AniBtlArtsEarth04,Ancient Glyph,"[#32IAttack (Set) - Area (XL) - Petrify (20%)]
+Summons a megalith high above, then drops it."
+25,65533,PMBIQ,20,4,1,30,100,1,113,30,0,0,0,0,5,20,30,255,0,5,AniBtlArtsEarth05,Earth Pulse,"[#32IRecovery - One - HP Regen]
+Stimulates healing. Heals 30% HP for 4 turns."
+26,65533,PMBIQ,20,4,1,30,100,1,66,25,0,0,0,0,5,20,30,255,0,6,AniBtlArtsEarth06,Crest,"[#32ISupport - One - DEF+25% (4 turns)]
+Temporarily grants earth's protection to raise defense."
+27,65533,PMBIQ,20,4,1,31,100,6,66,25,0,0,0,0,5,20,60,255,0,7,AniBtlArtsEarth07,La Crest,"[#32ISupport - Area (M) - DEF+25% (4 turns)]
+Temporarily grants earth's protection to raise defense."
+28,65533,PMBIQ,20,4,1,31,100,6,150,1,0,0,0,0,10,20,200,255,0,8,AniBtlArtsEarth08,Adamantine Shield,"[#32ISupport - Area (M) - Physical Immunity]
+A shield protects targets from one physical attack."
+35,65533,EBIQ,20,1,2,30,100,1,2,180,0,0,0,0,5,20,20,255,0,15,AniBtlArtsWater00,Aqua Bleed,"[#33IAttack - One]
+Strikes an enemy with a heavy mass of water."
+36,65533,EBIQ,20,1,2,31,100,6,2,215,0,16,20,0,7,20,60,255,0,16,AniBtlArtsWater01,Frost Edge,"[#33IAttack - Area (M) - Freeze (20%)]
+Attacks enemies with blades of crystallized ice."
+37,65533,EBIQ,20,1,2,11,100,3,2,275,0,0,0,0,10,25,110,255,0,17,AniBtlArtsWater02,Hydro Cannon,"[#33IAttack (Set) - Line (M)]
+Strikes with a high-pressure water current."
+38,65533,EBIQ,20,1,2,11,100,6,2,335,0,16,30,0,15,25,220,255,0,18,AniBtlArtsWater03,Crystal Flood,"[#33IAttack (Set) - Line (L) - Freeze (30%)]
+Creates a glistening river of ice."
+39,65533,EBIQ,20,1,2,12,100,100,2,365,0,0,0,0,20,30,350,255,0,19,AniBtlArtsWater04,Maelstrom,"[#33IAttack - All]
+Creates a powerful whirlpool. "
+40,65533,PMBCIQ,20,3,2,30,100,1,108,300,10,0,0,0,3,20,20,255,0,20,AniBtlArtsWater05,Tear,"[#33IRecovery - One - HP Heal (S)]
+Heals a small amount of HP with the power of water."
+41,65533,PMBCIQ,20,3,2,30,100,1,108,600,10,0,0,0,4,20,60,255,0,21,AniBtlArtsWater06,Teara,"[#33IRecovery - One - HP Heal (M)]
+Heals a medium amount of HP with the power of water."
+42,65533,PMBCIQ,20,3,2,30,100,1,108,1200,10,0,0,0,6,25,120,255,0,21,AniBtlArtsWater07,Tearal,"[#33IRecovery - One - HP Heal (L)]
+Heals a large amount of HP with the power of water."
+43,65533,PMRBCIQ,20,3,2,30,100,1,116,300,10,0,0,0,5,20,50,255,0,22,AniBtlArtsWater08,Thelas,"[#33IRecovery - One - Revive & HP Heal (S)]
+Revives one ally, and heals a small amount of HP."
+44,65533,PMRBCIQ,20,3,2,30,100,1,116,600,10,0,0,0,7,25,150,255,0,23,AniBtlArtsWater09,Athelas,"[#33IRecovery - One - Revive & HP Heal (M)]
+Revives one ally, and heals a medium amount of HP."
+50,65533,EBIQ,20,1,3,30,100,1,2,180,0,15,20,0,5,20,20,255,0,30,AniBtlArtsFire00,Fire Bolt,"[#34IAttack - One - Burn (20%)]
+Shoots a blazing orb of fire at an enemy."
+51,65533,EBIQ,20,1,3,31,100,4,2,220,0,15,30,0,7,20,50,255,0,31,AniBtlArtsFire01,Heatwave,"[#34IAttack - Area (S) - Burn (30%)]
+Covers the earth's surface with intense heat."
+52,65533,EBIQ,20,1,3,31,100,6,2,280,0,15,20,0,10,25,120,255,0,32,AniBtlArtsFire02,Flame Tongue,"[#34IAttack - Area (M) - Burn (20%)]
+Flames erupt from the ground, skewering enemies."
+53,65533,EBIQ,20,1,3,31,100,8,2,310,0,15,30,0,15,25,180,255,0,33,AniBtlArtsFire03,Volcanic Rain,"[#34IAttack - Area (L) - Burn (30%)]
+Causes incandescent volcanic bombs to rain from the sky."
+54,65533,EBIQ,20,1,3,31,100,12,2,340,0,15,20,0,20,25,240,255,0,34,AniBtlArtsFire04,Flare Bomb,"[#34IAttack - Area (XL) - Burn (20%)]
+Two flames collide, causing a great explosion."
+55,65533,EBIQ,20,1,3,31,100,4,2,450,0,15,50,0,25,30,400,255,0,34,AniBtlArtsFire05,Purgatorial Flame,"[#34IAttack - Area (S) - Burn (50%)]
+Summons the flames of Gehenna to reduce enemies to ash."
+56,65533,PMBIQ,20,4,3,30,100,1,115,10,0,0,0,0,5,20,40,255,0,35,AniBtlArtsFire06,Impassion,"[#34IRecovery - One - CP Regen]
+Raises spirit. Restores 20CP for 4 turns."
+59,65533,PMBIQ,20,4,3,31,100,8,73,0,0,102,5,0,5,20,50,255,0,36,AniBtlArtsFire09,Heat Up,"[#34IRecovery - Area (L) - Cures status down - CP+5]
+Cures status down, and restores 5CP."
+57,65533,PMBIQ,20,4,3,30,100,1,65,25,0,0,0,0,5,20,30,255,0,37,AniBtlArtsFire07,Forte,"[#34ISupport - One - STR+25% (4 turns)]
+Temporarily grants fire's blessing to raise attack."
+58,65533,PMBIQ,20,4,3,31,100,6,65,25,0,0,0,0,5,20,60,255,0,38,AniBtlArtsFire08,La Forte,"[#34ISupport - Area (M) - STR+25% (4 turns)]
+Temporarily grants fire's blessing to raise attack."
+65,65533,EBIQ,20,1,4,30,100,1,2,180,0,0,0,0,4,20,20,255,0,45,AniBtlArtsWind00,Air Strike,"[#35IAttack - One]
+Attacks an enemy with a mass of compressed air."
+66,65533,EBIQ,20,1,4,11,100,2,2,210,0,11,20,0,6,20,50,255,0,46,AniBtlArtsWind01,Spark Arrow,"[#35IAttack (Set) - Line (S) - Seal (20%)]
+Unleashes a line of lightning towards enemies."
+67,65533,EBIQ,20,1,4,32,100,8,2,270,0,0,0,0,9,25,120,255,0,47,AniBtlArtsWind02,Aerial,"[#35IAttack (Set) - Area (L)]
+Creates a whirlwind containing pieces of rubble."
+68,65533,EBIQ,20,1,4,11,100,3,2,330,0,11,50,0,14,25,220,255,0,48,AniBtlArtsWind03,Judgment Bolt,"[#35IAttack (Set) - Line (M) - Seal (50%)]
+Brings down judgment upon foes with lightning."
+69,65533,EBIQ,20,1,4,12,100,100,2,360,0,11,30,0,18,30,360,255,0,49,AniBtlArtsWind04,Ragna Vortex,"[#35IAttack - All - Seal (30%)]
+Swallows up enemies with a lightning-imbued whirlwind."
+70,65533,PMBCIQ,20,3,4,31,100,6,108,250,10,0,0,0,5,20,40,255,0,50,AniBtlArtsWind05,Breath,"[#35IRecovery - Area (M) - HP Heal (S)]
+Heals allies in an area with purifying breath."
+71,65533,PMBCIQ,20,3,4,31,100,8,108,550,10,0,0,0,7,25,120,255,0,51,AniBtlArtsWind06,Holy Breath,"[#35IRecovery - Area (L) - HP Heal (M)]
+Heals allies in an area with purifying sacred breath."
+72,65533,PMBIQ,20,4,4,31,100,12,72,0,0,0,0,0,5,20,50,255,0,52,AniBtlArtsWind07,Recuria,"[#35IRecovery - Area (XL) - Cures abnormal status]
+Cures abnormal status (except K.O.)"
+80,65533,EBIQ,20,1,5,30,100,1,2,200,0,18,30,0,7,7,30,255,0,60,AniBtlArtsTime00,Soul Blur,"[#36IAttack - One - Faint (30%)]
+Emits a spacetime-shaking pulse."
+81,65533,EBIQ,20,1,5,31,100,6,2,240,0,20,30,0,10,10,100,255,0,61,AniBtlArtsTime01,Demonic Scythe,"[#36IAttack - Area (M) - K.O. (30%)]
+Steals foes' souls with the Grim Reaper's scythe."
+82,65533,EBIQ,20,1,5,31,100,12,2,310,0,21,50,0,20,15,200,255,0,62,AniBtlArtsTime02,Grim Butterfly,"[#36IAttack - Area (XL) - Nightmare (50%)]
+A swarm of butterflies plunges enemies into despair."
+83,65533,EBIQ,20,1,5,31,100,8,112,410,5,0,0,0,30,30,400,255,0,63,AniBtlArtsTime03,Shadow Blade,"[#36IAttack - Area (L) - HP Absorb]
+A demonic blade. Absorb 5% of damage dealt as HP."
+84,65533,PMBIQ,20,4,5,31,100,6,69,25,0,70,50,0,5,20,20,255,0,64,AniBtlArtsTime04,Chrono Drive,"[#36ISupport - Area (M) - SPD+25%/MOV+50% (4 turns)]
+Speeds up the flow of time for targeted allies."
+85,65533,EBIQ,20,2,5,31,100,6,22,100,15,34,25,0,5,20,50,255,0,65,AniBtlArtsTime05,Chrono Break,"[#36ISupport - Area (M) - SPD-25% - Delay+15]
+Slows down the flow of time for targeted enemies."
+86,65533,MBIQ,20,4,5,30,0,1,81,0,0,0,0,0,0,0,200,255,0,66,AniBtlArtsTime06,Chrono Burst,"[#36ISupport - Self - Act twice in succession]
+Alters the laws of time, allowing the user to act twice more."
+95,65533,EBIQ,20,1,6,32,100,4,2,170,0,13,30,0,7,20,30,255,0,75,AniBtlArtsGold00,Golden Sphere,"[#37IAttack (Set) - Area (S) - Blind (30%)]
+Attacks enemies with golden magic orbs."
+96,65533,EBIQ,20,1,6,32,100,8,2,250,0,35,50,0,10,25,100,255,0,76,AniBtlArtsGold01,Dark Matter,"[#37IAttack (Set) - Area (L) - Suction - MOV-50%]
+Draws in and compresses enemies."
+97,65533,EBIQ,20,1,6,12,100,100,2,320,0,0,0,0,15,25,200,255,0,77,AniBtlArtsGold02,Cross Crusade,"[#37IAttack - All]
+A cross-shaped void bathes all in holy light."
+98,65533,EBIQ,20,1,6,12,100,100,2,400,0,78,25,0,30,30,400,255,0,78,AniBtlArtsGold03,Altair Cannon,"[#37IAttack - All - ATS/ADF-25%]
+Blasts of light fall from above."
+99,65533,PMBIQ,20,4,6,31,100,6,67,25,0,68,25,0,5,20,30,255,0,79,AniBtlArtsGold04,Fortuna,"[#37ISupport - Area (M) - ATS/ADF+25% (4 turns)]
+Grants light's clarity to raise ATS/ADF."
+100,65533,PMBIQ,20,4,6,30,100,1,71,0,0,0,0,0,5,20,50,255,0,80,AniBtlArtsGold05,Shining,"[#37ISupport - One - Insight]
+Grants insight status for 4 turns."
+101,65533,PMRBCIQ,20,3,6,12,100,100,107,100,0,113,30,0,10,20,400,255,0,81,AniBtlArtsGold06,Seraphic Ring,"[#37IRecovery - All - Cures K.O. - HP Heal (Full) - HP Regen]
+Fully heals, and heals 30% HP for 4 turns."
+110,65533,EBIQ,20,1,7,11,100,2,2,170,0,0,0,0,7,20,30,255,0,90,AniBtlArtsSilver00,Luminous Ray,"[#38IAttack (Set) - Line (S)]
+Unleashes a beam of lunar light."
+111,65533,EBIQ,20,1,7,31,100,6,2,240,0,19,40,0,10,25,100,255,0,91,AniBtlArtsSilver01,Silver Thorn,"[#38IAttack - Area (M) - Confuse (40%)]
+Blades of condensed insanity rain from above."
+112,65533,EBIQ,20,1,7,31,100,12,2,300,0,44,25,0,15,25,200,255,0,92,AniBtlArtsSilver02,Phantom Phobia,"[#38IAttack - Area (XL) - Status down (random)]
+Terrifies enemies with an illusion of death."
+113,65533,EBIQ,20,1,7,12,100,100,2,420,0,0,0,0,30,30,420,255,0,93,AniBtlArtsSilver03,Claiomh Solarion,"[#38IAttack - All]
+Annihilates all with a beam of condensed magical energy."
+114,65533,EBIQ,20,2,7,30,100,1,203,0,0,0,0,0,5,20,10,255,0,94,AniBtlArtsSilver04,Analyze,"[#38ISupport - One - Analysis]
+Analyzes and obtains data on an enemy."
+115,65533,PMBIQ,20,4,7,30,100,1,73,0,0,82,25,0,5,20,50,255,0,95,AniBtlArtsSilver05,Saintly Force,"[#38ISupport - One - STR/DEF+25% (4 turns) - Cures status down]
+Buffs an ally with pure radiance."
+116,65533,PMBIQ,20,4,7,12,100,100,151,1,0,67,25,0,10,20,150,255,0,96,AniBtlArtsSilver06,Crescent Mirror,"[#38ISupport - All - Magic Reflect - ATS+25% (4 turns)]
+Reflects one magic attack. Increases ATS by 25%."
+210,0,EBI,31,1,0,31,100,6,1,200,0,15,100,0,0,40,100,255,0,5,AniBtlSCraft00,Flame Slash,"[Attack - Area (M) - Burn (100%)]
+(Class SS) Bathes sword in flames and slashes enemies."
+211,0,EBI,31,1,0,31,100,8,1,250,0,15,100,0,0,40,100,255,0,6,AniBtlSCraft00,Azure Flame Slash,"[Attack - Area (L) - Burn (100%)]
+(Class SSS) Bathes sword in blue flames and slashes enemies."
+230,1,EBI,31,1,0,11,100,3,2,200,0,12,100,0,0,40,100,255,0,4,AniBtlSCraft00,Rosetta Arrow,"[Magic Attack (Set) - Line (M) - Mute (100%)]
+(Class SS) Fires an arrow containing condensed magical energy."
+231,1,EBI,31,1,0,11,100,6,2,225,0,12,100,0,0,40,100,255,0,5,AniBtlSCraft01,Judgment Arrow,"[Magic Attack (Set) - Line (L) - Mute (100%)]
+(Class SS+) Annihilates enemies with an arrow of judgment."
+250,2,EBI,31,1,0,31,100,12,2,225,0,19,100,0,0,40,100,255,0,5,AniBtlSCraft00,Seventh Rhapsody,"[Magic Attack - Area (XL) - Confuse (100%)]
+(Class SS+) Utterly destroys foes with the power of music."
+270,3,EBI,31,1,0,31,100,6,1,200,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Radiant Dance,"[Attack - Area (M)]
+(Class SS) Slices up foes with a blade of light."
+271,3,EBI,31,1,0,31,100,12,1,250,0,0,0,0,0,40,100,255,0,5,AniBtlSCraft01,Radiant Waltz,"[Attack - Area (XL)]
+(Class SSS) Cuts up foes with a series of beautiful slashes."
+290,4,EBI,31,1,0,31,100,8,1,200,0,40,100,0,0,40,100,255,0,4,AniBtlSCraft00,Ultimate Shot,"[Attack - Area (L) - Random abnormal status]
+(Class SS) Fires a bullet of unimaginable power."
+310,5,EBI,31,1,0,12,100,100,2,250,0,0,0,0,0,40,100,255,0,5,AniBtlSCraft00,Lord Albireon,"[Magic Attack - All]
+(Class SSS) Turns all to dust with the light of mighty towers."
+360,6,EBI,31,1,0,31,100,8,1,200,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Crystal Saber,"[Attack - Area (L)]
+(Class SS) Imprisons foes in a barrier, then eliminates them."
+380,7,EBI,31,1,0,31,100,12,1,225,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Sylphid Dance,"[Attack - Area (XL)]
+(Class SS+) Overwhelms foes with a dance of death."
+400,8,EBI,31,1,0,31,100,8,1,225,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Calamity Hawk,"[Attack - Area (L)]
+(Class SS+) Descends upon foes with a hawklike aura."
+420,9,EBI,31,1,0,12,100,100,1,250,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Gigant Breaker,"[Attack - All]
+(Class SSS) Turns Airgetlam into a hammer and strikes foes."
+440,10,EBI,31,1,0,32,100,12,1,250,0,0,0,0,0,40,100,255,0,4,AniBtlSCraft00,Cross Raven,"[Attack (Set) - Area (XL)]
+(Class SSS) Wildly fires bullets which all hit at once."
+460,11,EBI,31,1,0,12,100,100,1,275,0,18,100,0,0,40,100,255,0,3,AniBtlSCraft00,Plasma Storm,"[Attack - All - Faint (100%)]
+(Class SSS+) Races across the battlefield, dominating foes."
+480,12,EBI,31,1,0,2,100,8,1,225,0,0,0,0,0,40,100,255,0,3,AniBtlSCraft00,Dragon Kick,"[Attack - Area (L)]
+(Class SS+) An explosive dragon kick from above."
+500,65533,EBI,11,1,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,0,AniBtlLinkChase,Assist,Assist
+501,65533,EBI,11,1,0,31,100,6,1,100,0,0,0,0,0,0,0,255,0,1,AniBtlLinkRush,Rush,Rush
+502,65533,EBI,11,1,0,31,100,6,1,130,0,0,0,0,0,0,0,255,0,2,AniBtlLinkRush,Rush 2,Increases the power of Rush.
+503,65533,EBI,11,1,0,12,100,100,1,100,0,0,0,0,0,0,0,255,0,3,AniBtlLinkBurst,Burst,Burst
+510,65533,EBI,11,1,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,4,AniBtlLinkLastAttack,Finishing Blow,Finishing Blow
+520,65533,PBI,10,4,0,1,1,1,0,0,0,0,0,0,0,0,0,255,0,5,AniBtlLinkProtect,Cover,"Sometimes defends partner from an attack, halving damage."
+521,65533,PBI,10,3,0,30,100,1,103,20,0,0,0,0,0,0,0,255,0,6,AniBtlLinkFirstAid,Auto-Tear,Sometimes heals partner's HP when they are attacked.
+522,65533,EBI,10,1,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,7,AniBtlLinkCounter,Counterattack,Sometimes counterattacks foe when partner is attacked.
+530,65533,EBI,10,1,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,8,AniBtlLinkUtmostAttack,Powerful Strike,Increases Finishing Blow's power and activation frequency.
+531,65533,PBI,10,3,0,30,100,1,103,25,0,102,50,0,0,0,0,255,0,9,AniBtlLinkLivelyYell,Cheer,Sometimes encourages partner when they are attacked. CP+50.
+532,65533,PBI,10,4,0,30,100,1,0,0,0,0,0,0,0,0,0,255,0,10,AniBtlLinkBoostArts,Arts Support,Sometimes increases the power of partner's arts by 1.2x.
+533,65533,EBI,10,1,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,11,AniBtlLinkRageCounter,Vengeance,Sometimes counters with a critical when partner is attacked.
+534,65533,PBI,10,3,0,30,100,1,101,100,0,0,0,0,0,0,0,255,0,12,AniBtlLinkQuickCharge,Auto-Charge,Sometimes restores partner's EP after they use arts.
+535,65533,PBI,10,3,0,30,100,1,103,25,0,74,0,0,0,0,0,255,0,13,AniBtlLinkQuickCure,Auto-Curia,Sometimes cures a partner's abnormal status or status down.
+536,65533,EBI,10,1,0,30,100,1,1,100,0,22,100,20,0,0,0,255,0,14,AniBtlLinkMomentChase,Deadly Assist,Assist attacks deal critical damage and cause delay+20.
+537,65533,PBI,10,4,0,1,1,1,0,0,0,0,0,0,0,0,0,255,0,15,AniBtlLinkSolidGuard,Protective Wall,"Sometimes protects partner, reducing incoming damage by 90%."
+7,65533,EBI,1,0,0,30,100,1,1,100,0,0,0,0,0,20,0,0,0,0,AniBtlAttack,Attack,The Ashen Knight's basic attack.
+8,65533,EBI,2,0,0,30,100,1,1,100,0,0,0,0,0,0,0,255,0,2,AniBtlCounter,Counter,Counter
+550,65533,EBI,11,0,0,30,100,1,1,120,0,0,0,0,0,0,0,255,0,2,AniBtlLinkChase,Assist,Assist (1.2x damage)
+551,65533,PMBI,30,3,0,30,0,1,103,50,0,102,50,0,0,30,500,255,5,1,AniBtlSinki,Spirit,"[Support - Self - Consumes #4C500#0CEP, Heals 50% HP/CP+50]"
+552,65533,PMBI,30,3,0,30,0,1,80,25,3,0,0,0,0,25,40,255,5,1,AniBtlCraft00,Qinggong,"[Support - Self - STR/SPD+25%]
+Focuses energy, increasing physical capabilities."
+553,65533,PMBI,30,0,0,30,0,1,0,0,0,0,0,0,0,70,90,255,5,1,AniBtlCraft01,Morning Moon,"[Support - Self - Halves damage - 50% chance to counter]
+Counters cause unbalance 100% of the time."
+554,65533,EBI,31,1,0,30,100,1,1,240,0,0,100,0,0,40,100,255,100,5,AniBtlSCraft00,Destructive Impact,Charge attack that uses a regular attack (weaponless version)
+563,65533,EBI,30,0,0,34,100,1,1,110,0,0,0,0,0,20,20,30,0,0,AniBtlCraft12,Lustrous Slash,"[Attack - 30% chance to unbalance - Can't guard/counter]
+Two slashes in quick succession."
+564,65533,EBI,30,0,0,34,100,1,1,120,0,0,0,0,0,20,60,50,0,0,AniBtlCraft13,Flame Impact,"[Attack - 50% chance to unbalance - Can't guard/counter]
+A powerful downward slash."
+565,65533,EBI,31,1,0,30,100,1,1,250,0,0,100,0,0,40,100,255,100,5,AniBtlSCraft10,Enlightened Domination,--
+900,65533,EB,30,1,0,1,2,1,1,130,0,22,100,30,0,30,25,255,0,0,AniBtlCraft00,Piercing Strike,"[Attack - One - Delay+30]
+(Class B) Thrusts sword forwards, piercing a foe."
+901,65533,EB,30,1,0,11,100,2,1,110,0,34,25,0,0,25,30,255,0,1,AniBtlCraft01,Soaring Bird,"[Attack (Set) - Line (S) - SPD-25%]
+(Class C) Releases a bird-shaped shock wave."

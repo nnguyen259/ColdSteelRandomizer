@@ -1,4 +1,5 @@
 1 14 25 47
+390 391 392 393
 1,scripts/scena/dat_us/m2500.dat,40747
 1,scripts/scena/dat_us/system.dat,4896
 1,scripts/scena/dat_us/system.dat,8688
