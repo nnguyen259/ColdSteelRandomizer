@@ -34,7 +34,7 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 ### Character
 * **Base Stat and Stat Growth:** Randomize the starting stat and stat growth for every character, including Sara and Angelica. The higher the variance, the more random it gets. Increase Base Stat option will give every character an extra 300 HP and 30 DEF at the start of the game.
 * **Crafts:** Randomize the craft pool for every character. The character will still have the same amount of total crafts and the level learn for those crafts, but the actual craft pool will be different. However, they will still use their old animation as if they are using their original crafts. Therefore, it is possible that crafts might not work as expected due to the interaction with the animation.
-* **Original Crafts:** Only enabled when randomized craft is also enabled. These crafts are all original from me (nnguyen259) or player submitted. To submit your own craft, go [here](https://forms.gle/XhtVyMxxjB3xYMXr7).
+* **Original Crafts:** Only enabled when randomized craft is also enabled. These crafts are all original from me (nnguyen259) or player submitted. To submit your own craft, go [here](https://forms.gle/dxvDuajCURGcbGda6).
 
 ### Orbment Options
 * **Orbment Line:** Create a new orbment line for each character and randomly assign slots to have an elemental lock.
@@ -45,7 +45,7 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 
 * **Normalize Master Quartz:** Make sure that late game master quartz (Vermillion, Thor, etc...) will have their effects even at lv1 with some rebalance done so that they are appropriate for the level.
 
-* **Randomize Master Quartz Arts:** Randomize the art(s) each master quartz give per level. The chance determine of likely it is to get an art.
+* **Randomize Master Quartz Arts:** Randomize the art(s) each master quartz give per level (up to 2). The chance for getting an art will be rolled separatedly so you can end up with 0, 1, or 2 arts per master quartz level.
 
 * **Shuffle Chests:** Randomly shuffle the contents of every chest in the game with the exception of the first Needle Shoot chest, Master Quartz chests and Sepith chests. There are three mode:
 
