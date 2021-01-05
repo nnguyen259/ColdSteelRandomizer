@@ -22,7 +22,7 @@ The randomizer will only work with the English release of Cold Steel 1 due to ho
 
 Usage otherwise is pretty straightforward. After you have downloaded and launched the application, you will be greeted by this window:
 
-![](https://media.discordapp.net/attachments/588527782674432013/787159970902835220/unknown.png)
+![](https://media.discordapp.net/attachments/785577919904219197/795839395390816306/unknown.png?width=804&height=676)
 
 The Game Location is the folder where the game .exe is located.
 
@@ -59,6 +59,7 @@ After picking the seed (optional) and the options you want. Press Randomize! to 
 Note: Playble characters as enemies will not be randomized.
 * **Enemy Stats:** Randomize enemy main four stats (STR, DEF, ATS, ADF). If the enemy has 0 ATS, it will not be changed. The higher the variance, the more random it is.
 * **Enemy Elemental/Affliction/Unbalance Efficacy:** Generate new values for these efficacy for each enemy. There is an option to prevent Petrify/Deathblow/Vanish efficacy from being randomized.
+* **Enemy Drops:** Randomize enemy drops. U-Material will not be changed. If "Keep Drop in Same Category" is enabled, randomized drop will be in the same category as normal drop. Otherwise, it will be a random armor/boots/accessory/quartz/consumables/materials.
 
 ### Misc. Options
 * **Resources Gain:** These are options to increase the amount of EXP, Sepith, Sepith Mass after the battle as well as reduce the amount of Sepith needed to unlock character orbment slots. Helpful since you can easily end up with multiple characters having long orbment line or when you want to minimize battles.

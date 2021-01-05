@@ -160,6 +160,15 @@ class ColdSteelApp:
         self.randomizeEnemyUnbalanceRes = tk.IntVar()
         self.cbtnEnemyUnbalanceRes.config(text='Randomize Enemy Unbalance Efficacy', variable=self.randomizeEnemyUnbalanceRes)
         self.cbtnEnemyUnbalanceRes.grid(columnspan='2', padx='5', pady='5', row='5', sticky='w')
+        # enemy drop
+        self.cbtnEnemyDrop = ttk.Checkbutton(self.frameEnemy)
+        self.randomizeEnemyDrop = tk.IntVar()
+        self.keepCategory = tk.IntVar()
+        self.cbtnKeepCategory = ttk.Checkbutton(self.frameEnemy)
+        self.cbtnEnemyDrop.config(text='Randomize Enemy Drop', variable=self.randomizeEnemyDrop)
+        self.cbtnEnemyDrop.grid(columnspan='2', padx='5', pady='5', row='6', sticky='w')
+        self.cbtnKeepCategory.config(text='Keep Item Drop In The Same Category', variable=self.keepCategory)
+        self.cbtnKeepCategory.grid(columnspan='2', padx='25', pady='5', row='7', sticky='w')
         self.frameEnemy.config(height='200', text='Enemy', width='200')
         self.frameEnemy.grid(column='0', padx='5', pady='5', row='2', sticky='nsew')
 
@@ -380,14 +389,14 @@ class ColdSteelApp:
                             randomizer.chest.randomize(path=self.gameDirectory.get() + '/data/scripts/scena/dat_us/', seed=self.seed.get(), mode=self.randomizeChestMode.get())
 
                         if self.randomizeEnemyStat.get() or self.randomizeEnemyEleRes.get() or self.randomizeEnemyAfflictionRes.get() or self.randomizeEnemyUnbalanceRes.get() \
-                            or self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
+                            or self.randomizeEnemyDrop.get() or self.increaseEXP.get() or self.increaseSepith.get() or self.increaseSepithMass.get():
                             self.progressValue.set('Randomizing Enemies...')
                             import randomizer.mons
                             randomizer.mons.randomize(path=self.gameDirectory.get() + '/data/text/dat_us/', seed=self.seed.get(), 
                                                     randomStat=self.randomizeEnemyStat.get(), randomEleRes=self.randomizeEnemyEleRes.get(), 
                                                     randomAfflictionRes=self.randomizeEnemyAfflictionRes.get(), randomUnbalance=self.randomizeEnemyUnbalanceRes.get(), 
-                                                    keepDeathblow=self.keepDeathBlow.get(), increaseExp=self.increaseEXP.get(), 
-                                                    increaseSepith=self.increaseSepith.get(), increaseMass=self.increaseSepithMass.get())
+                                                    keepDeathblow=self.keepDeathBlow.get(), randomDrop=self.randomizeEnemyDrop.get(), sensibleDrop=self.keepCategory.get(),
+                                                    increaseExp=self.increaseEXP.get(), increaseSepith=self.increaseSepith.get(), increaseMass=self.increaseSepithMass.get())
                         
                         if self.reduceSlotCost.get():
                             self.progressValue.set('Reducing Slot Cost...')

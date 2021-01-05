@@ -2,7 +2,7 @@ import random, csv
 
 subStatArray = ['dex', 'agi', 'spd']
 
-def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=True, randomAfflictionRes=True, randomUnbalance=True, keepDeathblow=False, increaseSepith=False, increaseMass=False, increaseExp=False):
+def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=True, randomAfflictionRes=True, randomUnbalance=True, keepDeathblow=False, randomDrop=False, sensibleDrop=True, increaseSepith=False, increaseMass=False, increaseExp=False):
     if seed:
         random.seed(seed)
 
@@ -58,6 +58,37 @@ def randomize(path=None, seed=None, variance=10, randomStat=True, randomEleRes=T
             unbalanceNum = [0, 10, 50, 100, 200, 400]
             for unbalance in unbalanceList:
                 mons[unbalance] = random.choice(unbalanceNum)
+
+        if randomDrop:
+            ids = {
+                "consumables" : [0, 37],
+                "zemurian" : [51, 52],
+                "armor": [500, 524],
+                "boots" : [550, 575],
+                "accessory" : [600, 663],
+                "food" : [1500, 1579],
+                "materials" : [1600, 1617],
+                "earthQuartz" : [2100, 2130],
+                "waterQuartz" : [2135, 2168],
+                "fireQuartz" : [2170, 2202],
+                "windQuartz" : [2205, 2236],
+                "timeQuartz" : [2240, 2267],
+                "spaceQuartz" : [2270, 2297],
+                "mirageQuartz" : [2300, 2326]
+            }
+            
+            for k in range(2):
+                dropId = int(mons['drop' + str(k+1) + '_id'])
+                if dropId == 50:
+                    continue
+                if sensibleDrop:
+                    for id in ids:
+                        if dropId >= ids[id][0] and dropId <= ids[id][1]:
+                            mons['drop' + str(k+1) + '_id'] = random.randint(ids[id][0], ids[id][1])
+                            break
+                else:
+                    category = random.choice(list(ids.keys()))
+                    mons['drop' + str(k+1) + '_id'] = random.randint(ids[category][0], ids[category][1])
 
         if increaseSepith:
             sepithList = ['earth', 'water', 'fire', 'wind', 'time', 'space', 'mirage']
