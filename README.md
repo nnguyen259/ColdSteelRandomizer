@@ -1,6 +1,6 @@
 # Trails of Cold Steel Randomizer
 
-## Latest Version: [1.2.0](https://github.com/nnguyen259/ColdSteelRandomizer/releases/tag/1.2.0)
+## Latest Version: [1.3.0](https://github.com/nnguyen259/ColdSteelRandomizer/releases/tag/1.3.0)
 
 ## Experimental Version: None
 
